@@ -1,18 +1,28 @@
 import React from 'react'
-import { Link } from 'gatsby'
 
 import Layout from '../components/layout'
-import Image from '../components/image'
+import Partner from '../components/Partner'
+import Clients from '../components/Clients'
+import Projects from '../components/Projects'
+import Tumblr from '../components/Tumblr'
+import JoinUs from '../components/JoinUs'
+import Meet from '../components/Meet'
+import Us from '../components/Us'
+import SocialLinks from '../components/SocialLinks'
+import Newsletter from '../components/Newsletter'
 
 const IndexPage = () => (
   <Layout>
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: '300px', marginBottom: '1.45rem' }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
+    <Partner />
+    <Clients />
+    <Projects />
+    <Tumblr />
+    <JoinUs />
+    <Tumblr />
+    <Meet />
+    <Us />
+    <SocialLinks />
+    <Newsletter />
   </Layout>
 )
 

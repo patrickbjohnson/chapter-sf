@@ -1,0 +1,36 @@
+
+@font-face {
+    font-family: 'austin';
+    src: url('austin-text-roman.woff');
+    src: url('austin-text-roman.woff') format('woff'),
+         url('austin-text-roman.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'austin';
+    src: url('austin-text-italic.woff');
+    src: url('austin-text-italic.woff') format('woff'),
+         url('austin-text-italic.woff2') format('woff2');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'austin';
+    src: url('austin-light.eot');
+    src: url('austin-light.woff') format('woff'),
+         url('austin-light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'austin';
+    src: url('austin-light-italic.woff');
+    src: url('austin-light-italic.woff') format('woff'),
+         url('austin-light-italic.woff2') format('woff2');
+    font-weight: 300;
+    font-style: italic;
+}
