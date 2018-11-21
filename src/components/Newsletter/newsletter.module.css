@@ -1,4 +1,171 @@
 .section {
     background-color: #000;
     color: #fff;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    height: 65px;
+}
+
+.form {
+    display: flex;
+    width: 100%;
+    margin-bottom: 0;
+    border-bottom: 1px solid #fff;
+}
+
+.sr {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+}
+
+.input {
+    width: 100%;
+    appearance: none;
+    background-color: #000;
+    color: #fff;
+    border: 0;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.20em;
+}
+
+.input::-webkit-input-placeholder {
+    font-size: 12px;
+    letter-spacing: 0.20em;
+    color: rgba(255, 255, 255, 1);
+}
+
+.input::-moz-placeholder {
+    font-size: 12px;
+    letter-spacing: 0.20em;
+    color: rgba(255, 255, 255, 1);
+}
+
+.input:-ms-input-placeholder {
+    font-size: 12px;
+    letter-spacing: 0.20em;
+    color: rgba(255, 255, 255, 1);
+}
+
+.input:-moz-placeholder {
+    font-size: 12px;
+    letter-spacing: 0.20em;
+    color: rgba(255, 255, 255, 1);
+}
+
+.input:focus {
+    outline: 0;
+}
+
+.button {
+    flex-shrink: 0;
+    appearance: none;
+    border: 0;
+    outline: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.button:after {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+    transform: rotate(45deg);
+}
+
+
+@media (min-width: 768px) {
+    .section {
+        height: 150px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .form {
+        padding-bottom: 5px;
+    }
+
+    .input {
+        font-size: 30px;
+    }
+
+    .input::-webkit-input-placeholder {
+        font-size: 30px;
+        color: rgba(255, 255, 255, 1);
+    }
+    
+    .input::-moz-placeholder {
+        font-size: 30px;
+        color: rgba(255, 255, 255, 1);
+    }
+    
+    .input:-ms-input-placeholder {
+        font-size: 30px;
+        color: rgba(255, 255, 255, 1);
+    }
+    
+    .input:-moz-placeholder {
+        font-size: 30px;
+        color: rgba(255, 255, 255, 1);
+    }
+
+    .button:after {
+        width: 16px;
+        height: 16px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .section {
+        height: 200px;
+        padding-left: 55px;
+        padding-right: 55px;
+    }
+
+    .form {
+        width: 100%;
+        max-width: 980px;
+        padding-bottom: 5px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .input {
+        font-size: 40px;
+    }
+
+    .input::-webkit-input-placeholder {
+        font-size: 40px;
+        color: rgba(255, 255, 255, 1);
+    }
+    
+    .input::-moz-placeholder {
+        font-size: 40px;
+        color: rgba(255, 255, 255, 1);
+    }
+    
+    .input:-ms-input-placeholder {
+        font-size: 40px;
+        color: rgba(255, 255, 255, 1);
+    }
+    
+    .input:-moz-placeholder {
+        font-size: 40px;
+        color: rgba(255, 255, 255, 1);
+    }
+
+    .button:after {
+        width: 25px;
+        height: 25px;
+    }
 }

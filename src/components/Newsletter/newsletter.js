@@ -5,7 +5,12 @@ import styles from './newsletter.module.css'
 const Newsletter = () => {
     return (
         <section className={styles.section}>
-            <h1>Newsletter</h1>
+            <form className={styles.form}>
+                <input className={styles.input} type="email" placeholder="Follow our newsletter" />
+                <button type="submit" className={styles.button}>
+                    <span className={styles.sr}>Submit</span>
+                </button>
+            </form>
         </section>
     )
 }
