@@ -2,3 +2,74 @@
     background-color: #000;
     color: #fff;
 }
+
+.hero {
+    position: relative;
+    height: 700px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(http://placehold.it/1200x700?text=1200x700);
+}
+
+.title {
+    display: block;
+    width: 100%;    
+    max-width: 60px;
+    padding-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: max-width .25s ease-out;
+}
+
+.content {
+    padding: 20px 20px;
+    max-width: 980px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.content p {
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.content p:last-of-type {
+    margin-bottom: 0;
+}
+
+.content span {
+    color: #9A9C9F;
+}
+
+@media (min-width: 768px) {
+    .title {
+        max-width: 150px;
+        padding-top: 60px;
+    }
+
+    .content {
+        padding: 40px 40px 50px;
+    }
+
+    .content p {
+        font-size: 22px;
+        line-height: 1.363636364;
+    }
+}
+
+@media (min-width: 1024px) {
+    .title {
+        max-width: 250px;
+    }
+
+    .content {
+        padding: 45px 55px 100px;
+    }
+
+    .content p {
+        font-size: 24px;
+        line-height: 1.6;
+    }
+}
