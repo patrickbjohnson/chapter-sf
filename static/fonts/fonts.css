@@ -2,8 +2,7 @@
 @font-face {
     font-family: 'austin';
     src: url('austin-text-roman.woff');
-    src: url('austin-text-roman.woff') format('woff'),
-         url('austin-text-roman.woff2') format('woff2');
+    src: url('austin-text-roman.woff') format('woff');
     font-weight: 400;
     font-style: normal;
 }
@@ -11,17 +10,15 @@
 @font-face {
     font-family: 'austin';
     src: url('austin-text-italic.woff');
-    src: url('austin-text-italic.woff') format('woff'),
-         url('austin-text-italic.woff2') format('woff2');
+    src: url('austin-text-italic.woff') format('woff');
     font-weight: 400;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'austin';
-    src: url('austin-light.eot');
-    src: url('austin-light.woff') format('woff'),
-         url('austin-light.woff2') format('woff2');
+    src: url('austin-light.woff');
+    src: url('austin-light.woff') format('woff');
     font-weight: 300;
     font-style: normal;
 }
@@ -29,8 +26,20 @@
 @font-face {
     font-family: 'austin';
     src: url('austin-light-italic.woff');
-    src: url('austin-light-italic.woff') format('woff'),
-         url('austin-light-italic.woff2') format('woff2');
+    src: url('austin-light-italic.woff') format('woff');
     font-weight: 300;
     font-style: italic;
+}
+
+
+@font-face {
+    font-family: 'venus';
+    src: url('VenusSB-MediumExtended.eot');
+    src: url('VenusSB-MediumExtended.eot?#iefix') format('embedded-opentype'),
+        url('VenusSB-MediumExtended.woff2') format('woff2'),
+        url('VenusSB-MediumExtended.woff') format('woff'),
+        url('VenusSB-MediumExtended.ttf') format('truetype'),
+        url('VenusSB-MediumExtended.svg#VenusSB-MediumExtended') format('svg');
+    font-weight: 500;
+    font-style: normal;
 }

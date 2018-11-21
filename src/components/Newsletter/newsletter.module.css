@@ -31,30 +31,36 @@
     background-color: #000;
     color: #fff;
     border: 0;
+    font-family: 'venus';
+    font-weight: 500;
     font-size: 12px;
     text-transform: uppercase;
     letter-spacing: 0.20em;
 }
 
 .input::-webkit-input-placeholder {
+    font-family: 'venus';
     font-size: 12px;
     letter-spacing: 0.20em;
     color: rgba(255, 255, 255, 1);
 }
 
 .input::-moz-placeholder {
+    font-family: 'venus';
     font-size: 12px;
     letter-spacing: 0.20em;
     color: rgba(255, 255, 255, 1);
 }
 
 .input:-ms-input-placeholder {
+    font-family: 'venus';
     font-size: 12px;
     letter-spacing: 0.20em;
     color: rgba(255, 255, 255, 1);
 }
 
 .input:-moz-placeholder {
+    font-family: 'venus';
     font-size: 12px;
     letter-spacing: 0.20em;
     color: rgba(255, 255, 255, 1);

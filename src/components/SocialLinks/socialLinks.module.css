@@ -25,7 +25,9 @@
     margin-right: 7px;
     padding-bottom: 5px;
     border-bottom: 3px solid transparent;
+    font-family: 'venus';
     font-size: 10px;
+    letter-spacing: 0.20em;
     transition: border-bottom-color .25s ease-out;
 }
 
