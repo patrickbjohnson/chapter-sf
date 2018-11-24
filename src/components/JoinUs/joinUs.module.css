@@ -1,3 +1,55 @@
 .section {
     background-color: #63C0EA;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding: 20px 20px 22px;
 }
+
+.title {
+    display: block;
+    margin-bottom: 26px;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.copy {
+    font-size: 20px;
+    line-height: 1;
+}
+
+.copy span {
+    font-family: 'austin', serif;
+    font-style: italic;
+    font-size: 24px;
+}
+
+
+@media (min-width: 768px) {
+    .section {
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-bottom: 100px;
+    }
+
+    .title {
+        margin-bottom: 80px;
+    }
+
+    .copy {
+        font-size: 50px;
+        margin-bottom: 90px;
+    }
+
+    .copy span {
+        font-size: 60px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .section {
+        padding: 55px 55px 125px;
+    }
+}
+
+@media (min-width: 1200px) {}

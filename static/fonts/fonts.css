@@ -43,3 +43,16 @@
     font-weight: 500;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'pitch';
+    src: url('Pitch-Regular.eot');
+    src: url('Pitch-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Pitch-Regular.woff2') format('woff2'),
+        url('Pitch-Regular.woff') format('woff'),
+        url('Pitch-Regular.ttf') format('truetype'),
+        url('Pitch-Regular.svg#Pitch-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+

@@ -7,6 +7,7 @@ const MeetRow = (props) => {
     return (
         <div className={styles.row}>
             <h3 className={styles.rowTitle}>Critroulette</h3>
+            
             <div className={styles.innerContent}>
                 <p className={styles.smallText}>4 design students x Chapter partners</p>
                 <div className={styles.flex}>
@@ -20,8 +21,8 @@ const MeetRow = (props) => {
                 </div>
                 
             </div>
+
             <button className={styles.button} onClick={props.clickHandler}>Book</button>
-            
         </div>
     )
 }

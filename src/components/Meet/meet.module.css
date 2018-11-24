@@ -17,6 +17,8 @@
 }
 
 .copy span {
+    font-family: 'austin', serif;
+    font-style: italic;
     font-size: 24px;
 }
 

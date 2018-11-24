@@ -9,10 +9,11 @@
 }
 
 .rowTitle {
+    margin-bottom: 0;
     font-family: 'austin';
     font-size: 50px;
+    font-weight: 400;
     line-height: 1;
-    margin-bottom: 0;
 }
 
 .smallText {
@@ -54,8 +55,10 @@
     color: #000;
     appearance: none;
     transition: border-color .25s ease-out;
+    cursor: pointer;
 }
 
+.button:hover,
 .button:focus {
     border: 2px solid black;
 }
@@ -89,6 +92,9 @@
         justify-content: space-between;
         align-items: flex-start;
         padding-bottom: 50px;
+        max-width: 1020px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .innerContent + .button {
@@ -107,6 +113,4 @@
     .list li {
         font-size: 16px;
     }
-
-    
 }

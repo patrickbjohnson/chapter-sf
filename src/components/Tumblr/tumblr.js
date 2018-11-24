@@ -2,15 +2,12 @@ import React from 'react'
 
 import styles from './tumblr.module.css'
 
-const Tumblr = () => {
+const Tumblr = (props) => {
+    const { bg1, bg2 } = props
     return (
         <section className={styles.section}>
-            <div className={styles.imageWrap}>
-                <img src="http://placehold.it/400x600" alt="Alt text"/>
-            </div>
-            <div className={styles.imageWrap}>
-                <img src="http://placehold.it/400x600" alt="Alt text"/>
-            </div>
+            <div className={styles.imageWrap} style={{backgroundImage: `url(${bg1})`}}></div>
+            <div className={styles.imageWrap} style={{backgroundImage: `url(${bg2})`}}></div>
         </section>
     )
 }
