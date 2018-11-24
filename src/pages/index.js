@@ -13,7 +13,6 @@ import Newsletter from '../components/Newsletter'
 
 const IndexPage = () => (
   <Layout>
-    <Partner />
     <Clients />
     <Projects />
     <Tumblr />

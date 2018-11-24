@@ -1,3 +1,63 @@
 .section {
     background-color: #FFFFFF;
+    padding: 34px 20px 60px;
+}
+
+.title {
+    margin-bottom: 24px;
+    font-family: 'pitch';
+    font-size: 10px;
+    line-height: 1;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.clientList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.clientList li {
+    display: inline-block;
+}
+
+
+@media (min-width: 768px) {
+    .section {
+        padding: 115px 40px 90px;
+        box-sizing: content-box;
+    }
+
+    .title {
+        font-size: 12px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .section {
+        padding: 148px 55px 130px;
+    }
+
+    .title {
+        font-size: 15px;
+        margin-bottom: 30px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .section {
+        max-width: 980px;
+        padding-top: 108px;
+        padding-bottom: 140px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .title {
+        font-size: 15px;
+        
+    }
 }

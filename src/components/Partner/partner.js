@@ -4,7 +4,7 @@ import React from 'react'
 const Partner = () => {
     return (
         <section className={styles.section}>
-            <h1>Hello</h1>
+            <h1>Partner</h1>
         </section>
     )
 }
