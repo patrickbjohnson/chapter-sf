@@ -25,6 +25,9 @@ const Layout = ({ children }) => (
             { name: 'description', content: 'Sample' },
             { name: 'keywords', content: 'sample, something' },
           ]}
+          link={[ 
+            { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css' }
+          ]}
         >
           <html lang="en" />
         </Helmet>
