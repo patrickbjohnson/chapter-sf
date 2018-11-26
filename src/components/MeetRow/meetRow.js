@@ -3,26 +3,29 @@ import React from 'react'
 import styles from './meetRow.module.css'
 
 const MeetRow = (props) => {
-    
+    const { 
+        title, 
+        copy, 
+        listItems 
+    } = props
+
     return (
         <div className={styles.row}>
-            <h3 className={styles.rowTitle}>Critroulette</h3>
+            <h3 className={styles.rowTitle}>{title}</h3>
             
             <div className={styles.innerContent}>
-                <p className={styles.smallText}>4 design students x Chapter partners</p>
                 <div className={styles.flex}>
+                    <p className={styles.smallText}>{copy}</p>
+                    {listItems && 
                     <ul className={styles.list}>
-                        <li>You have work.</li>
-                        <li>We have thoughts.</li>
-                        <li>Every Tuesday.</li>
-                        <li>On Google Hangouts.</li>
-                    </ul>
-                    <button className={styles.button} onClick={props.clickHandler}>Book</button>
+                        {listItems.map((item, i) => <li key={i}>{item}</li>)}
+                    </ul>                    
+                    }
                 </div>
                 
+                <button className={styles.button} onClick={props.clickHandler}>Book</button>
             </div>
 
-            <button className={styles.button} onClick={props.clickHandler}>Book</button>
         </div>
     )
 }

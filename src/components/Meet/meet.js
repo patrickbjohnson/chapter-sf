@@ -12,8 +12,17 @@ const Meet = () => {
             </span>
             <p className={styles.copy}>Meeting people is easy. We came up with a few ways to <span>keep it interesting</span>.</p>
             
-            <MeetRow clickHandler={() => {console.log('clicked!')}}/>
-            <MeetRow />
+            <MeetRow 
+                title="Critroulette"
+                copy="4 design students x Chapter partners"
+                listItems={['You have work.', 'We have thoughts.', 'Every Tuesday.', 'On Google Hangouts.']}
+                clickHandler={() => {console.log('clicked!')}}
+            />
+            <MeetRow 
+                title="The Mission"
+                copy="Your strategic mind x Our crew "
+                listItems={['Three hours.', 'A few pizzas.', 'Solving a problem for good in the world.', 'Quarterly at Chapter.']}
+            />
         </section>
     )
 }
