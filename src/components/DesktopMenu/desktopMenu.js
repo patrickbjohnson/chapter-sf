@@ -10,8 +10,6 @@ class DesktopMenu extends Component {
     constructor() {
         super()
 
-        this.mq = window.matchMedia('(min-width: 1024px)')
-
         this.state = {
             sticky: false,
             smallScreen: false,
@@ -19,7 +17,7 @@ class DesktopMenu extends Component {
             activeNav: null,
             showLogo: false,
             mobileMenu: false,
-            mq: this.mq.matches,
+            mq: null,
             sections: [
                 {
                     id: 'partner'
@@ -42,7 +40,10 @@ class DesktopMenu extends Component {
     componentDidMount() {
         this.initObserver()
         this.lockPageWhenMobileMenuOpen()
+
+        this.mq = window.matchMedia('(min-width: 1024px)')
         this.mq.addListener((data) => this.setState({mq: data.matches}))
+        
         window.addEventListener('scroll', this.logoHandler)
     }
 
