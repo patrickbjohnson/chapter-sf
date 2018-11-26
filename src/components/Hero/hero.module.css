@@ -1,83 +1,126 @@
 .section {
-    position: relative;
-    height: 100vh;
-    width: 100vw;
-    overflow: hidden;
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
 }
 
 .slide {
-    position: relative;
-    float: left;
-    height: 100vh;
-    width: 100vw;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+  position: relative;
+  float: left;
+  height: 100vh;
+  width: 100vw;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.caption {
+  display: none;
 }
 
 .credit {
-    position: absolute;
-    right: 25px;
-    bottom: 25px;
-    font-family: 'pitch';
-    text-transform: uppercase;
-    font-size: 26px;
-    color: #fff;
-    letter-spacing: 0.1em;
-    text-decoration: none;
+  position: absolute;
+  right: 25px;
+  bottom: 25px;
+  font-family: 'pitch';
+  text-transform: uppercase;
+  font-size: 26px;
+  color: #fff;
+  letter-spacing: 0.1em;
+  text-decoration: none;
 }
 
-.title, 
+.title,
 .copy {
-    z-index: 1;
-    font-size: 26px;
-    line-height: 1.2;
-    color: #fff;
+  z-index: 1;
+  font-size: 26px;
+  line-height: 1.2;
+  color: #fff;
 }
 
 .title {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    right: 20px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+}
+
+.copy,
+.copy span {
+  font-size: 18px;
+  line-height: 1.2;
 }
 
 .copy {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 20px;
-    right: 20px;
-    font-family: Helvetica, sans-serif;
-    font-weight: 300;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  margin-bottom: 0;
+  font-family: Helvetica, sans-serif;
+  font-weight: 300;
+  max-width: calc(100% - 90px);
 }
 
 .copy span {
-    font-family: 'austin', serif;
-    font-style: italic;
+  font-family: 'austin', serif;
+  font-style: italic;
 }
 
+.downArrow {
+  position: absolute;
+  bottom: 30px;
+  right: 20px;
+  display: block;
+  width: 28px;
+  height: 28px;
+  background-color: transparent;
+  z-index: 1;
+  transform: rotate(45deg);
+  border-bottom: 2px solid #fff;
+  border-right: 2px solid #fff;
+  animation: bounce 4s infinite;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0) rotate(45deg);
+  }
+  60% {
+    transform: translateY(-10px) rotate(45deg);
+  }
+  100% {
+    transform: translateY(0) rotate(45deg);
+  }
+}
 @media (min-width: 768px) {
-    .title {
-        left: 5%;
-        right: 5%;
-    }
+  .caption {
+    display: block;
+  }
 
-    .copy {
-        font-size: 50px;
-        margin-bottom: 90px;
-        left: 40px;
-        right: 40px;
-    }
+  .title {
+    left: 5%;
+    right: 5%;
+  }
 
-    .copy span {
-        font-size: 60px;
-    }
+  .copy {
+    top: 50%;
+    left: 40px;
+    right: 40px;
+    font-size: 50px;
+    margin-bottom: 90px;
+    transform: translateY(-50%);
+  }
+
+  .copy span {
+    font-size: 60px;
+  }
 }
 
 @media (min-width: 1024px) {
-    .copy {
-        left: 55px;
-        right: 55px;
-    }
+  .copy {
+    left: 55px;
+    right: 55px;
+  }
 }
