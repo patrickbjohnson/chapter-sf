@@ -2,7 +2,7 @@ import React from 'react'
 
 import Layout from '../components/layout'
 import Hero from '../components/Hero'
-import DesktopMenu from '../components/DesktopMenu'
+import Menu from '../components/DesktopMenu'
 import Partner from '../components/Partner'
 import Clients from '../components/Clients'
 import Projects from '../components/Projects'
@@ -16,7 +16,7 @@ import Newsletter from '../components/Newsletter'
 const IndexPage = () => (
   <Layout>
     <Hero />
-    <DesktopMenu />
+    <Menu />
     <Partner />
     <Clients />
     <Projects />
