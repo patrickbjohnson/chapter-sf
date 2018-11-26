@@ -1,9 +1,19 @@
 import React from 'react'
-
+import createMailLink from '../../utils/createMailLink'
 import styles from './joinUsRow.module.css'
 
+
+
 const JoinUsRow = (props) => {
-    const { title, copy, message, buttonText } = props
+    const { 
+        title, 
+        copy, 
+        message, 
+        buttonText,
+        mailto
+    } = props
+    
+
     return (
         <div className={styles.row}>
             <h1 className={styles.title}>{title}</h1>
@@ -15,9 +25,9 @@ const JoinUsRow = (props) => {
                         <p className={styles.message}>{message}</p>
                     }            
                 </div>
-                <a className={styles.button} href="http://google.com">{buttonText}</a>
+                <a className={styles.button} href={createMailLink(mailto)}>{buttonText}</a>
             </div>
-            <a className={styles.button} href="http://google.com">{buttonText}</a>
+            <a className={styles.button} href={createMailLink(mailto)}>{buttonText}</a>
             
         </div>
     )
