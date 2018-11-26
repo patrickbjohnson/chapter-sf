@@ -16,7 +16,11 @@ const Meet = () => {
                 title="Critroulette"
                 copy="4 design students x Chapter partners"
                 listItems={['You have work.', 'We have thoughts.', 'Every Tuesday.', 'On Google Hangouts.']}
-                clickHandler={() => {console.log('clicked!')}}
+                clickHandler={() => {
+                    if (!window.Calendly) return false;
+                    window.Calendly.showPopupWidget('https://calendly.com/progresslabs');
+                    return false;
+                }}
             />
             <MeetRow 
                 title="The Mission"

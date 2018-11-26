@@ -1,4 +1,5 @@
 import React from 'react'
+import Iframe from 'react-iframe'
 
 import styles from './meetRow.module.css'
 
@@ -22,7 +23,6 @@ const MeetRow = (props) => {
                     </ul>                    
                     }
                 </div>
-                
                 <button className={styles.button} onClick={props.clickHandler}>Book</button>
             </div>
 

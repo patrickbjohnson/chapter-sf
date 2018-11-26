@@ -26,7 +26,11 @@ const Layout = ({ children }) => (
             { name: 'keywords', content: 'sample, something' },
           ]}
           link={[ 
-            { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css' }
+            { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css' },
+            { rel: 'stylesheet', href: 'https://assets.calendly.com/assets/external/widget.css' }
+          ]}
+          script={[
+            {type: 'text/javascript', src:'https://assets.calendly.com/assets/external/widget.js' }
           ]}
         >
           <html lang="en" />
