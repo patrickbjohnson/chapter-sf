@@ -16,23 +16,6 @@
 }
 
 @font-face {
-    font-family: 'austin';
-    src: url('austin-light.woff');
-    src: url('austin-light.woff') format('woff');
-    font-weight: 300;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'austin';
-    src: url('austin-light-italic.woff');
-    src: url('austin-light-italic.woff') format('woff');
-    font-weight: 300;
-    font-style: italic;
-}
-
-
-@font-face {
     font-family: 'venus';
     src: url('VenusSB-MediumExtended.eot');
     src: url('VenusSB-MediumExtended.eot?#iefix') format('embedded-opentype'),
