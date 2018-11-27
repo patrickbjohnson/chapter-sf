@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import { Link } from 'gatsby'
+
 import scrollIntoView from 'scroll-into-view-if-needed'
 import smoothScrollIntoView from 'smooth-scroll-into-view-if-needed'
 
@@ -38,15 +40,7 @@ class DesktopMenu extends Component {
     componentDidMount() {
         this.initObserver()
         this.lockPageWhenMobileMenuOpen()
-
-        this.mq = window.matchMedia('(min-width: 1024px)')
-        this.mq.addListener((data) => this.setState({mq: data.matches}))
-
         window.addEventListener('scroll', this.logoHandler)
-    }
-
-    componentWillUnmount() {
-        window.removeEventListener(this.logoHandler)
     }
 
     initObserver = () => {
@@ -57,6 +51,8 @@ class DesktopMenu extends Component {
         this.state.sections.map((section) => {
             observer.observe(document.getElementById(section.id))
         })
+
+        return observer
     }
 
     lockPageWhenMobileMenuOpen = () => {
@@ -66,7 +62,6 @@ class DesktopMenu extends Component {
         } else {
             document.body.removeAttribute('style')
         }
-        
     }
 
     mobileMenuHandler = () => {
@@ -85,7 +80,8 @@ class DesktopMenu extends Component {
     }
 
     navHandler = (entries, observer) => {   
-        entries.map((entry) => {
+        return entries.map((entry) => {
+            
             if (entry.isIntersecting) {
                 this.setState({
                     activeNav: entry.target.id
@@ -94,10 +90,12 @@ class DesktopMenu extends Component {
         })
     }
 
-    clickHandler(section) {
-        if (section === undefined) return false
-
-        smoothScrollIntoView(document.getElementById(section), { 
+    clickHandler(e) {
+        if (e.target.href === undefined) return false
+        
+        const id = e.target.href.split('#')[1];
+        
+        smoothScrollIntoView(document.getElementById(id), {
             behavior: 'smooth',
             block: 'start',
         })
@@ -145,37 +143,37 @@ class DesktopMenu extends Component {
                 </div>
                 <nav className={styles.desktop}>
                     <div className={styles.group}>
-                        <a 
-                            className={this.navClasses('partner')} 
-                            onClick={(e) => {
-                                e.preventDefault()
-                                this.clickHandler('partner')
-                            }}
-                            href='#partner'>partner</a>
-                        <a 
-                            className={this.navClasses('join')} 
-                            onClick={(e) => {
-                                e.preventDefault()
-                                this.clickHandler('join')
-                            }}
-                            href='#join'>join</a>
+                        <Link
+                            to="#partner"
+                            className={this.navClasses('partner')}
+                            onClick={this.clickHandler}
+                            >
+                            Partner
+                        </Link>
+                        <Link
+                            to="#join"
+                            className={this.navClasses('join')}
+                            onClick={this.clickHandler}
+                            >
+                            Join
+                        </Link>
                     </div>
 
                     <div className={styles.group}>
-                        <a 
-                            className={this.navClasses('meet')} 
-                            onClick={(e) => {
-                                e.preventDefault()
-                                this.clickHandler('meet')
-                            }}
-                            href='#meet'>meet</a>
-                        <a 
-                            className={this.navClasses('us')} 
-                            onClick={(e) => {
-                                e.preventDefault()
-                                this.clickHandler('us')
-                            }}
-                            href='#us'>us</a>
+                        <Link
+                            to="#meet"
+                            className={this.navClasses('meet')}
+                            onClick={this.clickHandler}
+                            >
+                            Meet
+                        </Link>
+                        <Link
+                            to="#us"
+                            className={this.navClasses('us')}
+                            onClick={this.clickHandler}
+                        >
+                            Us
+                        </Link>
                     </div>
                 </nav>
             </div>

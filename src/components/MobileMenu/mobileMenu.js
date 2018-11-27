@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'gatsby'
 
 import social from '../../utils/socialLinks'
 
@@ -25,13 +26,13 @@ class MobileMenu extends Component {
         <nav className={styles.nav}>
           {this.props.menu.map((item, i) => {
             return (
-              <a
-                className={this.navClasses(item.id)}
-                href={`#${item.id}`}
+              <Link
+                to={`#${item.id}`}
                 key={i}
+                className={this.navClasses(item.id)}
               >
                 {item.id}
-              </a>
+              </Link>
             )
           })}
         </nav>
