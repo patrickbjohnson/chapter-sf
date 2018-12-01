@@ -1,12 +1,12 @@
 .client {
     position: relative;
     display: inline-block;
-    margin-right: 5px;
+    margin-right: 10px;
     font-family: 'austin';
     font-weight: 400;
     font-size: 30px;
     line-height: 1;
-
+    color: #000;
 }
 
 .client span {
@@ -38,7 +38,7 @@
 @media (min-width: 768px) {
     .client {
         font-size: 70px;
-        margin-right: 10px;
+        margin-right: 15px;
     }
 
     .panel {
@@ -52,7 +52,7 @@
 
 @media (min-width: 1024px) {
     .client {
-        margin-right: 15px;
+        margin-right: 25px;
         font-size: 94px;
         line-height: .978723404;
     }
