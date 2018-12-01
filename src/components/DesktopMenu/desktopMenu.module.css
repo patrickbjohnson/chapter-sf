@@ -43,6 +43,18 @@
     width: 100%;
 }
 
+.active[href="/#join"]:after  {
+    background-color: #63C0EA;
+}
+
+.active[href="/#meet"]:after  {
+    background-color: #FFD864;
+}
+
+.active[href="/#us"]:after  {
+    background-color: #000;
+}
+
 .group:first-of-type .link {
     margin-right: 36px;
 }
@@ -165,6 +177,7 @@
     .nav {
         display: flex;
         height: 70px;
+        box-shadow: 0 2px 16px rgba(0,0,0,0.04);
     }
 
     .logo {
