@@ -33,6 +33,7 @@
 }
 
 .address {
+    font-family: 'pitch', 'Courier New', Courier, monospace;
     margin-top: 15px;
     margin-bottom: 0;
     font-size: 8px;

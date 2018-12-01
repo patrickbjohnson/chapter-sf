@@ -17,7 +17,7 @@ class DesktopMenu extends Component {
         this.state = {
             sticky: false,
             smallScreen: false,
-            threshold: 0.65,
+            threshold: 0.2,
             activeNav: null,
             showLogo: false,
             mobileMenu: false,
@@ -56,6 +56,8 @@ class DesktopMenu extends Component {
             threshold: this.state.threshold
         })
 
+        console.log(observer)
+
         this.state.sections.map((section) => {
             observer.observe(document.getElementById(section.id))
         })
@@ -89,7 +91,7 @@ class DesktopMenu extends Component {
 
     navHandler = (entries, observer) => {   
         return entries.map((entry) => {
-            
+            console.log(entries)
             if (entry.isIntersecting) {
                 this.setState({
                     activeNav: entry.target.id
