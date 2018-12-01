@@ -11,7 +11,7 @@ const Us = () => {
                 </span>
             </div>
             <div className={styles.content}>
-                <p>This is Chapter. We do things differently here. Founded by <span>Gareth Kay</span> and <span>Neil Robinson</span> in 2014, we’re a group of optimistic misfits whose past lives spans time in creative places as well as time in the classroom, the pub and the shed—meet us and figure out which of us was an English teacher, who was the barmaid and who is the woodworker.</p>
+                <p>This is Chapter. We do things differently here. Founded by <a href="https://www.linkedin.com/in/neilrobinson/" target="_blank" rel="noopener noreferrer">Gareth Kay</a> and <a href="https://www.linkedin.com/in/garethkaysf/" target="_blank" rel="noopener noreferrer">Neil Robinson</a> in 2014, we’re a group of optimistic misfits whose past lives spans time in creative places as well as time in the classroom, the pub and the shed—meet us and figure out which of us was an English teacher, who was the barmaid and who is the woodworker.</p>
                 <p>We’re a new type of creative studio, built from the ground up to better deliver the commercial creativity pioneering companies need today. Creativity that is defined by the impact it has, not the channel it is delivered in. Creativity that closes the growing gap between what people expect and what companies deliver. </p>
             </div>
         </section>

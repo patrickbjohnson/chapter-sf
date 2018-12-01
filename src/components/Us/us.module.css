@@ -39,8 +39,9 @@
     margin-bottom: 0;
 }
 
-.content span {
+.content a {
     color: #9A9C9F;
+    text-decoration: none;
 }
 
 @media (min-width: 768px) {
