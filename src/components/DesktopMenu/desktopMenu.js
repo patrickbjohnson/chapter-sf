@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import { Link } from 'gatsby'
 
 import throttle from 'lodash.throttle'
-
 import scrollIntoView from 'scroll-into-view-if-needed'
 import smoothScrollIntoView from 'smooth-scroll-into-view-if-needed'
 
@@ -47,7 +46,6 @@ class DesktopMenu extends Component {
     }
 
     componentWillUnmount() {
-        console.log('UNNNNNNNMOUNTED')
         window.removeEventListener(this.logoHandler)
     }
 
@@ -55,8 +53,6 @@ class DesktopMenu extends Component {
         const observer = new IntersectionObserver(this.navHandler, {
             threshold: this.state.threshold
         })
-
-        console.log(observer)
 
         this.state.sections.map((section) => {
             observer.observe(document.getElementById(section.id))
@@ -89,9 +85,8 @@ class DesktopMenu extends Component {
         })
     }
 
-    navHandler = (entries, observer) => {   
+    navHandler = (entries) => {   
         return entries.map((entry) => {
-            console.log(entries)
             if (entry.isIntersecting) {
                 this.setState({
                     activeNav: entry.target.id
