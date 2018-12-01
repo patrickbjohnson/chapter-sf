@@ -58,11 +58,11 @@
     }
 
     .panel {
-        font-size: 13px;
+        font-size: 15px;
         line-height: .86;
         width: 280px;
-        padding: 10px 15px;
-        line-height: 1.15;
+        padding: 12px 20px;
+        line-height: 1.5;
     }
 }
 
