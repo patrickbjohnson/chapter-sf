@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import { Link } from 'gatsby'
 
+import throttle from 'lodash.throttle'
+
 import scrollIntoView from 'scroll-into-view-if-needed'
 import smoothScrollIntoView from 'smooth-scroll-into-view-if-needed'
 
@@ -38,16 +40,15 @@ class DesktopMenu extends Component {
     }
 
     componentDidMount() {
-        console.log('MOUNTED')
         this.initObserver()
         this.lockPageWhenMobileMenuOpen()
-        window.addEventListener('scroll', function pbjFunc(e) {
-            console.log('scrolled!')
-        });
+        
+        window.addEventListener('scroll', throttle(this.logoHandler, 200));
     }
 
     componentWillUnmount() {
         console.log('UNNNNNNNMOUNTED')
+        window.removeEventListener(this.logoHandler)
     }
 
     initObserver = () => {
@@ -78,7 +79,6 @@ class DesktopMenu extends Component {
     }
 
     logoHandler = () => {
-        console.log('ran!!!!!!');
         const hero = document.querySelector('[data-hero]')
         const height = hero.getBoundingClientRect().height
 
