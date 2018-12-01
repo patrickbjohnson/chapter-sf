@@ -25,7 +25,7 @@
     width: 150px;
     display: inline-block;
     padding: 5px 10px;
-    font-family: 'pitch';
+    font-family: 'pitch', 'Courier New', Courier, monospace;
     font-size: 10px;
     text-align: left;
     line-height: 1.2;

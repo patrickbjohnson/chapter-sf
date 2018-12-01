@@ -37,7 +37,7 @@
 
 .message {
     margin-bottom: 0;
-    font-family: 'pitch';
+    font-family: 'pitch', 'Courier New', Courier, monospace;
     font-weight: 600;
 }
 

@@ -35,7 +35,7 @@
 
 .label {
     display: block;
-    font-family: 'pitch';
+    font-family: 'pitch', 'Courier New', Courier, monospace;
     font-size: 10px;
     text-transform: uppercase;
     text-align: center;

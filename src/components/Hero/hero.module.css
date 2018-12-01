@@ -23,7 +23,7 @@
   position: absolute;
   right: 25px;
   bottom: 25px;
-  font-family: 'pitch';
+  font-family: 'pitch', 'Courier New', Courier, monospace;
   text-transform: uppercase;
   font-size: 26px;
   color: #fff;

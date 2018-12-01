@@ -5,7 +5,7 @@
 
 .title {
     margin-bottom: 24px;
-    font-family: 'pitch';
+    font-family: 'pitch', 'Courier New', Courier, monospace;
     font-size: 10px;
     line-height: 1;
     text-transform: uppercase;
