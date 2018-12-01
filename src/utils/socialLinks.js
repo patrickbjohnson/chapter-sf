@@ -1,22 +1,22 @@
 export default [
     {
         name: 'instagram',
-        url: 'https://instagram.com'
+        url: 'https://www.instagram.com/chapter_sf'
     },
     {
         name: 'twitter',
-        url: 'https://twitter.com'
+        url: 'https://twitter.com/chaptersf'
     },
     {
         name: 'linkedin',
-        url: 'https://linkedin.com'
+        url: 'https://www.linkedin.com/company/chapter-sf/'
     },
     {
         name: 'spotify',
-        url: 'https://spotify.com'
+        url: 'https://open.spotify.com/user/chaptersf?si=ycNkMRiySWiQUM1XgMG8dw'
     },
     {
         name: 'medium',
-        url: 'https://medium.com'
+        url: 'https://medium.com/chaptersf'
     }
 ]

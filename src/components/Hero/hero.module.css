@@ -1,6 +1,6 @@
 .section {
   position: relative;
-  height: 100vh;
+  height: calc(100vh - 30px);
   width: 100vw;
   overflow: hidden;
 }
@@ -123,12 +123,17 @@
 }
 
 @media (min-width: 1024px) {
+  .section {
+    height: calc(100vh - 70px);
+  }
+  
   .caption {
     display: block;
   }
 
   .copy {
     top: 50%;
+    bottom: auto;
     left: 55px;
     right: 55px;
     margin-bottom: 90px;

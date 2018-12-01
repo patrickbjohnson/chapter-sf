@@ -38,9 +38,16 @@ class DesktopMenu extends Component {
     }
 
     componentDidMount() {
+        console.log('MOUNTED')
         this.initObserver()
         this.lockPageWhenMobileMenuOpen()
-        window.addEventListener('scroll', this.logoHandler)
+        window.addEventListener('scroll', function pbjFunc(e) {
+            console.log('scrolled!')
+        });
+    }
+
+    componentWillUnmount() {
+        console.log('UNNNNNNNMOUNTED')
     }
 
     initObserver = () => {
@@ -71,6 +78,7 @@ class DesktopMenu extends Component {
     }
 
     logoHandler = () => {
+        console.log('ran!!!!!!');
         const hero = document.querySelector('[data-hero]')
         const height = hero.getBoundingClientRect().height
 

@@ -41,7 +41,7 @@ const slideSettings = {
 const Hero = () => {
   return (
     <section className={styles.section} data-hero>
-      <div className={styles.content}>
+      <>
         <h1 className={styles.title}>
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1863 236">
             <path
@@ -56,7 +56,7 @@ const Hero = () => {
           unreasonable expectations.
         </h2>
         <div className={styles.downArrow} />
-      </div>
+      </>
 
       <Slider {...slideSettings}>
         {slides.map((slide, i) => {
