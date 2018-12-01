@@ -33,6 +33,17 @@
     color: #000;
     z-index: 1;
     cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .25s ease-out,
+                visibility 0s linear .25s;
+}
+
+.panel.active {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity .25s ease-out 0.1s,
+                visibility 0s linear;
 }
 
 @media (min-width: 768px) {
