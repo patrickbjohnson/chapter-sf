@@ -78,7 +78,7 @@ class Clients extends Component {
 
         this.state.clients.map((client, i) => {
             const dom = this.refs[client.name].clientRef.current;
-            console.log(client)
+
             dom.addEventListener('mouseleave', (e) => {
                 if ((this.state.activeClient !== client.name) || (!client.info )) return false;
                 const currentClient = this.state.activeClient
