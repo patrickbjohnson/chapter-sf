@@ -8,38 +8,43 @@ class Partner extends Component {
     super(props)
 
     this.state = {
-      input: null,
+      successMessage: 'Success! You\'ll hear from us soon.',
+      formUrl: 'https://usebasin.com/f/fe1f13ede55d',
       isEmpty: true,
-      formUrl: 'https://formcarry.com/s/o41OXMVVrzs'
+      success: null,
+      message: '',
     }
   }
 
-  changeHandler = e => {
+  changeHandler = (e) => {
+    console.log(e.target.value)
     this.setState({
       isEmpty: !!e.target.value.length <= 0,
+      message: e.target.value
     })
   }
 
   handleSubmit = e => {
     e.preventDefault()
     if (this.state.isEmpty) return
-  
     axios.post(
       this.state.formUrl, 
-      {
-        message: this.state.message
-      }, 
-      {
-        headers: {
-          'Accept': 'application/json'
-        }
-      }
+      {message: this.state.message}, 
+      {headers: {'Accept': 'application/json'}}
     )
-    .then(function (response) {
-        console.log(response);
+    .then((response) => {
+      const { success } = response.data
+
+      this.setState({
+        success: success,
+        message: '',
+      })
     })
-    .catch(function (error) {
-        console.log(error);
+    .catch((error) => {
+        
+        this.setState({
+          success: false,
+        })
     });
   }
 
@@ -64,10 +69,10 @@ class Partner extends Component {
             know they need to change what they do to meet the unreasonable
             expectations people have today.
           </p>
-          <form onSubmit={this.handleSubmit} className={styles.form}>
+          <form onSubmit={this.handleSubmit} className={styles.form} acceptCharset="UTF-8" method="POST">
             <input type="hidden" name="_gotcha" />
             <label className={styles.label}>What keeps you up at night?</label>
-            <textarea onChange={this.changeHandler} className={styles.input} name="message" />
+            <textarea onChange={this.changeHandler} className={styles.input} name="message" value={this.state.message}/>
             
             <button
               className={this.buttonClasses()}
@@ -76,6 +81,12 @@ class Partner extends Component {
               Send
             </button>
           </form>
+
+          {this.state.success &&
+            <div className={styles.message}>
+              <p>{this.state.successMessage}</p>
+            </div>
+          }
         </div>
       </section>
     )

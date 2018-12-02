@@ -46,7 +46,7 @@ class DesktopMenu extends Component {
     }
 
     componentWillUnmount() {
-        window.removeEventListener(this.logoHandler)
+        window.removeEventListener('scroll', this.logoHandler)
     }
 
     initObserver = () => {
