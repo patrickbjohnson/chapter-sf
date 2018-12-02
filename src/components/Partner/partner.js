@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-
+import axios from 'axios'
+import jsonpAdapter from 'axios-jsonp'
 import styles from './partner.module.css'
 
 class Partner extends Component {
@@ -9,6 +10,7 @@ class Partner extends Component {
     this.state = {
       input: null,
       isEmpty: true,
+      formUrl: 'https://formcarry.com/s/o41OXMVVrzs'
     }
   }
 
@@ -21,7 +23,24 @@ class Partner extends Component {
   handleSubmit = e => {
     e.preventDefault()
     if (this.state.isEmpty) return
-    console.log('submit form!')
+  
+    axios.post(
+      this.state.formUrl, 
+      {
+        message: this.state.message
+      }, 
+      {
+        headers: {
+          'Accept': 'application/json'
+        }
+      }
+    )
+    .then(function (response) {
+        console.log(response);
+    })
+    .catch(function (error) {
+        console.log(error);
+    });
   }
 
   buttonClasses = () => {
@@ -46,8 +65,10 @@ class Partner extends Component {
             expectations people have today.
           </p>
           <form onSubmit={this.handleSubmit} className={styles.form}>
+            <input type="hidden" name="_gotcha" />
             <label className={styles.label}>What keeps you up at night?</label>
-            <textarea onChange={this.changeHandler} className={styles.input} />
+            <textarea onChange={this.changeHandler} className={styles.input} name="message" />
+            
             <button
               className={this.buttonClasses()}
               disabled={this.state.isEmpty ? 'disabled' : ''}

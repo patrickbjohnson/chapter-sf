@@ -57,12 +57,10 @@ class Newsletter extends Component {
                 <div className={styles.flex}>
                     <form onSubmit={this.submitHandler} className={styles.form}>
                         <input onChange={this.changeHandler} className={styles.input} type="email" placeholder="Follow our newsletter" required/>
-                        {this.state.email &&
+
                         <button type="submit" className={styles.button}>
                             <span className={styles.sr}>Submit</span>
                         </button>
-                        }
-                        
                     </form>
                 </div>
                 <div className={styles.message}>
