@@ -10,13 +10,14 @@ class Tumblr extends Component {
         super(props)
 
         this.ALLOWED_TAG = 'chapterwebsiteimagery'
-        this.storage = window.localStorage;
+        this.storage = null
         this.state = {
             photos: null,
         }
     }
 
     componentDidMount() {
+        this.storage = window.localStorage
         this.storage.removeItem('photos')
         const storagePhotos = this.storage.getItem('photos');
         if (storagePhotos) {
