@@ -28,7 +28,12 @@ class Tumblr extends Component {
         } else {
             axios.get(
                 'https://api.tumblr.com/v2/blog/progresslabs.tumblr.com/posts?api_key=Yv0jdl1xx597BX1E0Pesb3xoMzy3Apk8166zaSHdPwVOxIbvOw', 
-                {headers: {'Accept': 'application/json'}}
+                {
+                    headers: {
+                        'Accept': 'application/json',
+                        'Access-Control-Allow-Origin': '*',
+                    }
+                }
             )
             .then((response) => {
                 console.log(response)
