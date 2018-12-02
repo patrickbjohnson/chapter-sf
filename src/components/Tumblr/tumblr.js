@@ -27,7 +27,7 @@ class Tumblr extends Component {
             })
         } else {
             axios.get(
-                'http://api.tumblr.com/v2/blog/progresslabs.tumblr.com/posts?api_key=Yv0jdl1xx597BX1E0Pesb3xoMzy3Apk8166zaSHdPwVOxIbvOw', 
+                'https://api.tumblr.com/v2/blog/progresslabs.tumblr.com/posts?api_key=Yv0jdl1xx597BX1E0Pesb3xoMzy3Apk8166zaSHdPwVOxIbvOw', 
                 {headers: {'Accept': 'application/json'}}
             )
             .then((response) => {
