@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import axios from 'axios'
-import jsonpAdapter from 'axios-jsonp'
 import styles from './partner.module.css'
 
 class Partner extends Component {
@@ -26,7 +25,9 @@ class Partner extends Component {
 
   handleSubmit = e => {
     e.preventDefault()
+    
     if (this.state.isEmpty) return
+
     axios.post(
       this.state.formUrl, 
       {message: this.state.message}, 
@@ -38,12 +39,13 @@ class Partner extends Component {
       this.setState({
         success: success,
         message: '',
+        isEmpty: true,
       })
     })
     .catch((error) => {
-        
         this.setState({
           success: false,
+          isEmpty: true,
         })
     });
   }

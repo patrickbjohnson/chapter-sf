@@ -79,12 +79,12 @@ class Clients extends Component {
         this.state.clients.map((client, i) => {
             const dom = this.refs[client.name].clientRef.current;
 
-            dom.addEventListener('mouseleave', (e) => {
+            return dom.addEventListener('mouseleave', (e) => {
                 if ((this.state.activeClient !== client.name) || (!client.info )) return false;
                 const currentClient = this.state.activeClient
                 
                 setTimeout(() => {
-                    if (currentClient == this.state.activeClient) {
+                    if (currentClient === this.state.activeClient) {
                         this.setState({
                             activeClient: null
                         })
@@ -94,8 +94,8 @@ class Clients extends Component {
                     }
                 }, 800)
             })
-            
         })
+
     }
 
     toggleInfoDisplay = (clientName) => {

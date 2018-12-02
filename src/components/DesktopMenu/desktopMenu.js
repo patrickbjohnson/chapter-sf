@@ -55,7 +55,7 @@ class DesktopMenu extends Component {
         })
 
         this.state.sections.map((section) => {
-            observer.observe(document.getElementById(section.id))
+            return observer.observe(document.getElementById(section.id))
         })
 
         return observer

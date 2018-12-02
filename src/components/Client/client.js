@@ -54,8 +54,6 @@ class Client extends Component {
             name, 
             info,
             eventHandler,
-            isActive,
-            hideEvent,
             mq
         } = this.props
 
