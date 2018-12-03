@@ -5,6 +5,7 @@ import { StaticQuery, graphql } from 'gatsby'
 
 import '../../static/fonts/fonts.css'
 import './layout.css'
+import './sal.css'
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -25,12 +26,22 @@ const Layout = ({ children }) => (
             { name: 'description', content: 'Sample' },
             { name: 'keywords', content: 'sample, something' },
           ]}
-          link={[ 
-            { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css' },
-            { rel: 'stylesheet', href: 'https://assets.calendly.com/assets/external/widget.css' }
+          link={[
+            {
+              rel: 'stylesheet',
+              href:
+                'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css',
+            },
+            {
+              rel: 'stylesheet',
+              href: 'https://assets.calendly.com/assets/external/widget.css',
+            },
           ]}
           script={[
-            {type: 'text/javascript', src:'https://assets.calendly.com/assets/external/widget.js' }
+            {
+              type: 'text/javascript',
+              src: 'https://assets.calendly.com/assets/external/widget.js',
+            },
           ]}
         >
           <html lang="en" />
