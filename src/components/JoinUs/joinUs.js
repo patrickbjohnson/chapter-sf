@@ -38,7 +38,7 @@ class JoinUs extends Component {
   componentDidMount() {
     sal({
       threshold: 0.5,
-      once: false,
+      once: true,
     })
   }
 
