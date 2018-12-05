@@ -1,64 +1,68 @@
 .section {
-    background-color: #FFFFFF;
-    padding: 34px 20px 60px;
-    overflow: hidden;
+  background-color: #ffffff;
+  padding: 34px 20px 60px;
+  overflow: hidden;
+  z-index: 1;
+  position: relative;
+}
+
+.inner {
+  max-width: 980px;
+  margin: auto;
 }
 
 .title {
-    margin-bottom: 24px;
-    font-family: 'pitch', 'Courier New', Courier, monospace;
-    font-size: 10px;
-    line-height: 1;
-    text-transform: uppercase;
-    text-align: center;
+  margin-bottom: 24px;
+  font-family: 'pitch', 'Courier New', Courier, monospace;
+  font-size: 10px;
+  line-height: 1;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 .clientList {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    text-align: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
 }
 
 .clientList li {
-    display: inline-block;
+  display: inline-block;
 }
 
-
 @media (min-width: 768px) {
-    .section {
-        padding: 115px 40px 90px;
-        box-sizing: content-box;
-    }
+  .section {
+    padding: 115px 40px 90px;
+    box-sizing: content-box;
+  }
 
-    .title {
-        font-size: 12px;
-        margin-bottom: 20px;
-    }
+  .title {
+    font-size: 12px;
+    margin-bottom: 20px;
+  }
 }
 
 @media (min-width: 1024px) {
-    .section {
-        padding: 148px 55px 130px;
-    }
+  .section {
+    padding: 148px 55px 130px;
+  }
 
-    .title {
-        font-size: 15px;
-        margin-bottom: 30px;
-    }
+  .title {
+    font-size: 15px;
+    margin-bottom: 30px;
+  }
 }
 
 @media (min-width: 1200px) {
-    .section {
-        max-width: 980px;
-        padding-top: 108px;
-        padding-bottom: 140px;
-        margin-left: auto;
-        margin-right: auto;
-    }
+  .section {
+    padding-top: 108px;
+    padding-bottom: 140px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-    .title {
-        font-size: 15px;
-        
-    }
+  .title {
+    font-size: 15px;
+  }
 }
