@@ -16,6 +16,13 @@
 }
 
 @font-face {
+    font-family: 'austin-lite';
+    src: url('austin-light.woff');
+    src: url('austin-light.woff') format('woff');
+    font-weight: 300;
+}
+
+@font-face {
     font-family: 'venus';
     src: url('VenusSB-MediumExtended.eot');
     src: url('VenusSB-MediumExtended.eot?#iefix') format('embedded-opentype'),
