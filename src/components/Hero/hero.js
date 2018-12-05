@@ -42,6 +42,7 @@ const slideSettings = {
 const Hero = () => {
   return (
     <section className={styles.section} data-hero>
+      <div className={styles.spacer} />
       <>
         <h1 className={styles.title}>
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1863 236">

@@ -9,6 +9,10 @@
   padding-right: 20px;
   background-color: #fff;
   z-index: 10;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 .link {
@@ -33,23 +37,28 @@
   top: 40%;
   transform: translateY(-50%);
   transition: width 0.25s ease-out;
-  background-color: #ff6d2c;
+  background-color: inherit;
   width: 0%;
 }
 
+.link:hover:after,
 .active:after {
   width: 100%;
 }
 
-.active[href='/#join']:after {
+.link[href='/#partner']:after {
+  background-color: #ff6d2c;
+}
+
+.link[href='/#join']:after {
   background-color: #63c0ea;
 }
 
-.active[href='/#meet']:after {
+.link[href='/#meet']:after {
   background-color: #ffd864;
 }
 
-.active[href='/#us']:after {
+.link[href='/#us']:after {
   background-color: #000;
 }
 

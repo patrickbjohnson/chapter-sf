@@ -10,7 +10,7 @@
 
 .rowTitle {
   margin-bottom: 0;
-  font-family: 'austin';
+  font-family: 'austin-lite';
   font-size: 50px;
   font-weight: 400;
   line-height: 1;
@@ -27,6 +27,7 @@
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
+  flex-direction: column;
 }
 
 .list {
@@ -57,6 +58,7 @@
   text-transform: uppercase;
   transition: background-color 0.25s ease-out, color 0.25s ease-out;
   cursor: pointer;
+  margin-top: 25px;
 }
 
 .button:hover,
@@ -69,13 +71,6 @@
   display: flex;
   flex-direction: column;
   margin-right: 25px;
-}
-
-.innerContent {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  margin-top: 25px;
 }
 
 @media (min-width: 768px) {
@@ -122,6 +117,10 @@
   .innerContent {
     width: 59%;
     margin-top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 25px;
   }
 
   .innerContent + .button {
