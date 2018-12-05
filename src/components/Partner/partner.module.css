@@ -1,188 +1,188 @@
 .section {
-    position: relative;
-    padding: 20px 20px 40px;
-    background-color: #FF6D2C;
+  position: relative;
+  padding: 20px 20px 40px;
+  background-color: #ff6d2c;
+  min-height: 100vh;
 }
 
 .content {
-    max-width: 1160px;
-    margin-left: auto;
-    margin-right: auto;
+  max-width: 1160px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .title {
-    display: block;
-    max-width: 100%;
-    margin-bottom: 20px;
-    margin-left: auto;
-    margin-right: auto;
+  display: block;
+  max-width: 100%;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .copy {
-    font-size: 18px;
-    line-height: 1.2;
+  font-size: 18px;
+  line-height: 1.2;
 }
 
 .copy span {
-    font-family: 'austin', serif;
-    font-style: italic;
-    font-size: 18px;
-
+  font-family: 'austin', serif;
+  font-style: italic;
+  font-size: 18px;
+  letter-spacing: 0.1em;
 }
 
 .form {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 .label {
-    display: block;
-    font-family: 'pitch', 'Courier New', Courier, monospace;
-    font-size: 10px;
-    text-transform: uppercase;
-    text-align: center;
-    letter-spacing: 0.1em;
-    color: #fff;
+  display: block;
+  font-family: 'pitch', 'Courier New', Courier, monospace;
+  font-size: 10px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.1em;
+  color: #fff;
 }
 
 .input {
-    display: block;
-    width: 100%;
-    border-radius: 10px;
-    padding: 8px 10px;
-    border: 0;
-    outline: 0;
-    font-family: 'pitch', 'Courier New', Courier, monospace;
-    font-size: 12px;
-    line-height: 1.1;
-    min-height: 80px;
-    font-size: 14px;
+  display: block;
+  width: 100%;
+  border-radius: 10px;
+  padding: 8px 10px;
+  border: 0;
+  outline: 0;
+  font-family: 'pitch', 'Courier New', Courier, monospace;
+  font-size: 12px;
+  line-height: 1.1;
+  min-height: 80px;
+  font-size: 14px;
 }
 
 .button {
-    display: table;
-    padding: 8px 16px;
-    border-radius: 25px;
-    border: 2px solid transparent;
-    margin-top: 15px;
-    margin-left: auto;
-    margin-right: auto;
-    outline: 0;
-    font-family: 'venus';
-    font-size: 10px;
-    line-height: 1;
-    letter-spacing: .2em;
-    background-color: #000;
-    color: #FF6D2C;
-    appearance: none;
-    transition: background-color .25s ease-out,
-                color .25s ease-out,
-                opacity .25s ease-out;
-    cursor: pointer;
-    text-transform: uppercase;
+  display: table;
+  padding: 8px 16px;
+  border-radius: 25px;
+  border: 2px solid transparent;
+  margin-top: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 0;
+  font-family: 'venus';
+  font-size: 10px;
+  line-height: 1;
+  letter-spacing: 0.2em;
+  background-color: #000;
+  color: #ff6d2c;
+  appearance: none;
+  transition: background-color 0.25s ease-out, color 0.25s ease-out,
+    opacity 0.25s ease-out;
+  cursor: pointer;
+  text-transform: uppercase;
 }
 
 .disabled {
-    opacity: 0.5;
-    pointer-events: none;
-    cursor: disabled;
+  opacity: 0.5;
+  pointer-events: none;
+  cursor: disabled;
 }
 
 .button:active,
 .button:hover,
 .button:focus {
-    background-color: #fff;
-    color: #FF6D2C;
+  background-color: #fff;
+  color: #ff6d2c;
 }
 
 .message {
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 12px;
-    font-family: 'pitch', 'Courier New', Courier, monospace;
-    color: #fff;
-    text-align: center;
-    bottom: 10px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 12px;
+  font-family: 'pitch', 'Courier New', Courier, monospace;
+  color: #fff;
+  text-align: center;
+  bottom: 10px;
 }
 
 .message p {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 @media (min-width: 768px) {
-    .section {
-        padding: 40px 40px 50px;
-    }
+  .section {
+    padding: 40px 40px 50px;
+  }
 
-    .title {
-        margin-bottom: 80px;
-    }
+  .title {
+    margin-bottom: 80px;
+  }
 
-    .copy {
-        font-size: 35px;
-        line-height: .95;
-        margin-bottom: 45px;
-    }
+  .copy {
+    font-size: 35px;
+    line-height: 0.95;
+    margin-bottom: 45px;
+  }
 
-    .copy span {
-        font-size: 35px;
-    }
+  .copy span {
+    font-size: 35px;
+  }
 
-    .form {
-        max-width: 435px;
-        margin-left: auto;
-        margin-right: auto;
-    }
+  .form {
+    max-width: 435px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-    .label {
-        font-size: 12px;
-        margin-bottom: 5px;
-    }
+  .label {
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
 
-    .input {
-        font-size: 16px;
-    }
+  .input {
+    font-size: 16px;
+  }
 
-    .message {
-        margin-top: 25px;
-        font-size: 16px;
-    }
+  .message {
+    margin-top: 25px;
+    font-size: 16px;
+  }
 }
 
 @media (min-width: 1024px) {
-    .section {
-        padding: 200px 20px 100px;
-    }
-    
-    .copy, 
-    .copy span {
-        font-size: 40px;
-        line-height: 1.125;
-    }
+  .section {
+    padding: 200px 20px 100px;
+  }
 
-    .copy {
-        margin-bottom: 150px;
-    }
+  .copy,
+  .copy span {
+    font-size: 40px;
+    line-height: 1.125;
+  }
 
-    .form {
-        max-width: 580px;
-    }
+  .copy {
+    margin-bottom: 150px;
+  }
 
-    .label {
-        font-size: 15px;
-        line-height: 1.333333333;
-        margin-bottom: 15px;
-    }
+  .form {
+    max-width: 580px;
+  }
+
+  .label {
+    font-size: 15px;
+    line-height: 1.333333333;
+    margin-bottom: 15px;
+  }
 }
 
 @media (min-width: 1200px) {
-    .section {
-        padding: 200px 40px 150px;
-    }
+  .section {
+    padding: 200px 40px 150px;
+  }
 
-    .copy {
-        margin-bottom: 135px;
-    }
+  .copy {
+    margin-bottom: 135px;
+  }
 }

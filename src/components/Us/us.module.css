@@ -1,77 +1,83 @@
 .section {
-    background-color: #000;
-    color: #fff;
+  background-color: #000;
+  color: #fff;
+  min-height: 100vh;
 }
 
 .hero {
-    position: relative;
-    height: 700px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-image: url(http://placehold.it/1200x700?text=1200x700);
+  position: relative;
+  height: 700px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url(http://placehold.it/1200x700?text=1200x700);
 }
 
 .title {
-    display: block;
-    width: 100%;    
-    max-width: 40%;
-    padding-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    transition: max-width .25s ease-out;
+  display: block;
+  width: 100%;
+  max-width: 40%;
+  padding-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  transition: max-width 0.25s ease-out;
 }
 
 .content {
-    padding: 20px 20px;
-    max-width: 980px;
-    margin-left: auto;
-    margin-right: auto;
-    font-family: Helvetica, Arial, sans-serif;
-    font-weight: 200;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px;
+  max-width: 980px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 200;
 }
 
 .content p {
-    font-size: 12px;
-    line-height: 1.5;
+  font-size: 12px;
+  line-height: 1.5;
 }
 
 .content p:last-of-type {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 .content a {
-    color: #9A9C9F;
-    text-decoration: none;
+  color: #9a9c9f;
+  text-decoration: none;
 }
 
 @media (min-width: 768px) {
-    .title {
-        max-width: 150px;
-        padding-top: 60px;
-    }
+  .title {
+    max-width: 150px;
+    padding-top: 60px;
+  }
 
-    .content {
-        padding: 40px 40px 50px;
-    }
+  .content {
+    padding: 40px 40px 50px;
+  }
 
-    .content p {
-        font-size: 22px;
-        line-height: 1.363636364;
-    }
+  .content p {
+    font-size: 22px;
+    line-height: 1.363636364;
+  }
 }
 
 @media (min-width: 1024px) {
-    .title {
-        max-width: 400px;
-    }
+  .title {
+    max-width: 400px;
+  }
 
-    .content {
-        padding: 45px 55px 100px;
-    }
+  .content {
+    padding: 100px;
+    min-height: calc(100vh - 700px);
+  }
 
-    .content p {
-        font-size: 24px;
-        line-height: 1.6;
-    }
+  .content p {
+    font-size: 24px;
+    line-height: 1.6;
+  }
 }

@@ -1,145 +1,139 @@
 .row {
-    padding-top: 12px;
-    padding-bottom: 18px;
-    border-top: 1px solid black;
+  padding-top: 12px;
+  padding-bottom: 18px;
+  border-top: 1px solid black;
 }
 
 .row:last-of-type {
-    border-bottom: 1px solid black;
+  border-bottom: 1px solid black;
 }
 
 .rowTitle {
-    margin-bottom: 0;
-    font-family: 'austin';
-    font-size: 50px;
-    font-weight: 400;
-    line-height: 1;
+  margin-bottom: 0;
+  font-family: 'austin';
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 1;
 }
 
 .smallText {
-    font-family: 'pitch', 'Courier New', Courier, monospace;
-    font-size: 10px;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
+  font-family: 'pitch', 'Courier New', Courier, monospace;
+  font-size: 10px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
 }
 
-
 .flex {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
 }
 
 .list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .list li {
-    margin-bottom: 0;
-    font-size: 10px;
-    line-height: 1.5;
+  margin-bottom: 0;
+  font-size: 10px;
+  line-height: 1.5;
 }
 
 .button {
-    display: inline-block;
-    padding: 8px 16px;
-    border-radius: 25px;
-    border: 2px solid transparent;
-    outline: 0;
-    font-family: 'venus';
-    font-size: 10px;
-    line-height: 1;
-    letter-spacing: .2em;
-    background-color: #fff;
-    color: #000;
-    appearance: none;
-    text-transform: uppercase;
-    transition: background-color .25s ease-out,
-                color .25s ease-out;
-    cursor: pointer;
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 25px;
+  border: 2px solid transparent;
+  outline: 0;
+  font-family: 'venus';
+  font-size: 10px;
+  line-height: 1;
+  letter-spacing: 0.2em;
+  background-color: #fff;
+  color: #000;
+  appearance: none;
+  text-transform: uppercase;
+  transition: background-color 0.25s ease-out, color 0.25s ease-out;
+  cursor: pointer;
 }
 
 .button:hover,
 .button:focus {
-    background-color: #000;
-    color: #FFD864;
+  background-color: #000;
+  color: #ffd864;
 }
 
-
 .flex {
-    display: flex;
-    flex-direction: column;
-    margin-right: 25px;
+  display: flex;
+  flex-direction: column;
+  margin-right: 25px;
 }
 
 .innerContent {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 25px;
 }
 
 @media (min-width: 768px) {
-    .row {
-        padding-top: 30px;
-        padding-bottom: 35px;
-        border-top: 1px solid black;
-    }
+  .row {
+    padding-top: 30px;
+    padding-bottom: 35px;
+    border-top: 1px solid black;
+  }
 
-    .rowTitle {
-        font-size: 120px;
-    }
+  .rowTitle {
+    font-size: 120px;
+  }
 
+  .smallText,
+  .list li {
+    font-size: 21px;
+  }
 
-    .smallText,
-    .list li {
-        font-size: 21px;
-    }
+  .flex {
+    width: 100%;
+    margin-right: 60px;
+  }
 
-    .flex {
-        width: 100%;
-        margin-right: 60px;
-    }
-
-    .innerContent {
-        margin-top: 40px;
-    }
-
+  .innerContent {
+    margin-top: 40px;
+  }
 }
 
 @media (min-width: 1024px) {
-    .row {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        padding-bottom: 50px;
-        max-width: 1020px;
-        margin-left: auto;
-        margin-right: auto;
-    }
+  .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom: 50px;
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-    .flex {
-        width: 76%;
-    }
+  .flex {
+    width: 76%;
+  }
 
-    .innerContent {
-        width: 59%;
-        margin-top: 0;
-    }
+  .innerContent {
+    width: 59%;
+    margin-top: 0;
+  }
 
-    .innerContent + .button {
-        display: block;
-    }
-    
-    .rowTitle {
-        font-size: 70px;
-    }
+  .innerContent + .button {
+    display: block;
+  }
 
+  .rowTitle {
+    font-size: 70px;
+  }
 
-    .smallText,
-    .list li {
-        font-size: 16px;
-    }
+  .smallText,
+  .list li {
+    font-size: 16px;
+  }
 }
