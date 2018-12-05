@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'gatsby'
 
 import Slider from 'react-slick'
 
@@ -55,7 +56,9 @@ const Hero = () => {
           <span>designing soulful brands</span> that thrive in today's world of
           unreasonable expectations.
         </h2>
-        <div className={styles.downArrow} />
+        <Link to="#partner">
+          <div className={styles.downArrow} />
+        </Link>
       </>
 
       <Slider {...slideSettings}>

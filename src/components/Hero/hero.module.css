@@ -48,7 +48,7 @@
 
 .copy,
 .copy span {
-  font-size: 18px;
+  font-size: 30px;
   line-height: 1.2;
 }
 
@@ -60,7 +60,7 @@
   margin-bottom: 0;
   font-family: Helvetica, sans-serif;
   font-weight: 300;
-  max-width: 72%;
+  max-width: 80%;
 }
 
 .copy span {
@@ -101,7 +101,7 @@
     right: 5%;
   }
 
-  .copy, 
+  .copy,
   .copy span {
     font-size: 40px;
     line-height: 1.125;
@@ -112,7 +112,6 @@
     left: 45px;
     right: 45px;
   }
-
 
   .downArrow {
     bottom: 50px;
@@ -126,7 +125,7 @@
   .section {
     height: calc(100vh - 70px);
   }
-  
+
   .caption {
     display: block;
   }
@@ -146,5 +145,3 @@
     display: none;
   }
 }
-
-

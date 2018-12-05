@@ -28,7 +28,7 @@
   padding: 0;
   text-align: center;
   transform: translateX(50%);
-  animation: marquee 35s linear infinite;
+  animation: marquee 25s linear infinite;
 }
 
 .item {
@@ -53,7 +53,7 @@
     transform: translateX(100%);
   }
   100% {
-    transform: translateX(-120%);
+    transform: translateX(-100%);
   }
 }
 
@@ -93,21 +93,13 @@
 
   .list {
     transform: translateX(0);
-    width: 200%;
+    width: 150%;
   }
 
   .item {
     font-size: 94px;
     margin-right: 25px;
   }
-
-  /* .item:first-of-type {
-    padding-right: 55px;
-  }
-
-  .item:last-of-type {
-    padding-right: 55px;
-  } */
 }
 
 @media (min-width: 1200px) {
