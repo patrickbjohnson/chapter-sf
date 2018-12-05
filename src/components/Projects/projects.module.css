@@ -30,7 +30,7 @@
 .item {
     display: inline-block;
     flex-shrink: 0;
-    font-family: 'austin';
+    font-family: 'austin-lite';
     font-size: 30px;
     line-height: .9;
     margin-right: 5px;
