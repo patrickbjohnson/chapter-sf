@@ -91,12 +91,6 @@ class IndexPage extends Component {
     }
   }
 
-  getNavOffset = () => {
-    this.menu.style.top = this.state.mqMatches
-      ? `${this.hero.getBoundingClientRect().height}px`
-      : 0
-  }
-
   render() {
     return (
       <Layout>
