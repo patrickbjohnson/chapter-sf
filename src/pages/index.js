@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import Scrollbar from 'react-smooth-scrollbar'
-import debounce from 'lodash.debounce'
 
 import Layout from '../components/layout'
 import Hero from '../components/Hero'
@@ -21,71 +20,78 @@ class IndexPage extends Component {
   constructor() {
     super()
     this.scrollRef = React.createRef()
-
+    this.mq = null
     this.state = { hasRun: true, navOffset: null, mq: null, mqMatches: null }
     this.hero = null
+    this.heroDims = null
     this.menu = null
   }
 
   componentDidMount() {
     const { scrollbar } = this.scrollContainer
-
+    this.mq = window.matchMedia('(min-width: 1024px)')
     this.hero = document.querySelector('[data-hero')
+    this.heroDims = this.hero.getBoundingClientRect()
     this.menu = document.querySelector('[data-nav]')
+    this.offset = null
+    this.foo = null
 
-    this.setupScrollableElements()
+    this.initialNavSetup(this.mq.matches)
 
     scrollbar.addListener(({ offset }) => {
-      this.hero.style.top = ` ${offset.y}px`
-      this.menu.style.position = 'absolute'
+      this.offset = offset
 
-      if (this.state.mq.matches) {
-        if (offset.y > this.state.navOffset) {
-          this.menu.style.top = `${offset.y}px`
-        } else {
-          this.menu.style.top = `${this.state.navOffset}px`
-        }
+      if (this.mq.matches) {
+        this.hero.style.top = ` ${offset.y}px`
+        this.menu.style.top = `${this.hero.getBoundingClientRect().height}px`
+
+        this.menuScrollOffsets()
       } else {
         this.menu.style.top = `${offset.y}px`
         this.hero.style.top = ` ${offset.y + 30}px`
       }
     })
 
-    window.addEventListener('resize', e => {
-      console.log('foo')
+    this.mq.addListener(media => {
+      this.heroDims = this.hero.getBoundingClientRect()
+
+      if (media.matches) {
+        if (this.offset) {
+          this.hero.style.top = `${this.offset.y}px`
+          this.menuScrollOffsets()
+        } else {
+          this.initialNavSetup(media.matches)
+        }
+      } else {
+        if (this.offset) {
+          this.hero.style.top = `${this.offset.y + 30}px`
+          this.menu.style.top = `${this.offset.y}px`
+        } else {
+          this.initialNavSetup(media.matches)
+        }
+      }
     })
   }
 
-  setupScrollableElements = () => {
-    let hasRun = false
-    const mq = window.matchMedia('(min-width: 1024px)')
-
-    this.setState({
-      mq: mq,
-      mqMatches: mq.matches,
-      navOffset: this.menu ? this.hero.getBoundingClientRect().height : 0,
-    })
-
-    hasRun = true
-
-    this.menu.style.position = 'absolute'
-
-    this.menu.style.top = mq.matches
-      ? `${this.hero.getBoundingClientRect().height}px`
-      : 0
-
-    if (!hasRun) return
-    mq.addListener(media => {
-      this.setState({ mqMatches: media.matches })
-    })
+  initialNavSetup(isLarge) {
+    if (isLarge) {
+      this.menu.style.top = `${this.hero.getBoundingClientRect().height}px`
+      this.hero.style.top = 0
+    } else {
+      this.menu.style.top = 0
+      this.hero.style.top = `30px`
+    }
   }
 
-  onResize = debounce(() => {
-    console.log('foo')
-  }, 200)
+  menuScrollOffsets() {
+    if (this.offset.y > this.heroDims.height) {
+      this.menu.style.top = `${this.offset.y}px`
+    } else {
+      this.menu.style.top = `${this.heroDims.height}px`
+    }
+  }
 
   getNavOffset = () => {
-    console.log('offsettinggs')
     this.menu.style.top = this.state.mqMatches
       ? `${this.hero.getBoundingClientRect().height}px`
       : 0
