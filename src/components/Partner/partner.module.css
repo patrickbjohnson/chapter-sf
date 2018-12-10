@@ -32,7 +32,6 @@
   letter-spacing: 0.1em;
 }
 
-
 .button {
   display: table;
   padding: 8px 16px;
@@ -146,10 +145,8 @@
     max-width: 580px;
   }
 
-  .label {
+  .button {
     font-size: 15px;
-    line-height: 1.333333333;
-    margin-bottom: 15px;
   }
 }
 
