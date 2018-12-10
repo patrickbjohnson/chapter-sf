@@ -1,13 +1,13 @@
 .section {
-  background-color: #ffffff;
-  padding: 34px 20px 60px;
-  overflow: hidden;
-  z-index: 1;
   position: relative;
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: #ffffff;
+  padding: 34px 20px 60px;
+  overflow: hidden;
+  z-index: 10;
 }
 
 .inner {

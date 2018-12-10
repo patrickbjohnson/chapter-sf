@@ -36,17 +36,37 @@ class IndexPage extends Component {
     this.heroDims = this.hero.getBoundingClientRect()
     this.menu = document.querySelector('[data-nav]')
 
-    this.footer = document.querySelector('[data-newsletter]');
-    console.log(this.footer)
+    this.footer = document.querySelector('[data-newsletter]')
+    this.footerSpacer = document.querySelector('[data-newsletter-spacer]')
+    this.footerSpacer.style.height = `${
+      this.footer.getBoundingClientRect().height
+    }px`
+    this.footer.style.left = 0
+    this.footer.style.right = 0
+
+    this.socialContainer = document.querySelector('[data-social]')
+    this.socialContainer.style.paddingBottom = this.footer.getBoundingClientRect().height
     this.offset = null
 
     this.initialNavSetup(this.mq.matches)
 
+    this.footer.style.visibility = 'hidden'
+
     scrollbar.addListener(({ offset }) => {
       this.offset = offset
 
+      this.footer.style.top = `${offset.y +
+        (scrollbar.bounding.bottom -
+          this.footer.getBoundingClientRect().height)}px`
+
+      if (this.offset.y < window.outerHeight) {
+        this.footer.style.visibility = 'hidden'
+      } else {
+        this.footer.style.visibility = 'visible'
+      }
+
       if (this.mq.matches) {
-        this.hero.style.top = ` ${offset.y}px`
+        this.hero.style.top = `${offset.y}px`
         this.menu.style.top = `${this.hero.getBoundingClientRect().height}px`
 
         this.menuScrollOffsets()
