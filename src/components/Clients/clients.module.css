@@ -15,6 +15,7 @@
 .inner {
   max-width: 980px;
   margin: auto;
+  will-change: transform, opacity;
 }
 
 .title {
