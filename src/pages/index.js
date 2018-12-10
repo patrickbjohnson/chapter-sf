@@ -79,6 +79,10 @@ class IndexPage extends Component {
     this.mq.addListener(media => {
       this.heroDims = this.hero.getBoundingClientRect()
 
+      this.footerSpacer.style.height = `${
+        this.footer.getBoundingClientRect().height
+      }px`
+
       if (media.matches) {
         if (this.offset) {
           this.hero.style.top = `${this.offset.y}px`
