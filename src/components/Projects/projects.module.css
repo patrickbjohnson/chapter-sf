@@ -3,7 +3,7 @@
   background-color: #c4c6c7;
   padding: 22px 20px 16px;
   z-index: 10;
-  height: 150px;
+  backface-visibility: hidden;
 }
 
 .title {

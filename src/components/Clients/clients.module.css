@@ -4,10 +4,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   background-color: #ffffff;
   padding: 34px 20px 60px;
   overflow: hidden;
   z-index: 10;
+  backface-visibility: hidden;
 }
 
 .inner {
