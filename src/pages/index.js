@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Scrollbar from 'react-smooth-scrollbar'
+import sal from 'sal.js'
 
 import Layout from '../components/layout'
 import Hero from '../components/Hero'
@@ -29,12 +30,15 @@ class IndexPage extends Component {
 
   componentDidMount() {
     const { scrollbar } = this.scrollContainer
+
     this.mq = window.matchMedia('(min-width: 1024px)')
     this.hero = document.querySelector('[data-hero')
     this.heroDims = this.hero.getBoundingClientRect()
     this.menu = document.querySelector('[data-nav]')
+
+    this.footer = document.querySelector('[data-newsletter]');
+    console.log(this.footer)
     this.offset = null
-    this.foo = null
 
     this.initialNavSetup(this.mq.matches)
 
@@ -70,6 +74,11 @@ class IndexPage extends Component {
           this.initialNavSetup(media.matches)
         }
       }
+    })
+
+    sal({
+      threshold: 0.4,
+      once: true,
     })
   }
 

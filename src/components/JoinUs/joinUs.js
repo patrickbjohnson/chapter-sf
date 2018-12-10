@@ -42,36 +42,6 @@ class JoinUs extends Component {
     })
   }
 
-  //   initObserver(sections) {
-  //     const intersectionObserver = new IntersectionObserver(
-  //       (entries, observer) => {
-  //         entries.forEach(entry => {
-  //           if (entry.intersectionRatio > 0) {
-  //             this.animate(entry.target)
-  //           }
-  //         })
-  //       },
-  //       {
-  //         threshold: 0.5,
-  //       }
-  //     )
-
-  //     sections.map(section => {
-  //       this.setHiddenStyles(section)
-  //       intersectionObserver.observe(section)
-  //     })
-  //   }
-
-  //   setHiddenStyles(element) {
-  //     element.style.opacity = 0
-  //     element.style.transition = 'opacity .25s ease-out'
-  //   }
-
-  //   animate(element) {
-  //     element.style.opacity = 1
-  //     console.log(element, ' in view!')
-  //   }
-
   render() {
     return (
       <section id="join" className={styles.section} data-section>
@@ -79,7 +49,8 @@ class JoinUs extends Component {
           <h2
             className={styles.title}
             data-sal="slide-up"
-            data-sal-delay="300"
+            data-sal-delay="100"
+            data-sal-duration="600"
             data-sal-easing="ease-out-bounce"
           >
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 481.9 116">

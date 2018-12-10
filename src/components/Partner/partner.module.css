@@ -32,33 +32,6 @@
   letter-spacing: 0.1em;
 }
 
-.form {
-  margin-bottom: 0;
-}
-
-.label {
-  display: block;
-  font-family: 'pitch', 'Courier New', Courier, monospace;
-  font-size: 10px;
-  text-transform: uppercase;
-  text-align: center;
-  letter-spacing: 0.1em;
-  color: #fff;
-}
-
-.input {
-  display: block;
-  width: 100%;
-  border-radius: 10px;
-  padding: 8px 10px;
-  border: 0;
-  outline: 0;
-  font-family: 'pitch', 'Courier New', Courier, monospace;
-  font-size: 12px;
-  line-height: 1.1;
-  min-height: 80px;
-  font-size: 14px;
-}
 
 .button {
   display: table;
@@ -80,6 +53,7 @@
     opacity 0.25s ease-out;
   cursor: pointer;
   text-transform: uppercase;
+  text-decoration: none;
 }
 
 .disabled {

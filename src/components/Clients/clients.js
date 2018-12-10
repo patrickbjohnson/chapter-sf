@@ -117,7 +117,13 @@ class Clients extends Component {
   render() {
     return (
       <section className={styles.section}>
-        <div className={styles.inner}>
+        <div className={styles.inner}
+        data-sal="slide-up"
+        data-sal-delay="100"
+        data-sal-duration="600"
+        data-sal-easing="ease-out-bounce"
+        >
+          
           <h2 className={styles.title}>Some of our pioneering partners</h2>
 
           <ul className={styles.clientList}>

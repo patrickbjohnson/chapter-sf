@@ -12,7 +12,12 @@ const Us = () => {
           </svg>
         </span>
       </div>
-      <div className={styles.content}>
+      <div className={styles.content}
+        data-sal="slide-up"
+        data-sal-delay="100"
+        data-sal-duration="500"
+        data-sal-easing="ease-out-bounce"
+      >
         <div className={styles.innerContent}>
           <p>
             This is Chapter. We do things differently here. Founded by{' '}

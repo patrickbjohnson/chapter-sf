@@ -44,7 +44,11 @@ const Hero = () => {
     <section className={styles.section} data-hero>
       <div className={styles.spacer} />
       <>
-        <h1 className={styles.title}>
+        <h1 className={styles.title}
+            data-sal="fade"
+            data-sal-delay="200"
+            data-sal-duration="500"
+            data-sal-easing="ease-in-cubic">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1863 236">
             <path
               fill="#fff"
@@ -52,7 +56,11 @@ const Hero = () => {
             />
           </svg>
         </h1>
-        <h2 className={styles.copy}>
+        <h2 className={styles.copy}
+            data-sal="fade"
+            data-sal-delay="400"
+            data-sal-duration="700"
+            data-sal-easing="ease-in-cubic">
           Chapter is a new type of <span>creative studio</span> focused on{' '}
           <span>designing soulful brands</span> that thrive in today's world of
           unreasonable expectations.

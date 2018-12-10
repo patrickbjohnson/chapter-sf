@@ -6,7 +6,12 @@ const JoinUsRow = props => {
   const { title, copy, message, buttonText, mailto } = props
 
   return (
-    <div className={styles.row}>
+    <div className={styles.row}
+    data-sal="slide-up"
+    data-sal-delay="100"
+    data-sal-duration="600"
+    data-sal-easing="ease-out-bounce"
+    >
       <h1 className={styles.title}>{title}</h1>
 
       <div className={styles.flex}>
