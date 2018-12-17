@@ -33,7 +33,7 @@ class Newsletter extends Component {
     })
       .then(response => {
         const { result, msg } = response.data
-        console.log(response)
+
         this.setState({
           success: result === 'success',
           failure: result === 'error',

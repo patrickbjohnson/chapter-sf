@@ -21,12 +21,13 @@ import styles from '../components/smoothScroll.module.css'
 class IndexPage extends Component {
   constructor() {
     super()
-    this.scrollRef = React.createRef()
     this.mq = null
     this.state = { hasRun: true, navOffset: null, mq: null, mqMatches: null }
     this.hero = null
     this.heroDims = null
     this.menu = null
+    this.offset = null
+    this.scrollContainer = null
   }
 
   componentDidMount() {
@@ -47,7 +48,6 @@ class IndexPage extends Component {
 
     this.socialContainer = document.querySelector('[data-social]')
     this.socialContainer.style.paddingBottom = this.footer.getBoundingClientRect().height
-    this.offset = null
 
     this.initialNavSetup(this.mq.matches)
 
@@ -131,7 +131,15 @@ class IndexPage extends Component {
         <div className={styles.container}>
           <Scrollbar ref={c => (this.scrollContainer = c)}>
             <Hero />
-            <Menu logoIsVisible={this.offset} />
+            <Menu offset={this.offset} scrollBar={this.scrollContainer}
+              clickHandler={(e, id) => {
+                e.preventDefault()
+                const scrollbar = this.scrollContainer.scrollbar
+                scrollbar.scrollIntoView(document.querySelector(id), {
+                  offsetTop: -scrollbar.containerEl.scrollTop,
+                });
+              }}
+            />
             <Partner />
             <Clients />
             <Projects />

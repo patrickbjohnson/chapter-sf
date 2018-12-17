@@ -36,16 +36,21 @@ class DesktopMenu extends Component {
         },
       ],
     }
-
   }
 
   componentDidMount() {
+    this.setState()
     this.initObserver()
     this.lockPageWhenMobileMenuOpen()
 
     window.addEventListener('scroll', () => {
       console.log(this.props)
     })
+  }
+
+  componentDidUpdate(prevProps, prevState, snapshot) {
+    console.log(prevProps, prevState)
+    console.log(snapshot)
   }
 
 
@@ -96,14 +101,19 @@ class DesktopMenu extends Component {
   }
 
   clickHandler(e) {
-    if (e.target.href === undefined) return false
 
-    const id = e.target.href.split('#')[1]
+    e.preventDefault();
+    console.log(this.props)
 
-    smoothScrollIntoView(document.getElementById(id), {
-      behavior: 'smooth',
-      block: 'start',
-    })
+    // if (e.target.href === undefined) return false
+
+    // const id = e.target.href.split('#')[1]
+    // console.log(this.props)
+
+    // this.props.scrollContainer.scrollbar.scrollIntoView(document.getElementById(id), {
+    //   alignToTop: false,
+    //   onlyScrollIfNeeded: true,
+    // });
   }
 
   menuClasses = () => {
@@ -117,7 +127,7 @@ class DesktopMenu extends Component {
   }
 
   logoClasses = () => {
-    console.log(this.state.showLogo);
+
     return this.state.showLogo
       ? `${styles.isVisible} ${styles.logo}`
       : styles.logo
@@ -142,13 +152,13 @@ class DesktopMenu extends Component {
             <span />
           </div>
         </div>
+
         <MobileMenu
           logoInView={this.state.showLogo}
           isOpen={this.state.mobileMenu}
           menu={this.state.sections}
           activeNav={this.state.activeNav}
         />
-
         <div className={this.logoClasses()}>
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1863 236">
             <path
@@ -162,14 +172,18 @@ class DesktopMenu extends Component {
             <Link
               to="#partner"
               className={this.navClasses('partner')}
-              onClick={this.clickHandler}
+              onClick={(e) => {
+                this.props.clickHandler(e, '#partner')
+              }}
             >
               Partner
             </Link>
             <Link
               to="#join"
               className={this.navClasses('join')}
-              onClick={this.clickHandler}
+              onClick={(e) => {
+                this.props.clickHandler(e, '#join')
+              }}
             >
               Join
             </Link>
@@ -179,14 +193,18 @@ class DesktopMenu extends Component {
             <Link
               to="#meet"
               className={this.navClasses('meet')}
-              onClick={this.clickHandler}
+              onClick={(e) => {
+                this.props.clickHandler(e, '#meet')
+              }}
             >
               Meet
             </Link>
             <Link
               to="#us"
               className={this.navClasses('us')}
-              onClick={this.clickHandler}
+              onClick={(e) => {
+                this.props.clickHandler(e, '#us')
+              }}
             >
               Us
             </Link>

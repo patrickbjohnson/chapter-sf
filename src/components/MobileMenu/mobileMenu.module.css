@@ -23,17 +23,19 @@
 .nav,
 .smallNav {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
 .nav {
-  padding-top: 100px;
+  flex-direction: column;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .smallNav {
-  margin-top: auto;
+  flex-direction: row;
+  margin-top: 0;
   margin-bottom: 50px;
 }
 
@@ -72,13 +74,19 @@
   width: 100%;
 }
 
-.link:last-of-type,
-.smallink:last-of-type {
-  margin-bottom: 0;
+.link:last-of-type {
+    margin-bottom: 0;
 }
 
 .smallLink {
   font-size: 10px;
+  margin-bottom: 0;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.smallLink .link {
+  margin-bottom: 0;
 }
 
 @media (min-width: 1024px) {

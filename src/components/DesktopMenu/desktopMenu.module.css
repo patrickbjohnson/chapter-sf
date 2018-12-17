@@ -10,6 +10,7 @@
   background-color: #fff;
   z-index: 100;
   position: absolute;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.04);
 }
 
 .link {
@@ -172,8 +173,6 @@
 
   .nav {
     display: flex;
-    height: 70px;
-    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.04);
   }
 
   .logo {

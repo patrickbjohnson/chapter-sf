@@ -37,7 +37,7 @@ class Tumblr extends Component {
           }
         )
         .then(response => {
-          console.log(response)
+
           this.setState({
             success: response.status === 200 && response.statusText === 'OK',
           })
@@ -45,7 +45,7 @@ class Tumblr extends Component {
           this.processPosts(response.data.response.posts)
         })
         .catch(error => {
-          // console.log(error)
+          console.log(error)
         })
     }
   }

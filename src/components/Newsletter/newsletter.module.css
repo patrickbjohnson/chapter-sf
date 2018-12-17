@@ -5,7 +5,7 @@
   flex-direction: column;
   justify-content: center;
   padding: 65px 32px;
-  background-color: #000;
+  background-color: #FF6D2C;
   color: #fff;
   top: 0;
   left: 0;
@@ -43,7 +43,7 @@
 .input {
   width: 100%;
   appearance: none;
-  background-color: #000;
+  background-color: transparent;
   color: #fff;
   border: 0;
   font-family: 'venus';
@@ -179,7 +179,7 @@
 
 @media (min-width: 1024px) {
   .section {
-    height: 200px;
+    height: 400px;
     padding-left: 55px;
     padding-right: 55px;
   }

@@ -8,7 +8,7 @@ class Client extends Component {
 
         this.clientRef = React.createRef();
         this.panelRef = React.createRef();
-        
+
         this.state = {
             active: null,
             hasInfo: false
@@ -32,16 +32,16 @@ class Client extends Component {
         const hasLeftOverFlow = dims.left > (window.innerWidth - 10)
 
         const offset = (dims.width / 4)
-        
+
         if (hasRightOverFlow) {
-            console.log(dims.right - window.innerWidth)
+
             el.style.right = `-${offset}px`
             el.style.left = 'auto'
             el.style.transform  = 'translateX(0)'
         }
 
         if (hasLeftOverFlow) {
-            console.log(dims.right - window.innerWidth)
+
             el.style.left = `-${offset}px`
             el.style.right = 'auto'
             el.style.transform  = 'translateX(0)'
@@ -49,21 +49,21 @@ class Client extends Component {
     }
 
     render () {
-        
-        const { 
-            name, 
+
+        const {
+            name,
             info,
             eventHandler,
             mq
         } = this.props
 
         return (
-            <div 
+            <div
                 ref={this.clientRef}
-                className={styles.client}   
+                className={styles.client}
                 onClick={() => {
                     if (mq && this.state.hasInfo) return false
-                    console.log(this.clientRef.current)
+
                     this.updatePosition();
                     eventHandler()
                 }}
@@ -74,7 +74,7 @@ class Client extends Component {
                 }}
             >
                 {name}
-                {info && 
+                {info &&
                     <span>*
                         <div ref={this.panelRef} className={this.panelClasses()}>{info}</div>
                     </span>

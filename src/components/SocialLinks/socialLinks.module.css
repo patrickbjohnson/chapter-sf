@@ -42,7 +42,7 @@
 
 @media (min-width: 768px) {
   .section {
-    padding: 60px 40px;
+    padding: 35px 40px 60px;
   }
 
   .link {
@@ -51,10 +51,9 @@
     font-size: 18px;
   }
 
-
   .address {
     font-size: 12px;
-    margin-top: 36px;
+    margin-top: 50px;
   }
 }
 
