@@ -72,7 +72,7 @@ class IndexPage extends Component {
         this.menuScrollOffsets()
       } else {
         this.menu.style.top = `${offset.y}px`
-        this.hero.style.top = ` ${offset.y + 30}px`
+        this.hero.style.top = ` ${offset.y + 70}px`
       }
     })
 
@@ -92,7 +92,7 @@ class IndexPage extends Component {
         }
       } else {
         if (this.offset) {
-          this.hero.style.top = `${this.offset.y + 30}px`
+          this.hero.style.top = `${this.offset.y + 70}px`
           this.menu.style.top = `${this.offset.y}px`
         } else {
           this.initialNavSetup(media.matches)
@@ -112,7 +112,7 @@ class IndexPage extends Component {
       this.hero.style.top = 0
     } else {
       this.menu.style.top = 0
-      this.hero.style.top = `30px`
+      this.hero.style.top = `70px`
     }
   }
 

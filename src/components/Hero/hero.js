@@ -56,15 +56,6 @@ const Hero = () => {
             />
           </svg>
         </h1>
-        <h2 className={styles.copy}
-            data-sal="fade"
-            data-sal-delay="400"
-            data-sal-duration="700"
-            data-sal-easing="ease-in-cubic">
-          Chapter is a new type of <span>creative studio</span> focused on{' '}
-          <span>designing soulful brands</span> that thrive in today's world of
-          unreasonable expectations.
-        </h2>
         <Link to="#partner">
           <div className={styles.downArrow} />
         </Link>

@@ -1,7 +1,7 @@
 .section {
   position: relative;
   width: 100vw;
-  height: calc(100vh - 30px);
+  height: calc(100vh - 70px);
   overflow: hidden;
   width: 100vw;
   top: 30px;
@@ -38,42 +38,20 @@
   text-decoration: none;
 }
 
-.title,
-.copy {
+.title {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 20px;
+  right: 20px;
+  max-width: 100%;
   z-index: 1;
   font-size: 26px;
   line-height: 1.2;
   color: #fff;
-}
-
-.title {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  right: 20px;
-}
-
-.copy,
-.copy span {
-  font-size: 30px;
-  line-height: 1.2;
-}
-
-.copy {
-  position: absolute;
-  bottom: 20px;
-  left: 20px;
-  right: 20px;
   margin-bottom: 0;
-  font-family: Helvetica, sans-serif;
-  font-weight: 300;
-  max-width: 80%;
 }
 
-.copy span {
-  font-family: 'austin', serif;
-  font-style: italic;
-}
 
 .downArrow {
   position: absolute;

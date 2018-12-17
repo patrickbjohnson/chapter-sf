@@ -4,13 +4,12 @@
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  height: 30px;
+  height: 70px;
   padding-left: 20px;
   padding-right: 20px;
   background-color: #fff;
   z-index: 10;
   position: absolute;
-  /* top: 0; */
 }
 
 .link {
@@ -76,12 +75,17 @@
   top: 6px;
   margin-left: auto;
   margin-right: auto;
-  opacity: 0;
+  opacity: 1;
   width: 95px;
   height: 15px;
-  transform: scale(0.8);
+  transform: scale(1) translateY(-50%);
   z-index: 100;
+  top: 50%;
   transition: transform 0.25s ease-out, opacity 0.25s ease-out;
+}
+
+.logo svg {
+  display: block;
 }
 
 .isVisible {
@@ -91,12 +95,12 @@
 
 .mobileMenu {
   display: block;
-  width: 30px;
-  height: 30px;
+  width: 70px;
+  height: 70px;
   z-index: 100;
   position: absolute;
   top: 0;
-  left: 16px;
+  left: 0;
   z-index: 100;
   background-color: #fff;
   display: flex;
@@ -166,6 +170,7 @@
 }
 
 @media (min-width: 1024px) {
+
   .mobileMenu {
     display: none;
   }
@@ -187,10 +192,11 @@
     position: absolute;
     top: 50%;
     left: 0;
-    transform: translate(0%, -50%);
-
+    transform: translate(0%, -50%) scale(0.8);
     width: 225px;
     height: 28px;
+    opacity: 0;
+    transition: transform 0.25s ease-out, opacity 0.25s ease-out;
   }
 
   .group {
