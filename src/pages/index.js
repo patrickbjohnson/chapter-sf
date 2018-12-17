@@ -8,6 +8,7 @@ import Menu from '../components/DesktopMenu'
 import Partner from '../components/Partner'
 import Clients from '../components/Clients'
 import Projects from '../components/Projects'
+import CTARow from '../components/CTARow'
 import Tumblr from '../components/Tumblr'
 
 import Meet from '../components/Meet'
@@ -130,10 +131,11 @@ class IndexPage extends Component {
         <div className={styles.container}>
           <Scrollbar ref={c => (this.scrollContainer = c)}>
             <Hero />
-            <Menu />
+            <Menu logoIsVisible={this.offset} />
             <Partner />
             <Clients />
             <Projects />
+            <CTARow />
             <Tumblr />
             <Meet />
             <Us />

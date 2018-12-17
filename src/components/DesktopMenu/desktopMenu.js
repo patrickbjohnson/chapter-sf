@@ -10,8 +10,8 @@ import MobileMenu from '../MobileMenu'
 import styles from './desktopMenu.module.css'
 
 class DesktopMenu extends Component {
-  constructor() {
-    super()
+  constructor(props) {
+    super(props)
 
     this.state = {
       sticky: false,
@@ -36,18 +36,18 @@ class DesktopMenu extends Component {
         },
       ],
     }
+
   }
 
   componentDidMount() {
     this.initObserver()
     this.lockPageWhenMobileMenuOpen()
 
-    window.addEventListener('scroll', throttle(this.logoHandler, 200))
+    window.addEventListener('scroll', () => {
+      console.log(this.props)
+    })
   }
 
-  componentWillUnmount() {
-    window.removeEventListener('scroll', this.logoHandler)
-  }
 
   initObserver = () => {
     const observer = new IntersectionObserver(this.navHandler, {
@@ -81,7 +81,7 @@ class DesktopMenu extends Component {
     const height = hero.getBoundingClientRect().height
 
     this.setState({
-      showLogo: window.scrollY >= height,
+      showLogo: window.scrollY > height,
     })
   }
 
@@ -117,6 +117,7 @@ class DesktopMenu extends Component {
   }
 
   logoClasses = () => {
+    console.log(this.state.showLogo);
     return this.state.showLogo
       ? `${styles.isVisible} ${styles.logo}`
       : styles.logo
