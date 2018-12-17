@@ -49,7 +49,7 @@ class JoinUs extends Component {
       <section id="join" className={styles.section} data-section>
         <Content>
           <h2
-            className={styles.title}
+            className={content.title}
             data-sal="slide-up"
             data-sal-delay="100"
             data-sal-duration="600"

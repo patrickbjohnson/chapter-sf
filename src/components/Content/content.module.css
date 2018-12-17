@@ -10,3 +10,16 @@
     font-family: Helvetica, Arial, sans-serif;
     font-weight: 200;
 }
+
+@media (min-width: 1024px) {
+
+    .title {
+        margin-bottom: 70px;
+    }
+
+    .copy {
+        font-size: 40px;
+        line-height: 50px;
+        margin-bottom: 110px;
+    }
+}
