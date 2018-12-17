@@ -7,10 +7,10 @@ const MeetRow = props => {
 
   return (
     <div className={styles.row}
-    data-sal="slide-up"
-    data-sal-delay="100"
-    data-sal-duration="600"
-    data-sal-easing="ease-out-bounce"
+      data-sal="slide-up"
+      data-sal-delay="100"
+      data-sal-duration="600"
+      data-sal-easing="ease-out-bounce"
     >
       <h3 className={styles.rowTitle}>{title}</h3>
 

@@ -24,6 +24,10 @@
     font-weight: 200;
 }
 
+.copy:last-of-type:not(:first-of-type) {
+    margin-bottom: 0;
+}
+
 @media (min-width: 1024px) {
 
     .title {
