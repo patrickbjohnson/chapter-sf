@@ -1,11 +1,10 @@
 .section {
   position: relative;
-  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-color: #ffffff;
+  background-color: #fff;
   padding: 34px 20px 60px;
   overflow: hidden;
   z-index: 10;
@@ -20,11 +19,12 @@
 
 .title {
   margin-bottom: 24px;
-  font-family: 'pitch', 'Courier New', Courier, monospace;
+  font-family: 'Courier New', Courier, monospace;
   font-size: 15px;
   line-height: 1;
   text-transform: uppercase;
   text-align: center;
+  letter-spacing: 0.1em;
 }
 
 .clientList {
@@ -52,6 +52,7 @@
 
 @media (min-width: 1024px) {
   .section {
+    min-height: 100vh;
     padding: 148px 55px 130px;
   }
 
