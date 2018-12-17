@@ -21,6 +21,7 @@ class MobileMenu extends Component {
   }
 
   render() {
+    console.log(this.props)
     return (
       <div className={this.menuClasses()}>
         <nav className={styles.nav}>
@@ -30,6 +31,10 @@ class MobileMenu extends Component {
                 to={`#${item.id}`}
                 key={i}
                 className={this.navClasses(item.id)}
+                onClick={(e) => {
+                  e.preventDefault();
+                  this.props.clickHandler(e, `#${item.id}`)
+                }}
               >
                 {item.id}
               </Link>

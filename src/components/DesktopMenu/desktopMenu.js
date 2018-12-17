@@ -100,22 +100,6 @@ class DesktopMenu extends Component {
     })
   }
 
-  clickHandler(e) {
-
-    e.preventDefault();
-    console.log(this.props)
-
-    // if (e.target.href === undefined) return false
-
-    // const id = e.target.href.split('#')[1]
-    // console.log(this.props)
-
-    // this.props.scrollContainer.scrollbar.scrollIntoView(document.getElementById(id), {
-    //   alignToTop: false,
-    //   onlyScrollIfNeeded: true,
-    // });
-  }
-
   menuClasses = () => {
     return this.state.stuck ? [styles.nav, styles.stuck].join(' ') : styles.nav
   }
@@ -158,6 +142,7 @@ class DesktopMenu extends Component {
           isOpen={this.state.mobileMenu}
           menu={this.state.sections}
           activeNav={this.state.activeNav}
+          clickHandler={this.props.clickHandler}
         />
         <div className={this.logoClasses()}>
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1863 236">
