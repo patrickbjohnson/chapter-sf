@@ -9,68 +9,32 @@ class Tumblr extends Component {
   constructor(props) {
     super(props)
 
-    this.ALLOWED_TAG = 'chapterwebsiteimagery'
-    this.storage = null
     this.state = {
-      photos: null,
+      photos: [
+        {
+          src: 'http://placehold.it/800x800'
+        },
+        {
+          src: 'http://placehold.it/800x800'
+        },
+        {
+          src: 'http://placehold.it/800x800'
+        },
+        {
+          src: 'http://placehold.it/800x800'
+        }
+      ],
     }
   }
 
   componentDidMount() {
-    this.storage = window.localStorage
-    this.storage.removeItem('photos')
-    const storagePhotos = this.storage.getItem('photos')
-    if (storagePhotos) {
-      this.setState({
-        success: true,
-        photoSets: chunk(JSON.parse(storagePhotos), 2),
-      })
-    } else {
-      axios
-        .get(
-          'https://api.tumblr.com/v2/blog/progresslabs.tumblr.com/posts?api_key=Yv0jdl1xx597BX1E0Pesb3xoMzy3Apk8166zaSHdPwVOxIbvOw',
-          {
-            headers: {
-              Accept: 'application/json',
-              'Access-Control-Allow-Origin': '*',
-            },
-          }
-        )
-        .then(response => {
-
-          this.setState({
-            success: response.status === 200 && response.statusText === 'OK',
-          })
-
-          this.processPosts(response.data.response.posts)
-        })
-        .catch(error => {
-          console.log(error)
-        })
-    }
+    this.processPosts()
   }
 
   processPosts = posts => {
-    let photos = []
-
-    posts.map(post => {
-      if (post.type === 'photo' && post.tags.includes(this.ALLOWED_TAG)) {
-        return photos.push({
-          alt: post.summary,
-          caption: post.caption,
-          src: post.photos[0].original_size,
-          url: post.short_url,
-        })
-      }
-    })
-
-    this.storage.setItem('photos', JSON.stringify(photos))
-
     this.setState({
-      photoSets: chunk(photos, 2),
+      photoSets: chunk(this.state.photos, 2),
     })
-
-    return photos
   }
 
   render() {
@@ -85,7 +49,7 @@ class Tumblr extends Component {
                     className={styles.imageWrap}
                     key={i}
                     style={{
-                      backgroundImage: `url(${photo.src.url})`,
+                      backgroundImage: `url(${photo.src})`,
                     }}
                   >
                     {photo.caption && (
@@ -112,7 +76,7 @@ class Tumblr extends Component {
                     className={styles.imageWrap}
                     key={i}
                     style={{
-                      backgroundImage: `url(${photo.src.url})`,
+                      backgroundImage: `url(${photo.src})`,
                     }}
                   >
                     {photo.caption && (
