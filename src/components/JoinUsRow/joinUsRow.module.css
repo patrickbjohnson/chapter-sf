@@ -11,7 +11,7 @@
 
 .flex {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
 }
@@ -38,7 +38,7 @@
 
 .message {
   margin-bottom: 0;
-  font-family: 'pitch', 'Courier New', Courier, monospace;
+  font-family: 'Courier New', Courier, monospace;
   font-weight: 600;
 }
 
@@ -102,6 +102,7 @@
 
   .flex {
     max-width: 59%;
+    flex-direction: row;
   }
 
   .title {

@@ -64,6 +64,15 @@ class JoinUs extends Component {
             We're a crew of optimistic misfits with strong opinions, softly held. Nice to meet you.
           </p>
 
+
+          <JoinUsRow
+            title="Crew"
+            copy="We’re a bunch of designers, writers, producers and strategists restlessly dissatisfied with how brands, agencies and consultancies act today. If you feel like you’re a misfit, let’s change things together."
+            message="Make yourself at home."
+            buttonText="Chat"
+            mailto={crewEmail}
+          />
+
           <JoinUsRow
             title="Workshop"
             copy="This is not an internship. It’s an always on crash course in solving real problems, open to talent all over the world, done 10 weeks at a time."
@@ -78,14 +87,6 @@ class JoinUs extends Component {
             message="Join our League of freelancers."
             buttonText="Join"
             mailto={leagueEmail}
-          />
-
-          <JoinUsRow
-            title="Crew"
-            copy="We’re a bunch of designers, writers, producers and strategists restlessly dissatisfied with how brands, agencies and consultancies act today. If you feel like you’re a misfit, let’s change things together."
-            message="Make yourself at home."
-            buttonText="Chat"
-            mailto={crewEmail}
           />
 
         </Content>

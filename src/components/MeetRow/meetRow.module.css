@@ -1,12 +1,12 @@
 .row {
   padding-top: 12px;
   padding-bottom: 18px;
-  border-top: 1px solid black;
+  border-top: 1px solid #fff;
   will-change: transform, opacity;
 }
 
 .row:last-of-type {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #fff;
 }
 
 .rowTitle {
@@ -18,11 +18,12 @@
 }
 
 .smallText {
-  font-family: 'pitch', 'Courier New', Courier, monospace;
-  letter-spacing: 0.05em;
+  font-family: 'Courier New', Courier, monospace;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
   font-size: 15px;
   line-height: 1.6;
+  font-weight: 600;
 }
 
 .flex {
@@ -79,7 +80,7 @@
   .row {
     padding-top: 30px;
     padding-bottom: 35px;
-    border-top: 1px solid black;
+    border-top: 1px solid #fff;
   }
 
   .rowTitle {

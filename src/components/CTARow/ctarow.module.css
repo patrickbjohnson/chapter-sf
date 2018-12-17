@@ -34,7 +34,7 @@
   color: #FF6D2C;
 }
 
-@media (min-widthL 768px) {
+@media (min-width: 768px) {
     .section {
         padding-top: 55px;
         padding-bottom: 55px;

@@ -15,14 +15,18 @@ const JoinUsRow = props => {
       <h1 className={styles.title}>{title}</h1>
 
       <div className={styles.flex}>
-        <div className={styles.content}>
-          <p className={styles.copy}>{copy}</p>
-          {message && <p className={styles.message}>{message}</p>}
+        <div >
+          <div className={styles.content}>
+            <p className={styles.copy}>{copy}</p>
+            {message && <p className={styles.message}>{message}</p>}
+          </div>
         </div>
+
+        <a className={styles.button} href={createMailLink(mailto)}>
+          {buttonText}
+        </a>
       </div>
-      <a className={styles.button} href={createMailLink(mailto)}>
-        {buttonText}
-      </a>
+
     </div>
   )
 }
