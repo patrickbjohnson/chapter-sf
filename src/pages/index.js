@@ -26,6 +26,7 @@ class IndexPage extends Component {
     this.state = { hasRun: true, navOffset: null, mq: null, mqMatches: null }
     this.hero = null
     this.heroDims = null
+    this.newKind = null
     this.menu = null
     this.offset = null
     this.scrollContainer = null
@@ -35,8 +36,10 @@ class IndexPage extends Component {
     const { scrollbar } = this.scrollContainer
 
     this.mq = window.matchMedia('(min-width: 1024px)')
-    this.hero = document.querySelector('[data-hero')
+    this.hero = document.querySelector('[data-hero]')
     this.heroDims = this.hero.getBoundingClientRect()
+
+    this.newKind = document.querySelector('[data-newkind]')
     this.menu = document.querySelector('[data-nav]')
 
     this.footer = document.querySelector('[data-newsletter]')
@@ -129,13 +132,27 @@ class IndexPage extends Component {
       <Layout>
         <div className={styles.container}>
           <Scrollbar ref={c => (this.scrollContainer = c)}>
-            <Hero />
+            <Hero
+              clickHandler={(e, id) => {
+                e.preventDefault()
+                const scrollbar = this.scrollContainer.scrollbar
+                console.log(this.hero.getBoundingClientRect().height)
+
+                scrollbar.scrollIntoView(document.querySelector(id), {
+                  alignToTop: true,
+                  offsetTop: 70,
+                });
+
+                console.log(scrollbar)
+              }}
+            />
             <Menu offset={this.offset} scrollBar={this.scrollContainer}
               clickHandler={(e, id) => {
                 e.preventDefault()
                 const scrollbar = this.scrollContainer.scrollbar
                 scrollbar.scrollIntoView(document.querySelector(id), {
-                  offsetTop: -scrollbar.containerEl.scrollTop,
+                  alignToTop: true,
+                  offsetTop: 70,
                 });
               }}
             />

@@ -11,7 +11,7 @@ class Partner extends Component {
 
   render() {
     return (
-      <section id="new-kind" className={styles.section} data-section>
+      <section id="new-kind" className={styles.section} data-newkind>
           <Content>
             <p
               className={`${content.copy} ${content.white} ${content.center} ${content.ttu} ${content.smallCopy}`}

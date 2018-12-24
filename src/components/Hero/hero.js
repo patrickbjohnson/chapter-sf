@@ -39,9 +39,10 @@ const slideSettings = {
   slidesToScroll: 1,
 }
 
-const Hero = () => {
+const Hero = (props) => {
+
   return (
-    <section className={styles.section} data-hero>
+    <section className={styles.section} data-hero >
       <div className={styles.spacer} />
       <>
         <h1 className={styles.title}
@@ -56,9 +57,12 @@ const Hero = () => {
             />
           </svg>
         </h1>
-        <Link to="#partner">
-          <div className={styles.downArrow} />
-        </Link>
+
+        <div className={styles.downArrow} onClick={(e) => {
+          e.preventDefault();
+          props.clickHandler(e, '#new-kind')
+          console.log(e.target, 'clicked section')
+        }}/>
       </>
 
       <Slider {...slideSettings}>
