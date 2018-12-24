@@ -10,6 +10,7 @@ import Clients from '../components/Clients'
 import Projects from '../components/Projects'
 import CTARow from '../components/CTARow'
 import Tumblr from '../components/Tumblr'
+import NewKind from '../components/NewKind'
 
 import Meet from '../components/Meet'
 import Us from '../components/Us'
@@ -138,6 +139,7 @@ class IndexPage extends Component {
                 });
               }}
             />
+            <NewKind />
             <Partner />
             <Clients />
             <Projects />
