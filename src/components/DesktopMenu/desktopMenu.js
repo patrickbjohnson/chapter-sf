@@ -38,14 +38,11 @@ class DesktopMenu extends Component {
     }
   }
 
+
   componentDidMount() {
     this.setState()
     this.initObserver()
     this.lockPageWhenMobileMenuOpen()
-
-    window.addEventListener('scroll', () => {
-      console.log('scrolled')
-    })
   }
 
   initObserver = () => {
@@ -106,7 +103,7 @@ class DesktopMenu extends Component {
 
   logoClasses = () => {
 
-    return this.state.showLogo
+    return this.props.pastHero
       ? `${styles.isVisible} ${styles.logo}`
       : styles.logo
   }
@@ -118,6 +115,7 @@ class DesktopMenu extends Component {
   }
 
   render() {
+    console.log(this.props.pastHero)
     return (
       <div className={this.menuClasses()} data-nav>
         <div

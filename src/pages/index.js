@@ -23,13 +23,17 @@ class IndexPage extends Component {
   constructor() {
     super()
     this.mq = null
-    this.state = { hasRun: true, navOffset: null, mq: null, mqMatches: null }
     this.hero = null
     this.heroDims = null
     this.newKind = null
     this.menu = null
     this.offset = null
     this.scrollContainer = null
+    this.pastHero = false
+
+    this.state = {
+      pastHero: false
+    }
   }
 
   componentDidMount() {
@@ -66,6 +70,16 @@ class IndexPage extends Component {
         this.footer.style.visibility = 'hidden'
       } else {
         this.footer.style.visibility = 'visible'
+      }
+
+      if (this.offset.y > this.heroDims.height) {
+        this.pastHero = true
+
+        this.setState({pastHero: true})
+      } else {
+        this.pastHero = false
+        this.setState({pastHero: false})
+        console.log('not past!')
       }
 
       if (this.mq.matches) {
@@ -122,8 +136,10 @@ class IndexPage extends Component {
   menuScrollOffsets() {
     if (this.offset.y > this.heroDims.height) {
       this.menu.style.top = `${this.offset.y}px`
+      this.pastHero = true
     } else {
       this.menu.style.top = `${this.heroDims.height}px`
+      this.pastHero = false
     }
   }
 
@@ -135,22 +151,17 @@ class IndexPage extends Component {
             <Hero
               clickHandler={(e, id) => {
                 e.preventDefault()
-                const scrollbar = this.scrollContainer.scrollbar
-                console.log(this.hero.getBoundingClientRect().height)
-
-                scrollbar.scrollIntoView(document.querySelector(id), {
+                this.scrollContainer.scrollbar.scrollIntoView(document.querySelector(id), {
                   alignToTop: true,
                   offsetTop: 70,
                 });
-
-                console.log(scrollbar)
               }}
             />
-            <Menu offset={this.offset} scrollBar={this.scrollContainer}
+            <Menu
+              pastHero={this.state.pastHero}
               clickHandler={(e, id) => {
                 e.preventDefault()
-                const scrollbar = this.scrollContainer.scrollbar
-                scrollbar.scrollIntoView(document.querySelector(id), {
+                this.scrollContainer.scrollbar.scrollIntoView(document.querySelector(id), {
                   alignToTop: true,
                   offsetTop: 70,
                 });

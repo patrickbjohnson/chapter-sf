@@ -61,13 +61,14 @@
   position: absolute;
   left: 0;
   right: 0;
+  opacity: 0;
   top: 6px;
   margin-left: auto;
   margin-right: auto;
-  opacity: 1;
   width: 95px;
   height: 15px;
-  transform: scale(1) translateY(-50%);
+  transform: scale(.5) translateY(-50%);
+  transform-origin: center;
   z-index: 100;
   top: 50%;
   transition: transform 0.25s ease-out, opacity 0.25s ease-out;
@@ -79,7 +80,7 @@
 
 .isVisible {
   opacity: 1;
-  transform: scale(1);
+  transform: scale(1) translateY(-50%);
 }
 
 .mobileMenu {
@@ -185,6 +186,12 @@
     opacity: 0;
     transition: transform 0.25s ease-out, opacity 0.25s ease-out;
   }
+
+  .isVisible {
+    opacity: 1;
+    transform: scale(1) translateY(-50%);
+  }
+
 
   .group {
     display: block;
