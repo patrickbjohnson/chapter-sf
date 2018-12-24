@@ -1,6 +1,5 @@
 .row {
-  padding-top: 12px;
-  padding-bottom: 18px;
+  padding: 40px 0;
   border-top: 1px solid #fff;
   will-change: transform, opacity;
   color: #fff;

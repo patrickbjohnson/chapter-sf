@@ -1,6 +1,6 @@
 .section {
   position: relative;
-  padding: 32px;
+  padding: 40px 32px;
   background-color: #1a1a1a;
   backface-visibility: hidden;
   z-index: 10;
