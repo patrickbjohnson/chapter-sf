@@ -51,8 +51,6 @@ class IndexPage extends Component {
 
     this.initialNavSetup(this.mq.matches)
 
-    this.footer.style.visibility = 'hidden'
-
     scrollbar.addListener(({ offset }) => {
       this.offset = offset
 
