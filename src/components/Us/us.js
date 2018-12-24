@@ -29,7 +29,7 @@ const Us = () => {
           data-sal-duration="600"
           data-sal-easing="ease-out-bounce"
           >
-          <p className={`${content.copy} ${styles.copy}`}>
+          <p className={`${styles.copy} ${content.copySmall}`}>
             This is Chapter. We do things differently here. Founded by{' '}
             <a
               href="https://www.linkedin.com/in/neilrobinson/"
@@ -51,7 +51,7 @@ const Us = () => {
             and the shed—meet us and figure out which of us was an English
             teacher, who was the barmaid and who is the woodworker.
           </p>
-          <p className={`${content.copy} ${styles.copy}`}>
+          <p className={`${styles.copy} ${content.copySmall}`}>
             We’re a new type of creative studio, built from the ground up to
             better deliver the commercial creativity pioneering companies need
             today. Creativity that is defined by the impact it has, not the

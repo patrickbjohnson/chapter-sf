@@ -34,12 +34,19 @@
     margin-bottom: 0;
 }
 
+.copySmall {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 200;
+}
+
 @media (min-width: 1024px) {
 
     .title {
         margin-bottom: 70px;
     }
 
+    .copySmall,
     .copy {
         font-size: 40px;
         line-height: 50px;
