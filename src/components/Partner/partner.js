@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 
+import CTARow from '../CTARow'
 import Content from '../Content'
 import content from '../Content/content.module.css'
 import styles from './partner.module.css'
@@ -36,6 +37,8 @@ class Partner extends Component {
             know they need to change what they do to meet the unreasonable
             expectations people have today.
           </p>
+
+          <CTARow />
         </Content>
       </section>
     )

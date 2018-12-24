@@ -5,7 +5,8 @@ import styles from './ctarow.module.css'
 const CTARow = () => {
     return (
         <section className={styles.section}>
-            <a className={styles.button} href="#">What Keeps You Up At Night?</a>
+            <h4 className={styles.title}>What keeps you up at night?</h4>
+            <a className={styles.button} href="#">Work with us</a>
         </section>
     )
 }

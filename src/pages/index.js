@@ -143,7 +143,6 @@ class IndexPage extends Component {
             <Partner />
             <Clients />
             <Projects />
-            <CTARow />
             <Tumblr />
             <Meet />
             <Us />
