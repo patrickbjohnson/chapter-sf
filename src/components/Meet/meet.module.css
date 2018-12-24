@@ -16,6 +16,7 @@
 }
 
 
+
 @media (min-width: 768px) {
   .section {
     min-height: 100vh;
@@ -27,12 +28,6 @@
   .title {
     margin-bottom: 80px;
   }
-
-  /* .copy {
-    font-size: 50px;
-    margin-bottom: 90px;
-  } */
-
 }
 
 @media (min-width: 1024px) {

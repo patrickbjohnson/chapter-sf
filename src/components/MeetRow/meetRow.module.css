@@ -3,6 +3,7 @@
   padding-bottom: 18px;
   border-top: 1px solid #fff;
   will-change: transform, opacity;
+  color: #fff;
 }
 
 .row:last-of-type {
@@ -15,6 +16,7 @@
   font-size: 50px;
   font-weight: 400;
   line-height: 1;
+  color: #fff;
 }
 
 .smallText {
@@ -24,6 +26,7 @@
   font-size: 15px;
   line-height: 1.6;
   font-weight: 200;
+  color: #fff;
 }
 
 .flex {
@@ -43,6 +46,7 @@
   margin-bottom: 0;
   font-size: 15px;
   line-height: 1.6;
+  font-weight: 200;
 }
 
 .button {
@@ -66,8 +70,8 @@
 
 .button:hover,
 .button:focus {
-  background-color: #000;
-  color: #ffd864;
+  background-color: #FF6D2C;
+  color: #fff;
 }
 
 .flex {

@@ -14,6 +14,7 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    background-color: black;
 }
 
 .caption {
@@ -32,9 +33,6 @@
     margin-bottom: 0;
 }
 
-.imageWrap:last-of-type {
-    background-color: green;
-}
 
 @media (min-width: 768px) {
     .caption {

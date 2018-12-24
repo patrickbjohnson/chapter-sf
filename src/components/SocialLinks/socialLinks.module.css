@@ -27,6 +27,11 @@
 .link {
   margin-left: 7px;
   margin-right: 7px;
+  transition: color .25s ease-out;
+}
+
+.link:hover {
+  color: #FF6D2C;
 }
 
 .address {
