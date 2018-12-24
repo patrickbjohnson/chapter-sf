@@ -44,15 +44,9 @@ class DesktopMenu extends Component {
     this.lockPageWhenMobileMenuOpen()
 
     window.addEventListener('scroll', () => {
-      console.log(this.props)
+      console.log('scrolled')
     })
   }
-
-  componentDidUpdate(prevProps, prevState, snapshot) {
-    console.log(prevProps, prevState)
-    console.log(snapshot)
-  }
-
 
   initObserver = () => {
     const observer = new IntersectionObserver(this.navHandler, {

@@ -13,7 +13,7 @@ const projects = [
 
 const Projects = () => {
   return (
-    <section className={styles.section}>
+    <section className={styles.section} id="project-list">
       <h2 className={styles.title}>Some things we’ve made</h2>
       {projects.length > 0 && (
         <div className={styles.content}>

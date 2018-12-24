@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import axios from 'axios'
 
 import Content from '../Content'
 import content from '../Content/content.module.css'
@@ -18,7 +17,7 @@ class Partner extends Component {
         >
           <Content>
             <p
-              className={`${content.copy} ${content.center} ${content.ttu} ${content.smallCopy}`}
+              className={`${content.copy} ${content.white} ${content.center} ${content.ttu} ${content.smallCopy}`}
               data-sal="fade"
               data-sal-delay="100"
               data-sal-duration="600"
@@ -40,7 +39,7 @@ class Partner extends Component {
             </h2>
 
             <p
-              className={content.copy}
+              className={`${content.copy} ${content.white}`}
               data-sal="fade"
               data-sal-delay="100"
               data-sal-duration="600"
