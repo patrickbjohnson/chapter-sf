@@ -61,24 +61,19 @@ class Client extends Component {
             <div
                 ref={this.clientRef}
                 className={styles.client}
-                onClick={() => {
-                    if (mq && this.state.hasInfo) return false
+                // onClick={() => {
+                //     if (mq && this.state.hasInfo) return false
 
-                    this.updatePosition();
-                    eventHandler()
-                }}
+                //     this.updatePosition();
+                //     eventHandler()
+                // }}
 
-                onMouseEnter={() => {
-                    if (!mq && this.state.hasInfo) return false
-                    eventHandler()
-                }}
+                // onMouseEnter={() => {
+                //     if (!mq && this.state.hasInfo) return false
+                //     eventHandler()
+                // }}
             >
                 {name}
-                {info &&
-                    <span>*
-                        <div ref={this.panelRef} className={this.panelClasses()}>{info}</div>
-                    </span>
-                }
             </div>
         )
     }

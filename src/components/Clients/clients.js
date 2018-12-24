@@ -134,9 +134,9 @@ class Clients extends Component {
                     ref={client.name}
                     isActive={this.state.activeClient === client.name}
                     hideEvent={this.hideInfoDisplay}
-                    eventHandler={() => {
-                      this.toggleInfoDisplay(client.name)
-                    }}
+                    // eventHandler={() => {
+                    //   this.toggleInfoDisplay(client.name)
+                    // }}
                     mq={this.state.mq}
                     {...client}
                   />
