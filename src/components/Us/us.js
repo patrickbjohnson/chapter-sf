@@ -4,12 +4,14 @@ import Content from '../Content'
 import content from '../Content/content.module.css'
 import styles from './us.module.css'
 
+import UsImage from '../UsImage'
+
 const Us = () => {
   return (
     <section id="us" className={styles.section} data-section>
-      <div className={styles.hero}>
 
-      </div>
+      <UsImage classes={styles.hero} />
+
       <Content>
         <h2
           className={styles.title}

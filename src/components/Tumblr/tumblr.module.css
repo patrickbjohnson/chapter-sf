@@ -3,7 +3,6 @@
     position: relative;
     z-index: 10;
     backface-visibility: hidden;
-    max-height: 700px;
     overflow: hidden;
 }
 
@@ -11,10 +10,6 @@
     position: relative;
     height: 50vw;
     flex-basis: 50%;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-color: black;
 }
 
 .caption {
@@ -38,11 +33,15 @@
     .caption {
         font-size: 14px;
     }
+
+    .imageWrap {
+        height: 100vh;
+        width: 50vw;
+    }
 }
 
 @media (min-width: 1024px) {
     .imageWrap {
-        height: 700px;
         padding-bottom: 0;
     }
 }

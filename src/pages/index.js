@@ -10,7 +10,6 @@ import Clients from '../components/Clients'
 import Projects from '../components/Projects'
 import Tumblr from '../components/Tumblr'
 import NewKind from '../components/NewKind'
-
 import Meet from '../components/Meet'
 import Us from '../components/Us'
 import SocialLinks from '../components/SocialLinks'
@@ -78,7 +77,6 @@ class IndexPage extends Component {
       } else {
         this.pastHero = false
         this.setState({pastHero: false})
-        console.log('not past!')
       }
 
       if (this.mq.matches) {
