@@ -8,7 +8,6 @@ import Menu from '../components/DesktopMenu'
 import Partner from '../components/Partner'
 import Clients from '../components/Clients'
 import Projects from '../components/Projects'
-import CTARow from '../components/CTARow'
 import Tumblr from '../components/Tumblr'
 import NewKind from '../components/NewKind'
 
