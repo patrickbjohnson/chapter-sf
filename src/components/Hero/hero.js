@@ -43,7 +43,6 @@ const Hero = (props) => {
   return (
     <section className={styles.section} data-hero >
       <div className={styles.spacer} />
-      <>
         <h1 className={styles.title}
             data-sal="fade"
             data-sal-delay="200"
@@ -56,13 +55,6 @@ const Hero = (props) => {
             />
           </svg>
         </h1>
-
-        <div className={styles.downArrow} onClick={(e) => {
-          e.preventDefault();
-          props.clickHandler(e, '#new-kind')
-          console.log(e.target, 'clicked section')
-        }}/>
-      </>
 
       <Slider {...slideSettings}>
         {slides.map((slide, i) => {
@@ -91,6 +83,12 @@ const Hero = (props) => {
           )
         })}
       </Slider>
+
+      <div className={styles.downArrow} onClick={(e) => {
+          e.preventDefault();
+          props.clickHandler(e, '#new-kind')
+          console.log(e.target, 'clicked section')
+        }}/>
     </section>
   )
 }
