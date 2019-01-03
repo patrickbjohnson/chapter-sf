@@ -38,7 +38,7 @@ const Meet = () => {
                         listItems={['You have work.', 'We have thoughts.', 'Every Tuesday.', 'On Google Hangouts.']}
                         clickHandler={() => {
                             if (!window.Calendly) return false;
-                            window.Calendly.showPopupWidget('https://calendly.com/progresslabs');
+                            window.Calendly.showPopupWidget('https://calendly.com/critroulette/60min');
                             return false;
                         }}
                     />
