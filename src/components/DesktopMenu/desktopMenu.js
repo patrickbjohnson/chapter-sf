@@ -1,6 +1,10 @@
 import React, { Component } from 'react'
-import 'intersection-observer'
+
 import { Link } from 'gatsby'
+
+if (typeof window !== 'undefined') {
+  import 'intersection-observer'
+}
 
 import MobileMenu from '../MobileMenu'
 
