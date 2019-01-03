@@ -6,6 +6,12 @@
   z-index: 10;
   color: #fff;
   margin-top: 70px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+
+  align-items: center;
+  flex-direction: column;
 }
 
 @media (min-width: 1024px) {
