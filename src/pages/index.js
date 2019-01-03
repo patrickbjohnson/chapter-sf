@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Scrollbar from 'react-smooth-scrollbar'
 import sal from 'sal.js'
+import throttle from 'lodash.throttle'
 
 import Layout from '../components/layout'
 import Hero from '../components/Hero'
@@ -114,6 +115,10 @@ class IndexPage extends Component {
       }
     })
 
+    window.addEventListener('resize', throttle(() => {
+      this.resizeOffsets()
+    }, 200).bind(this))
+
     sal({
       threshold: 0.4,
       once: true,
@@ -130,12 +135,25 @@ class IndexPage extends Component {
     }
   }
 
+  resizeOffsets() {
+    const heroDims = this.hero.getBoundingClientRect()
+
+    if (this.offset) {
+      this.menuScrollOffsets();
+    } else {
+      this.menu.style.top = this.mq.matches ? `${heroDims.height}px` : 0
+      this.pastHero = false
+    }
+  }
+
   menuScrollOffsets() {
-    if (this.offset.y > this.heroDims.height) {
+    const heroDims = this.hero.getBoundingClientRect()
+
+    if (this.offset.y > heroDims.height) {
       this.menu.style.top = `${this.offset.y}px`
       this.pastHero = true
     } else {
-      this.menu.style.top = `${this.heroDims.height}px`
+      this.menu.style.top = `${heroDims.height}px`
       this.pastHero = false
     }
   }
