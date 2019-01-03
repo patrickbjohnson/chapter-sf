@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import from intersection-observer
+import 'intersection-observer'
 import { Link } from 'gatsby'
 
 import MobileMenu from '../MobileMenu'
