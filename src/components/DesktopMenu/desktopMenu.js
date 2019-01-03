@@ -1,10 +1,6 @@
 import React, { Component } from 'react'
 import { Link } from 'gatsby'
 
-import throttle from 'lodash.throttle'
-import scrollIntoView from 'scroll-into-view-if-needed'
-import smoothScrollIntoView from 'smooth-scroll-into-view-if-needed'
-
 import MobileMenu from '../MobileMenu'
 
 import styles from './desktopMenu.module.css'
