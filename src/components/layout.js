@@ -36,6 +36,11 @@ const Layout = ({ children }) => (
               rel: 'stylesheet',
               href: 'https://assets.calendly.com/assets/external/widget.css',
             },
+            {
+              rel: 'stylesheet',
+              href:
+                'https://cdnjs.cloudflare.com/ajax/libs/flickity/2.1.2/flickity.min.css',
+            },
           ]}
           script={[
             {
