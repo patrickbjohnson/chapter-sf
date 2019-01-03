@@ -70,7 +70,7 @@ class IndexPage extends Component {
         this.footer.style.visibility = 'visible'
       }
 
-      if (this.offset.y > this.heroDims.height) {
+      if (this.offset.y >= this.heroDims.height) {
         this.pastHero = true
 
         this.setState({pastHero: true})
