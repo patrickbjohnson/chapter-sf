@@ -14,7 +14,8 @@ class Clients extends Component {
       clients: [
         {
           name: 'Google',
-          info: false,
+          info:
+            'How might we make a more engaging and helpful experience for the financially underserved?',
         },
         {
           name: 'Airbnb',
@@ -23,15 +24,18 @@ class Clients extends Component {
         },
         {
           name: 'Sonos',
-          info: false,
+          info:
+            'How might we make a more engaging and helpful experience for the financially underserved?',
         },
         {
           name: 'Dropbox',
-          info: false,
+          info:
+            'How might we make a more engaging and helpful experience for the financially underserved?',
         },
         {
           name: 'Oculus',
-          info: false,
+          info:
+            'How might we make a more engaging and helpful experience for the financially underserved?',
         },
         {
           name: 'Uber',
@@ -40,7 +44,8 @@ class Clients extends Component {
         },
         {
           name: 'Domo',
-          info: false,
+          info:
+            'How might we make a more engaging and helpful experience for the financially underserved?',
         },
         {
           name: 'Kodak',
@@ -49,7 +54,8 @@ class Clients extends Component {
         },
         {
           name: 'Facebook',
-          info: false,
+          info:
+            'How might we make a more engaging and helpful experience for the financially underserved?',
         },
         {
           name: 'PayPal',
@@ -58,11 +64,13 @@ class Clients extends Component {
         },
         {
           name: 'Target',
-          info: false,
+          info:
+            'How might we make a more engaging and helpful experience for the financially underserved?',
         },
         {
           name: 'Pillpack',
-          info: false,
+          info:
+            'How might we make a more engaging and helpful experience for the financially underserved?',
         },
       ],
     }
@@ -134,9 +142,9 @@ class Clients extends Component {
                     ref={client.name}
                     isActive={this.state.activeClient === client.name}
                     hideEvent={this.hideInfoDisplay}
-                    // eventHandler={() => {
-                    //   this.toggleInfoDisplay(client.name)
-                    // }}
+                    eventHandler={() => {
+                      this.toggleInfoDisplay(client.name)
+                    }}
                     mq={this.state.mq}
                     {...client}
                   />

@@ -1,15 +1,11 @@
+import React, { Component } from 'react'
+import { Link } from 'gatsby'
+import MobileMenu from '../MobileMenu'
+import styles from './desktopMenu.module.css'
+
 if (typeof window !== `undefined`) {
   require('intersection-observer')
 }
-
-import React, { Component } from 'react'
-import { Link } from 'gatsby'
-
-
-
-import MobileMenu from '../MobileMenu'
-
-import styles from './desktopMenu.module.css'
 
 class DesktopMenu extends Component {
   constructor(props) {
@@ -39,7 +35,6 @@ class DesktopMenu extends Component {
       ],
     }
   }
-
 
   componentDidMount() {
     this.setState()
@@ -104,7 +99,6 @@ class DesktopMenu extends Component {
   }
 
   logoClasses = () => {
-
     return this.props.pastHero
       ? `${styles.isVisible} ${styles.logo}`
       : styles.logo
@@ -117,7 +111,6 @@ class DesktopMenu extends Component {
   }
 
   render() {
-
     return (
       <div className={this.menuClasses()} data-nav>
         <div
@@ -151,7 +144,7 @@ class DesktopMenu extends Component {
             <Link
               to="#partner"
               className={this.navClasses('partner')}
-              onClick={(e) => {
+              onClick={e => {
                 this.props.clickHandler(e, '#partner')
               }}
             >
@@ -160,7 +153,7 @@ class DesktopMenu extends Component {
             <Link
               to="#join"
               className={this.navClasses('join')}
-              onClick={(e) => {
+              onClick={e => {
                 this.props.clickHandler(e, '#join')
               }}
             >
@@ -172,7 +165,7 @@ class DesktopMenu extends Component {
             <Link
               to="#meet"
               className={this.navClasses('meet')}
-              onClick={(e) => {
+              onClick={e => {
                 this.props.clickHandler(e, '#meet')
               }}
             >
@@ -181,7 +174,7 @@ class DesktopMenu extends Component {
             <Link
               to="#us"
               className={this.navClasses('us')}
-              onClick={(e) => {
+              onClick={e => {
                 this.props.clickHandler(e, '#us')
               }}
             >
