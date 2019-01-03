@@ -115,7 +115,7 @@ class DesktopMenu extends Component {
   }
 
   render() {
-    console.log(this.props.pastHero)
+
     return (
       <div className={this.menuClasses()} data-nav>
         <div

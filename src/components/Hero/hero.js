@@ -87,7 +87,6 @@ const Hero = (props) => {
       <div className={styles.downArrow} onClick={(e) => {
           e.preventDefault();
           props.clickHandler(e, '#new-kind')
-          console.log(e.target, 'clicked section')
         }}/>
     </section>
   )
