@@ -18,28 +18,47 @@ class Projects extends Component {
     super()
     this.slider = React.createRef()
     this.sliderWrap = React.createRef()
+    this.mq = null;
+    this.matches = null;
     this.state = {
       flky: null,
     }
   }
 
   componentDidMount() {
+    this.mq = window.matchMedia('(min-width: 768px)');
+    this.matches = this.mq.matches;
+
+    this.mq.addListener(data => {
+      this.matches = data.matches
+      this.fkly.resize();
+    });
+
+    console.log(this.matches);
+
     const Flickity = require('flickity')
 
     const flky = new Flickity(this.slider.current, {
       prevNextButtons: false,
-      autoPlay: 2000,
-      wrapAround: true,
       pageDots: false,
       selectedAttraction: 0.01,
       friction: 0.2,
-      cellAlign: 'left',
-      percentPosition: false,
+      percentPosition: true,
+      autoPlay: this.matches ? 2000 : false,
+      wrapAround: this.matches ? true : false,
+      cellAlign: this.matches ? 'left' : 'center',
+      contain: this.matches ? true : false,
     })
+
+    // flky.resize();
 
     this.setState({
       flky: flky,
     })
+
+
+
+    this.slider.current.querySelector('.flickity-viewport').style.overflow = 'visible';
 
     this.slider.current.addEventListener('mouseout', e => {
       this.mouseHandler()

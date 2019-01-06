@@ -40,7 +40,7 @@
   font-family: 'austin-lite';
   font-size: 50px;
   line-height: 0.9;
-  margin-right: 5px;
+  padding-right: 8px;
   margin-bottom: 0;
   color: #fff;
   float: left;
@@ -48,6 +48,14 @@
 
 .item:after {
   content: ', ';
+}
+
+.item:last-of-type:after {
+  content: '';
+}
+
+.flickity-viewport {
+  overflow: visible;
 }
 
 @media (min-width: 768px) {
@@ -64,6 +72,10 @@
   .item {
     font-size: 70px;
     line-height: 1;
+  }
+
+  .item:last-of-type:after {
+    content: ', ';
   }
 }
 
@@ -83,6 +95,6 @@
 
   .item {
     font-size: 94px;
-    margin-right: 25px;
+    padding-right: 12px;
   }
 }
