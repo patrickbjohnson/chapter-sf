@@ -24,10 +24,9 @@
 }
 
 .copy {
-    font-size: 20px;
-    line-height: 24px;
-    font-family: 'Suisse', 'Helvetica', 'Arial', sans-serif;
-    font-weight: 200;
+    font-family: 'austin-lite', serif;
+    font-size: 30px;
+    line-height: 35px;
 }
 
 .copy:last-of-type:not(:first-of-type) {
@@ -38,6 +37,13 @@
     font-size: 16px;
     line-height: 24px;
     font-weight: 200;
+}
+
+@media (min-width: 768px) {
+    .copy {
+        font-size: 40px;
+        line-height: 45px;
+    }
 }
 
 @media (min-width: 1024px) {

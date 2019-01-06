@@ -7,25 +7,55 @@
   color: #fff;
 }
 
+.copy {
+  font-family: 'austin-lite', serif;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-align: center;
+  font-size: 15px;
+  line-height: 2;
+  margin-bottom: 50px;
+}
+
+.title {
+  margin-bottom: 50px;
+}
+
+
+@media (min-width: 768px) {
+  .section {
+    padding: 90px;
+  }
+
+  .title {
+    margin-bottom: 100px;
+  }
+
+  .copy {
+    font-size: 20px;
+    line-height: 35px;
+    margin-bottom: 50px;
+  }
+
+  .button {
+    font-size: 14px;
+  }
+}
+
 @media (min-width: 1024px) {
   .section {
     padding: 200px 20px 100px;
     margin-top: 0;
   }
 
-  .copy,
-  .copy span {
-    font-size: 40px;
-    line-height: 1.125;
+  .title {
+    margin-bottom: 120px;
   }
 
   .copy {
-    font-weight: 200;
-    margin-bottom: 150px;
-  }
-
-  .form {
-    max-width: 580px;
+    font-size: 20px;
+    line-height: 35px;
+    margin-bottom: 50px;
   }
 
   .button {
@@ -36,9 +66,5 @@
 @media (min-width: 1200px) {
   .section {
     padding: 200px 40px 150px;
-  }
-
-  .copy {
-    margin-bottom: 135px;
   }
 }

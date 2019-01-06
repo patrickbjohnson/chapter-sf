@@ -196,6 +196,10 @@
   .group {
     display: block;
   }
+
+  .link {
+    font-size: 15px;
+  }
 }
 
 @media (min-width: 1200px) {

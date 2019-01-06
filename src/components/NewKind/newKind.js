@@ -11,7 +11,7 @@ const Partner = () => {
     <section id="new-kind" className={styles.section} data-newkind>
       <Content>
         <p
-          className={`${content.copy} ${content.white} ${content.center} ${content.ttu} ${content.smallCopy}`}
+          className={`${styles.content}`}
           data-sal="fade"
           data-sal-delay="100"
           data-sal-duration="600"

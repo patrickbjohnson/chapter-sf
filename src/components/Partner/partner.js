@@ -11,7 +11,7 @@ const Partner = () => {
     <section id="partner" className={styles.section} data-section>
       <Content>
         <h2
-          className={`${content.title} ${content.whiteFill}`}
+          className={`${content.title} ${content.whiteFill} ${styles.title}`}
           data-sal="fade"
           data-sal-delay="100"
           data-sal-duration="600"
@@ -23,7 +23,7 @@ const Partner = () => {
         </h2>
 
         <p
-          className={`${content.copy} ${content.white}`}
+          className={`${content.copy} ${content.white} ${styles.copy}`}
           data-sal="fade"
           data-sal-delay="100"
           data-sal-duration="600"
