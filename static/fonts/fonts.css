@@ -46,3 +46,14 @@
     font-style: normal;
 }
 
+
+@font-face {
+    font-family: 'Suisse';
+    src: url('suisse.eot');
+    src: url('suisse.woff2') format('woff2'),
+         url('suisse.ttf') format('truetype'),
+         url('suisse.svg#suisse') format('svg'),
+         url('suisse.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+  }

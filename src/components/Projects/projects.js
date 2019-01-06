@@ -6,9 +6,11 @@ const projects = [
   'Experiences',
   'Products',
   'Systems',
-  'Tortor Bibendum',
-  'Bibendum',
-  'Risus Mattis Dolor',
+  'Campaigns',
+  'Environments',
+  'Prototypes',
+  'Events',
+  'Documentaries'
 ]
 
 class Projects extends Component {

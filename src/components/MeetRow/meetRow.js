@@ -16,7 +16,6 @@ const MeetRow = props => {
 
       <div className={styles.innerContent}>
         <div className={styles.flex}>
-          <p className={styles.smallText}>{copy}</p>
           {listItems && (
             <ul className={styles.list}>
               {listItems.map((item, i) => (
@@ -24,6 +23,7 @@ const MeetRow = props => {
               ))}
             </ul>
           )}
+          <p className={styles.smallText}>{copy}</p>
         </div>
         <button className={styles.button} onClick={props.clickHandler}>
           Book

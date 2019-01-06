@@ -44,7 +44,7 @@ const Meet = () => {
                     />
                     <MeetRow
                         title="The Mission"
-                        copy="Your strategic mind x Our crew "
+                        copy="Book a pro-bono strategic work session."
                         listItems={['Three hours.', 'A few pizzas.', 'Solving a problem for good in the world.', 'Quarterly at Chapter.']}
                     />
 
