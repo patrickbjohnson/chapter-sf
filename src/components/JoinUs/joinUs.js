@@ -61,7 +61,7 @@ class JoinUs extends Component {
           </h2>
 
           <p className={content.copy}>
-            We're a crew of optimistic misfits with strong opinions, softly held. Nice to meet you.
+            We're a crew of optimistic misfits with strong opinions, softly held looking to meet folk similar enough to get along but different enough to be dangerous
           </p>
 
           <JoinUsRow

@@ -23,7 +23,7 @@ const MeetRow = props => {
               ))}
             </ul>
           )}
-          <p className={styles.smallText}>{copy}</p>
+          <p className={styles.smallText}  dangerouslySetInnerHTML={{ __html: copy }}></p>
         </div>
         <button className={styles.button} onClick={props.clickHandler}>
           Book

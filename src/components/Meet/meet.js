@@ -34,7 +34,7 @@ const Meet = () => {
 
                     <MeetRow
                         title="Critroulette"
-                        copy="4 design students x Chapter partners"
+                        copy="Book a portfolio review"
                         listItems={['You have work.', 'We have thoughts.', 'Every Tuesday.', 'On Google Hangouts.']}
                         clickHandler={() => {
                             if (!window.Calendly) return false;
@@ -44,7 +44,7 @@ const Meet = () => {
                     />
                     <MeetRow
                         title="The Mission"
-                        copy="Book a pro-bono strategic work session."
+                        copy="JOIN US TO SOLVE SOMETHING <br> THAT MATTERS TOGETHER"
                         listItems={['Three hours.', 'A few pizzas.', 'Solving a problem for good in the world.', 'Quarterly at Chapter.']}
                     />
 
