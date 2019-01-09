@@ -60,7 +60,7 @@ class JoinUs extends Component {
             </svg>
           </h2>
 
-          <p className={content.copy}>
+          <p className={`${content.center} ${content.ttu} ${content.intro}`}>
             We're a crew of optimistic misfits with strong opinions, softly held looking to meet folk similar enough to get along but different enough to be dangerous
           </p>
 
