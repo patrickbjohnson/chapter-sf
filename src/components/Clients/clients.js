@@ -15,62 +15,51 @@ class Clients extends Component {
         {
           name: 'Google',
           info:
-            'How might we make a more engaging and helpful experience for the financially underserved?',
+            'new ways to go to market',
         },
         {
           name: 'Airbnb',
-          info:
-            'How might we make a more engaging and helpful experience for the financially underserved?',
+          info: 'new product launch',
         },
         {
           name: 'Sonos',
-          info:
-            'How might we make a more engaging and helpful experience for the financially underserved?',
+          info: 'Naming',
         },
         {
           name: 'Dropbox',
-          info:
-            'How might we make a more engaging and helpful experience for the financially underserved?',
+          info: 'Brand and Product Vision',
         },
         {
           name: 'Oculus',
-          info:
-            'How might we make a more engaging and helpful experience for the financially underserved?',
+          info: 'Experience Vision',
         },
         {
           name: 'Uber',
-          info:
-            'Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.',
+          info: 'Communications',
         },
         {
           name: 'Domo',
-          info:
-            'How might we make a more engaging and helpful experience for the financially underserved?',
+          info: 'Brand Story',
         },
         {
           name: 'Kodak',
-          info:
-            'Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.',
+          info: 'End to End Experience',
         },
         {
           name: 'Facebook',
-          info:
-            'How might we make a more engaging and helpful experience for the financially underserved?',
+          info: 'Brand Creation',
         },
         {
           name: 'PayPal',
-          info:
-            'Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.',
+          info: 'Product Vision',
         },
         {
           name: 'Target',
-          info:
-            'How might we make a more engaging and helpful experience for the financially underserved?',
+          info: 'Experience Vision',
         },
         {
           name: 'Pillpack',
-          info:
-            'How might we make a more engaging and helpful experience for the financially underserved?',
+          info: 'Go To Market',
         },
       ],
     }
