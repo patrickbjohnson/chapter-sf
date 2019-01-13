@@ -67,7 +67,7 @@ class JoinUs extends Component {
           <JoinUsRow
             title="Crew"
             copy="We’re a bunch of designers, writers, producers and strategists restlessly dissatisfied with how brands, agencies and consultancies act today. If you feel like you’re a misfit, let’s change things together."
-            message="Join our crew."
+            message="Join our crew"
             buttonText="Join"
             mailto={crewEmail}
           />
@@ -75,7 +75,7 @@ class JoinUs extends Component {
           <JoinUsRow
             title="League"
             copy="Most places just want to buy your time. We want you to join our league of diverse freelance talent from which we custom build teams to match extraordinary people with extraordinary projects."
-            message="Join the league."
+            message="Join the league"
             buttonText="Join"
             mailto={leagueEmail}
           />

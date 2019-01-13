@@ -29,7 +29,7 @@ const Partner = () => {
           data-sal-duration="600"
           data-sal-easing="ease-out-bounce"
         >
-          We work with a select number of pioneering companies who know they need to change what they do to meet the unreasonable expectations people have today.
+          We partner with a select number of changemakers who know they need to change what they do to meet the unreasonable expectations people have today
         </p>
 
         <CTARow />

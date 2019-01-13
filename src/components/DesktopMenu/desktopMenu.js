@@ -30,7 +30,7 @@ class DesktopMenu extends Component {
           id: 'join',
         },
         {
-          id: 'meet',
+          id: 'connect',
         },
       ],
     }
@@ -174,13 +174,13 @@ class DesktopMenu extends Component {
               Join
             </Link>
             <Link
-              to="#meet"
-              className={this.navClasses('meet')}
+              to="#connect"
+              className={this.navClasses('connect')}
               onClick={e => {
-                this.props.clickHandler(e, '#meet')
+                this.props.clickHandler(e, '#connect')
               }}
             >
-              Meet
+              Connect
             </Link>
           </div>
         </nav>
