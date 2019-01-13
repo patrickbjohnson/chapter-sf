@@ -39,6 +39,19 @@
   display: inline-block;
 }
 
+.cta {
+  margin-top: 50px;
+  font-size: 14px;
+  line-height: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
+  text-align: center;
+}
+
+.cta a {
+  color: #000;
+}
+
 @media (min-width: 768px) {
   .section {
     padding: 115px 40px 90px;

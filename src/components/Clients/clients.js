@@ -1,8 +1,16 @@
 import React, { Component } from 'react'
+import createMailLink from '../../utils/createMailLink'
 
 import Client from '../Client'
 
 import styles from './clients.module.css'
+
+const contactEmail = {
+  to: 'info@chapter.com',
+  subject: 'hello',
+  cc: false,
+  body: false,
+}
 
 class Clients extends Component {
   constructor() {
@@ -140,6 +148,8 @@ class Clients extends Component {
               )
             })}
           </ul>
+
+          <p className={styles.cta}>The work we do makes it difficult to share what we're up to publicly. <br />For a private viewing of these projects, please <a href={createMailLink(contactEmail)} target="_blank">contact us</a></p>
         </div>
       </section>
     )
