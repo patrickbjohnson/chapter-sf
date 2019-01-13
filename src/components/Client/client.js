@@ -41,6 +41,7 @@ class Client extends Component {
     const hasRightOverFlow = dims.right >= win - 20
     const hasLeftOverFlow = dims.left <= 20
 
+
     if (hasRightOverFlow) {
       el.style.left = `calc(50% - 15px)`
     }

@@ -29,8 +29,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 200px;
-  display: inline-block;
+  display: table;
   padding: 5px 10px;
   font-family: 'Courier New', Courier, monospace;
   font-size: 15px;
@@ -38,6 +37,7 @@
   font-weight: 200;
   line-height: 1.2;
   text-transform: capitalize;
+  text-align: center;
   background-color: #1a1a1a;
   color: #fff;
   z-index: 1;
@@ -60,7 +60,7 @@
   }
 
   .panel {
-    width: 215px;
+    /* width: 215px; */
     padding: 8px 15px;
     font-size: 12px;
   }
@@ -76,7 +76,7 @@
   .panel {
     font-size: 15px;
     line-height: 0.86;
-    width: 280px;
+    /* width: 280px; */
     padding: 12px 20px;
     line-height: 1.5;
   }
