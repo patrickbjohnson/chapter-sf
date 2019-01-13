@@ -1,0 +1,59 @@
+.bioWrap {
+    position: relative;
+    height: 100%;
+}
+
+.bio {
+    position: relative;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.bioCopy {
+    position: absolute;
+    bottom: 15px;
+    left: 20px;
+    right: 20px;
+    color: #fff;
+}
+
+.name {
+    font-family: 'austin-lite';
+    font-size: 25px;
+    margin-bottom: 0;
+}
+
+.title {
+    display: block;
+    font-size: 10px;
+    font-family: 'venus';
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.desc {
+    font-size: 12px;
+    line-height: 16px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style:  italic;
+    margin-bottom: 0;
+}
+
+.bioLink {
+    display: inline-block;
+    font-family: 'venus';
+    text-transform: uppercase;
+    margin-right: 20px;
+    text-decoration: none;
+    color: #fff;
+    margin-top: 10px;
+}
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 1024px) {
+
+}
