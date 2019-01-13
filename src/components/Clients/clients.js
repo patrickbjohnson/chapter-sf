@@ -14,52 +14,51 @@ class Clients extends Component {
       clients: [
         {
           name: 'Google',
-          info:
-            'new ways to go to market',
+          info: 'go to market',
         },
         {
           name: 'Airbnb',
-          info: 'new product launch',
+          info: 'brand design',
         },
         {
           name: 'Sonos',
-          info: 'Naming',
+          info: 'naming',
         },
         {
           name: 'Dropbox',
-          info: 'Brand and Product Vision',
+          info: 'product strategy',
         },
         {
           name: 'Oculus',
-          info: 'Experience Vision',
+          info: 'experience design',
         },
         {
           name: 'Uber',
-          info: 'Communications',
+          info: 'communications design',
         },
         {
           name: 'Domo',
-          info: 'Brand Story',
+          info: 'story design',
         },
         {
           name: 'Kodak',
-          info: 'End to End Experience',
+          info: 'end to end experience',
         },
         {
           name: 'Facebook',
-          info: 'Brand Creation',
+          info: 'brand design',
         },
         {
           name: 'PayPal',
-          info: 'Product Vision',
+          info: 'product design',
         },
         {
           name: 'Target',
-          info: 'Experience Vision',
+          info: 'business design',
         },
         {
           name: 'Pillpack',
-          info: 'Go To Market',
+          info: 'go to market',
         },
       ],
     }
