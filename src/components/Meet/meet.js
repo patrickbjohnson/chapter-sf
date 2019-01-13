@@ -1,10 +1,21 @@
 import React from 'react'
+import createMailLink from '../../utils/createMailLink'
 
 import Content from '../Content'
 import MeetRow from '../MeetRow'
 
 import content from '../Content/content.module.css'
 import styles from './meet.module.css'
+
+
+const missionEmail = {
+    to: 'book@chaptersf.com',
+    subject: 'book the mission',
+    cc: false,
+    body: false,
+}
+
+const calendlyLink = 'https://calendly.com/critroulette/15min';
 
 const Meet = () => {
     return (
@@ -38,7 +49,7 @@ const Meet = () => {
                         listItems={['You have work.', 'We have thoughts.', 'Every Tuesday.', 'On Google Hangouts.']}
                         clickHandler={() => {
                             if (!window.Calendly) return false;
-                            window.Calendly.showPopupWidget('https://calendly.com/critroulette/60min');
+                            window.Calendly.showPopupWidget(calendlyLink);
                             return false;
                         }}
                     />
@@ -46,6 +57,11 @@ const Meet = () => {
                         title="The Mission"
                         copy="JOIN US TO SOLVE SOMETHING <br> THAT MATTERS TOGETHER"
                         listItems={['Three hours.', 'A few pizzas.', 'Solving a problem for good in the world.', 'Quarterly at Chapter.']}
+                        clickHandler={(e) => {
+                            e.preventDefault();
+                            window.open(createMailLink(missionEmail));
+
+                        }}
                     />
 
                 </Content>

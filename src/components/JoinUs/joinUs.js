@@ -8,24 +8,24 @@ import content from '../Content/content.module.css'
 import styles from './joinUs.module.css'
 
 const workshopEmail = {
-  to: 'pbj@progresslabs.co',
+  to: 'join@chaptersf.com',
   cc: false,
-  subject: 'This is a subject line',
+  subject: 'apply for the workshop',
   body: false,
 }
 
 const leagueEmail = {
-  to: 'pbj@progresslabs.co',
+  to: 'join@chaptersf.com',
   cc: false,
-  subject: 'League Subject line',
-  body: 'League Email Body',
+  subject: 'join the league',
+  body: false,
 }
 
 const crewEmail = {
-  to: 'pbj@progresslabs.co',
+  to: 'join@chaptersf.com',
   cc: false,
-  subject: 'Crew Subject line',
-  body: 'Crew Email Body',
+  subject: 'join the crew',
+  body: false,
 }
 
 class JoinUs extends Component {

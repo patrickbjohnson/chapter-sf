@@ -4,8 +4,6 @@ import Content from '../Content'
 import content from '../Content/content.module.css'
 import styles from './us.module.css'
 
-import UsImage from '../UsImage'
-
 const Us = () => {
   return (
     <section id="about" className={styles.section} data-section>

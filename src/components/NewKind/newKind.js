@@ -3,7 +3,6 @@ import React from 'react'
 import '../../../content/data.json'
 
 import Content from '../Content'
-import content from '../Content/content.module.css'
 import styles from './newkind.module.css'
 
 const Partner = () => {
