@@ -79,7 +79,7 @@ const Hero = (props) => {
                   {slide.credit &&
                     slide.url && (
                       <a className={styles.credit} href={slide.url}>
-                        {slide.credit}
+                        Photo By {slide.credit}
                       </a>
                   )}
                 </div>
