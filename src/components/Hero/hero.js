@@ -6,24 +6,34 @@ import styles from './hero.module.css'
 
 const slides = [
   {
-    img: 'https://images.unsplash.com/photo-1498248193836-88f8c8d70a3f',
-    credit: 'Mark Clennon',
-    url: 'https://www.markclennon.com/',
+    img: 'ChristBurnett-01.jpg',
+    credit: 'Chris Burnett',
+    url: 'http://www.richgilligan.com',
   },
   {
-    img: 'https://images.unsplash.com/photo-1542979915-a9c2df9a2e74',
-    credit: 'Mark Clennon',
-    url: 'https://www.markclennon.com/',
+    img: 'ChristBurnett-02.jpg',
+    credit: 'Chris Burnett',
+    url: 'http://www.richgilligan.com',
   },
   {
-    img: 'https://images.unsplash.com/photo-1543013180-2bf6c621052f',
-    credit: false,
-    url: false,
+    img: 'ChristBurnett-03.jpg',
+    credit: 'Chris Burnett',
+    url: 'http://www.richgilligan.com',
   },
   {
-    img: 'https://images.unsplash.com/photo-1543050169-a7b5c9094109',
-    credit: 'Mark Clennon',
-    url: 'https://www.markclennon.com/',
+    img: 'ChristBurnett-04.jpg',
+    credit: 'Chris Burnett',
+    url: 'http://www.richgilligan.com',
+  },
+  {
+    img: 'ChristBurnett-05.jpg',
+    credit: 'Chris Burnett',
+    url: 'http://www.richgilligan.com',
+  },
+  {
+    img: 'RichGilligan.jpg',
+    credit: 'Rich Gilligan',
+    url: 'http://chrisbur.net',
   },
 ]
 
@@ -62,7 +72,7 @@ const Hero = (props) => {
             <div key={i}>
               <div
                 className={styles.slide}
-                style={{ backgroundImage: `url(${slide.img})` }}
+                style={{ backgroundImage: `url(../../${slide.img})` }}
               >
                 <h2>{slide.text}</h2>
                 <div className={styles.caption}>
@@ -71,12 +81,7 @@ const Hero = (props) => {
                       <a className={styles.credit} href={slide.url}>
                         {slide.credit}
                       </a>
-                    )}
-
-                  {slide.credit &&
-                    !slide.url && (
-                      <span className={styles.credit}>{slide.credit}</span>
-                    )}
+                  )}
                 </div>
               </div>
             </div>
