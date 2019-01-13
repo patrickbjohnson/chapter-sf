@@ -38,7 +38,7 @@ const Meet = () => {
                         data-sal-duration="600"
                         data-sal-easing="ease-out-bounce"
                     >
-                        Meeting people is easy. We came up with a few ways to keep it interesting.
+                        Get better by doing things together
                     </p>
 
                     <MeetRow
