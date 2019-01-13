@@ -38,6 +38,20 @@
     font-weight: 200;
 }
 
+.introCopy {
+    font-size: 14px;
+    line-height: 21px;
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.introCopy span {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+
+
 .intro {
     font-family: 'austin-lite', serif;
     text-transform: uppercase;
