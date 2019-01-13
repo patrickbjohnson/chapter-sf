@@ -35,7 +35,7 @@ class Client extends Component {
 
   updatePosition = () => {
     const el = this.panelRef.current
-    console.log(el)
+
     const win = window.innerWidth || document.documentElement.clientWidth
     const dims = el.getBoundingClientRect()
     const hasRightOverFlow = dims.right >= win - 20

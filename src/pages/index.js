@@ -13,8 +13,7 @@ import Tumblr from '../components/Tumblr'
 import NewKind from '../components/NewKind'
 import Meet from '../components/Meet'
 import Us from '../components/Us'
-import SocialLinks from '../components/SocialLinks'
-import Newsletter from '../components/Newsletter'
+import Footer from '../components/Footer'
 
 import styles from '../components/smoothScroll.module.css'
 
@@ -53,27 +52,29 @@ class IndexPage extends Component {
     this.footer.style.left = 0
     this.footer.style.right = 0
 
-    this.socialContainer = document.querySelector('[data-social]')
-    this.socialContainer.style.paddingBottom = this.footer.getBoundingClientRect().height
+    // this.socialContainer = document.querySelector('[data-social]')
+    // this.socialContainer.style.paddingBottom = this.footer.getBoundingClientRect().height
 
     this.initialNavSetup(this.mq.matches)
 
     scrollbar.addListener(({ offset }) => {
       this.offset = offset
 
+
       this.footer.style.top = `${offset.y +
         (scrollbar.bounding.bottom -
           this.footer.getBoundingClientRect().height)}px`
 
       if (this.offset.y < window.outerHeight) {
+        this.hero.style.visibility = 'visible'
         this.footer.style.visibility = 'hidden'
       } else {
+        this.hero.style.visibility = 'hidden'
         this.footer.style.visibility = 'visible'
       }
 
       if (this.offset.y >= this.heroDims.height) {
         this.pastHero = true
-
         this.setState({pastHero: true})
       } else {
         this.pastHero = false
@@ -190,8 +191,7 @@ class IndexPage extends Component {
             <Us />
             <Tumblr />
             <Meet />
-            <SocialLinks />
-            <Newsletter />
+            <Footer />
           </Scrollbar>
         </div>
       </Layout>

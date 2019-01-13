@@ -49,11 +49,11 @@
 
 @font-face {
     font-family: 'Suisse';
-    src: url('suisse.eot');
-    src: url('suisse.woff2') format('woff2'),
-         url('suisse.ttf') format('truetype'),
-         url('suisse.svg#suisse') format('svg'),
-         url('suisse.eot?#iefix') format('embedded-opentype');
+    src: url('SuisseIntl-Regular.eot');
+    src: url('SuisseIntl-Regular.woff2') format('woff2'),
+         url('SuisseIntl-Regular.ttf') format('truetype'),
+         url('SuisseIntl-Regular.svg#SuisseIntl-Regular') format('svg'),
+         url('SuisseIntl-Regular.eot?#iefix') format('embedded-opentype');
     font-weight: normal;
     font-style: normal;
   }

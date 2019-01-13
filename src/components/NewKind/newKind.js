@@ -9,9 +9,7 @@ import styles from './newkind.module.css'
 const Partner = () => {
   return (
     <section id="new-kind" className={styles.section} data-newkind>
-      <Content
-
-      >
+      <Content>
         <div
           data-sal="fade"
           data-sal-delay="100"

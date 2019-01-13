@@ -34,8 +34,6 @@ class Projects extends Component {
       this.fkly.resize();
     });
 
-    console.log(this.matches);
-
     const Flickity = require('flickity')
 
     const flky = new Flickity(this.slider.current, {
