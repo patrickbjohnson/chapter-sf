@@ -120,7 +120,7 @@ class Clients extends Component {
           data-sal-duration="600"
           data-sal-easing="ease-out-bounce"
         >
-          <h2 className={styles.title}>Some of our pioneering partners</h2>
+          <h2 className={styles.title}>We partner with pioneers</h2>
 
           <ul className={styles.clientList}>
             {this.state.clients.map((client, i) => {
