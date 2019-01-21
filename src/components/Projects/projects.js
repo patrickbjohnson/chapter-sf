@@ -38,13 +38,9 @@ class Projects extends Component {
       contain: this.matches ? true : false,
     })
 
-    // flky.resize();
-
     this.setState({
       flky: flky,
     })
-
-
 
     this.slider.current.querySelector('.flickity-viewport').style.overflow = 'visible';
 

@@ -77,7 +77,8 @@ const siteContent = {
         "third": "We do this by focusing our energy on rethinking products, communications and the way they work together to bring brands to life in more unexpected, joyful and human friendly ways."
     },
     "about": {
-        "title": "WE’RE BUILDING A HOME FOR BRILLIANT MISFITS"
+        "title": "WE’RE BUILDING A HOME FOR BRILLIANT MISFITS",
+        "bottom": "Our experience has led us to do things a bit differently. We act as an agent of change not an agency of record. We’re obsessed in finding the human opportunity or problem and solving or seizing it in whatever shape it takes. We break down silos. We move fast. We’re open. We show the thing. We’re fearless, optimistic explorers in search of the better path less traveled."
     },
     "partner": {
         "title": "We partner with a select number of changemakers who know they need to change what they do to meet the unreasonable expectations people have today",
