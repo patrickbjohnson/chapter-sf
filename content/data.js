@@ -57,7 +57,55 @@ const siteContent = {
             "email": "#",
             "image": '../../sue.png'
         },
-    ]
+    ],
+    "join": {
+        "title": "Curious, optimistic, misfits wanted.",
+        "rows": [
+            {
+                "title": "Crew",
+                "desc": "We’re a bunch of designers, writers, producers and strategists restlessly dissatisfied with how brands, agencies and consultancies act today. If you feel like you’re a misfit, let’s change things together.",
+                "message": "Join our crew",
+                "cta": {
+                    "text": "Join",
+                    "email": {
+                        to: 'join@chaptersf.com',
+                        subject: 'apply for the workshop',
+                        cc: false,
+                        body: false,
+                    }
+                }
+            },
+            {
+                "title": "League",
+                "desc": "Most places just want to buy your time. We want you to join our league of diverse freelance talent from which we custom build teams to match extraordinary people with extraordinary projects.",
+                "message": "Join the league",
+                "cta": {
+                    "text": "Join",
+                    "email": {
+                        to: 'join@chaptersf.com',
+                        subject: 'join the league',
+                        cc: false,
+                        body: false,
+                      }
+                }
+            },
+            {
+                "title": "Workshop",
+                "desc": "This is not an internship. It’s an always-on crash course in solving real problems, open to talent all over the world, done 10 weeks at a time.",
+                "message": "Apply for the workshop",
+                "cta": {
+                    "text": "Apply",
+                    "email": {
+                        to: 'join@chaptersf.com',
+                        subject: 'join the crew',
+                        cc: false,
+                        body: false,
+                      }
+                }
+            },
+        ]
+
+    }
 }
 
 export default siteContent

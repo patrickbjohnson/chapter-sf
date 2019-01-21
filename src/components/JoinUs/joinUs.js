@@ -1,32 +1,12 @@
 import React, { Component } from 'react'
 import sal from 'sal.js'
-
+import createMailLink from '../../utils/createMailLink'
+import data from '../../../content/data'
 import Content from '../Content'
 import JoinUsRow from '../JoinUsRow'
 
 import content from '../Content/content.module.css'
 import styles from './joinUs.module.css'
-
-const workshopEmail = {
-  to: 'join@chaptersf.com',
-  cc: false,
-  subject: 'apply for the workshop',
-  body: false,
-}
-
-const leagueEmail = {
-  to: 'join@chaptersf.com',
-  cc: false,
-  subject: 'join the league',
-  body: false,
-}
-
-const crewEmail = {
-  to: 'join@chaptersf.com',
-  cc: false,
-  subject: 'join the crew',
-  body: false,
-}
 
 class JoinUs extends Component {
   constructor() {
@@ -49,7 +29,7 @@ class JoinUs extends Component {
       <section id="join" className={styles.section} data-section>
         <Content>
           <h2
-            className={content.title}
+            className={`${content.title} ${content.white}`}
             data-sal="slide-up"
             data-sal-delay="100"
             data-sal-duration="600"
@@ -60,31 +40,22 @@ class JoinUs extends Component {
             </svg>
           </h2>
 
-          <p className={`${content.center} ${content.ttu} ${content.intro} ${content.introLg} ${content.copy}`}>Curious, optimistic, misfits wanted.</p>
+          <p className={`${content.center} ${content.white} ${content.ttu} ${content.intro} ${content.introLg} ${content.copy}`}>{data.join.title}</p>
 
-          <JoinUsRow
-            title="Crew"
-            copy="We’re a bunch of designers, writers, producers and strategists restlessly dissatisfied with how brands, agencies and consultancies act today. If you feel like you’re a misfit, let’s change things together."
-            message="Join our crew"
-            buttonText="Join"
-            mailto={crewEmail}
-          />
+          {data.join.rows.map((row, i) => {
 
-          <JoinUsRow
-            title="League"
-            copy="Most places just want to buy your time. We want you to join our league of diverse freelance talent from which we custom build teams to match extraordinary people with extraordinary projects."
-            message="Join the league"
-            buttonText="Join"
-            mailto={leagueEmail}
-          />
+            return (
+              <JoinUsRow
+                key={i}
+                title={row.title}
+                copy={row.desc}
+                message={row.message}
+                buttonText={row.cta.text}
+                mailto={createMailLink(row.cta.email)}
+              />
+            )
+          })}
 
-          <JoinUsRow
-            title="Workshop"
-            copy="This is not an internship. It’s an always-on crash course in solving real problems, open to talent all over the world, done 10 weeks at a time."
-            message="Apply for the workshop"
-            buttonText="Apply"
-            mailto={workshopEmail}
-          />
         </Content>
 
       </section>
