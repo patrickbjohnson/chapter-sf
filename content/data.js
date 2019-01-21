@@ -5,6 +5,20 @@ const siteContent = {
     "about": {
         "title": "WE’RE BUILDING A HOME FOR BRILLIANT MISFITS"
     },
+    "partner": {
+        "title": "We partner with a select number of changemakers who know they need to change what they do to meet the unreasonable expectations people have today",
+        "desc": "What keeps you up at night?",
+        "cta": {
+            "text": "Talk To Us",
+            "email": {
+                "to": 'hello@chaptersf.com',
+                "subject": 'talk to us',
+                "cc": false,
+                "body": false,
+            }
+        }
+
+    },
     "projects": {
         "title": "Some Things We Make",
         "list": [

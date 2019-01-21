@@ -1,5 +1,6 @@
 import React from 'react'
 
+import data from '../../../content/data'
 import CTARow from '../CTARow'
 import Content from '../Content'
 import content from '../Content/content.module.css'
@@ -23,13 +24,13 @@ const Partner = () => {
         </h2>
 
         <p
-          className={`${content.copy} ${content.white} ${styles.copy}`}
+          className={`${content.copy} ${content.white} ${content.max650} ${styles.copy}`}
           data-sal="fade"
           data-sal-delay="100"
           data-sal-duration="600"
           data-sal-easing="ease-out-bounce"
         >
-          We partner with a select number of changemakers who know they need to change what they do to meet the unreasonable expectations people have today
+          {data.partner.title}
         </p>
 
         <CTARow />
