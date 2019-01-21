@@ -31,7 +31,6 @@ const Hero = (props) => {
                 className={styles.slide}
                 style={{ backgroundImage: `url(../../${slide.img})` }}
               >
-                <h2>{slide.text}</h2>
                 <div className={styles.caption}>
                   {slide.credit &&
                     slide.url && (
