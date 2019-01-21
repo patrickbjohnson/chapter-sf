@@ -52,20 +52,17 @@ class IndexPage extends Component {
     this.footer.style.left = 0
     this.footer.style.right = 0
 
-    // this.socialContainer = document.querySelector('[data-social]')
-    // this.socialContainer.style.paddingBottom = this.footer.getBoundingClientRect().height
 
     this.initialNavSetup(this.mq.matches)
 
     scrollbar.addListener(({ offset }) => {
       this.offset = offset
 
-
       this.footer.style.top = `${offset.y +
         (scrollbar.bounding.bottom -
           this.footer.getBoundingClientRect().height)}px`
 
-      if (this.offset.y < window.outerHeight) {
+      if (this.offset.y < window.innerHeight) {
         this.hero.style.visibility = 'visible'
         this.footer.style.visibility = 'hidden'
       } else {
