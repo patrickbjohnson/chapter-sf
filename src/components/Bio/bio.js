@@ -6,7 +6,7 @@ const Bio = (props) => {
         <div className={styles.bioWrap}>
             <div
                     className={styles.bio}
-                    style={{ backgroundImage: `url(${props.image})` }}
+                    style={{ backgroundImage: `url(../../${props.image})` }}
             >
                 <div className={styles.bioCopy}>
                   <h3 className={styles.name}>{props.name}</h3>
@@ -14,8 +14,8 @@ const Bio = (props) => {
                   <p className={styles.desc}>{props.desc}</p>
                 </div>
             </div>
-            <a className={styles.bioLink} href="#">LinkedIn</a>
-            <a className={styles.bioLink} href="#">Twitter</a>
+            <a className={styles.bioLink} href={props.linkedin}>LinkedIn</a>
+            <a className={styles.bioLink} href={`mailto:${props.email}`}>Twitter</a>
         </div>
 
     )
