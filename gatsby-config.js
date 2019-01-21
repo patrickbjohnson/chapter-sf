@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Default Starter'
+    title: 'CHAPTER is a new type of creative studio.',
+    description: 'CHAPTER is a new type of creative studio focused on designing soulful brands that thrive in today\'s world of unreasonable expectations.'
   },
   plugins: [
     'gatsby-plugin-react-helmet',

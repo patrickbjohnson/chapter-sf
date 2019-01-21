@@ -13,7 +13,8 @@ const Layout = ({ children }) => (
       query SiteTitleQuery {
         site {
           siteMetadata {
-            title
+            title,
+            description
           }
         }
       }
@@ -23,8 +24,11 @@ const Layout = ({ children }) => (
         <Helmet
           title={data.site.siteMetadata.title}
           meta={[
-            { name: 'description', content: 'Sample' },
-            { name: 'keywords', content: 'sample, something' },
+            { name: 'description', content: data.site.siteMetadata.description },
+            { name: 'og:type', content: 'website' },
+            { name: 'og:url', content: 'https://chaptersf.com' },
+            { name: 'og:title', content: data.site.siteMetadata.title },
+            { name: 'og:description', content: data.site.siteMetadata.description },
           ]}
           link={[
             {
