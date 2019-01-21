@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 
+import data from '../../../content/data'
 import social from '../../utils/socialLinks'
 
 import styles from './footer.module.css'
@@ -29,12 +30,12 @@ class Footer extends Component {
                 <p>California, 94110</p>
               </a>
               <br />
-              <p className={`${styles.link} ${styles.phone}`}><a href="tel:+14155292529">+1 415 529 2529</a></p>
-              <p className={styles.link}><a href="mailto:info@chaptersf.com" target="_blank">info@chaptersf.com</a></p>
+              <p className={`${styles.link} ${styles.phone}`}><a href={data.phoneLink}>{data.phone}</a></p>
+              <p className={styles.link}><a href={`mailto:${data.email}`} target="_blank">{data.email}</a></p>
             </div>
 
             <div className={`${styles.socialLinks} ${styles.contentSection}`}>
-              {social.map((link, i) => {
+              {data.social.map((link, i) => {
                 return <a
                 className={styles.socialLink}
                 href={link.url}

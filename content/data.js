@@ -1,6 +1,80 @@
 const siteContent = {
+    "calendly": "https://calendly.com/critroulette/15min",
+    "phone": "+1 415 529 2529",
+    "phoneLink": "tel:+14155292529",
+    "email": "info@chaptersf.com",
+    "social": [
+        {
+            name: 'medium',
+            url: 'https://medium.com/chaptersf'
+        },
+        {
+            name: 'linkedin',
+            url: 'https://www.linkedin.com/company/chapter-sf/'
+        },
+        {
+            name: 'instagram',
+            url: 'https://www.instagram.com/chapter_sf'
+        },
+        {
+            name: 'twitter',
+            url: 'https://twitter.com/chaptersf'
+        },
+
+        {
+            name: 'spotify',
+            url: 'https://open.spotify.com/user/chaptersf?si=ycNkMRiySWiQUM1XgMG8dw'
+        },
+    ],
+    "hero": {
+        "settings": {
+            infinite: true,
+            speed: 500,
+            arrows: false,
+            dots: false,
+            autoplay: true,
+            fade: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+        },
+        "slides": [
+            {
+              "img": 'ChristBurnett-01.jpg',
+              "credit": 'Chris Burnett',
+              "url": 'http://www.richgilligan.com',
+            },
+            {
+              "img": 'ChristBurnett-02.jpg',
+              "credit": 'Chris Burnett',
+              "url": 'http://www.richgilligan.com',
+            },
+            {
+              "img": 'ChristBurnett-03.jpg',
+              "credit": 'Chris Burnett',
+              "url": 'http://www.richgilligan.com',
+            },
+            {
+              "img": 'ChristBurnett-04.jpg',
+              "credit": 'Chris Burnett',
+              "url": 'http://www.richgilligan.com',
+            },
+            {
+              "img": 'ChristBurnett-05.jpg',
+              "credit": 'Chris Burnett',
+              "url": 'http://www.richgilligan.com',
+            },
+            {
+              "img": 'RichGilligan.jpg',
+              "credit": 'Rich Gilligan',
+              "url": 'http://chrisbur.net',
+            },
+        ]
+    },
     "newKind": {
-        "intro": "Chapter is a new type of creative studio focused on designing soulful brands that thrive in today's world of unreasonable expectations."
+        "title" :"Only the human friendly will thrive",
+        "first": "Today, people expect more from their brands. Those expectations may seem unreasonable but they have been reset for good. Brands can no longer draw comfort from being a bit better than their direct competitors or doing what they’ve always done before. They need a new playbook to thrive in today’s world; to be human friendly, not just human like.",
+        "second": "Chapter is a new type of creative studio focused on designing soulful brands that thrive in today's world of unreasonable expectations. We help businesses seize the right opportunity, reset their direction and reinvent themselves and the categories they operate in.",
+        "third": "We do this by focusing our energy on rethinking products, communications and the way they work together to bring brands to life in more unexpected, joyful and human friendly ways."
     },
     "about": {
         "title": "WE’RE BUILDING A HOME FOR BRILLIANT MISFITS"
@@ -18,6 +92,65 @@ const siteContent = {
             }
         }
 
+    },
+    "clients": {
+        "title": "We Partner with Pioneers",
+        "list": [
+            {
+                name: 'Google',
+                info: 'go to market',
+            },
+            {
+                name: 'Airbnb',
+                info: 'brand design',
+            },
+            {
+                name: 'Sonos',
+                info: 'naming',
+            },
+            {
+                name: 'Dropbox',
+                info: 'product strategy',
+            },
+            {
+                name: 'Oculus',
+                info: 'experience design',
+            },
+            {
+                name: 'Uber',
+                info: 'communications design',
+            },
+            {
+                name: 'Domo',
+                info: 'story design',
+            },
+            {
+                name: 'Kodak',
+                info: 'end to end experience',
+            },
+            {
+                name: 'Facebook',
+                info: 'brand design',
+            },
+            {
+                name: 'PayPal',
+                info: 'product design',
+            },
+            {
+                name: 'Target',
+                info: 'business design',
+            },
+            {
+                name: 'Pillpack',
+                info: 'go to market',
+            },
+        ],
+        "email": {
+            to: 'info@chapter.com',
+            subject: 'hello',
+            cc: false,
+            body: false,
+        }
     },
     "projects": {
         "title": "Some Things We Make",
@@ -104,6 +237,26 @@ const siteContent = {
                 }
             },
         ]
+
+    },
+    "connect": {
+        "title": "Get better by doing things together",
+        "crit": {
+            "title": "Critroulette",
+            "copy": "Book a portfolio review",
+            "listItems": ['You have work.', 'We have thoughts.', 'Every Tuesday.', 'On Google Hangouts.']
+        },
+        "mission": {
+            "title": "The Mission",
+            "copy": "Join us to solve something <br> that matters together",
+            "listItems": ['Three hours.', 'A few pizzas.', 'Solving a problem for good in the world.', 'Quarterly at Chapter.'],
+            "email": {
+                to: 'book@chaptersf.com',
+                subject: 'book the mission',
+                cc: false,
+                body: false,
+            }
+        }
 
     }
 }

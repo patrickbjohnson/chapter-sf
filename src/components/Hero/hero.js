@@ -1,52 +1,9 @@
 import React from 'react'
 
 import Slider from 'react-slick'
-
+import data from '../../../content/data'
 import styles from './hero.module.css'
 
-const slides = [
-  {
-    img: 'ChristBurnett-01.jpg',
-    credit: 'Chris Burnett',
-    url: 'http://www.richgilligan.com',
-  },
-  {
-    img: 'ChristBurnett-02.jpg',
-    credit: 'Chris Burnett',
-    url: 'http://www.richgilligan.com',
-  },
-  {
-    img: 'ChristBurnett-03.jpg',
-    credit: 'Chris Burnett',
-    url: 'http://www.richgilligan.com',
-  },
-  {
-    img: 'ChristBurnett-04.jpg',
-    credit: 'Chris Burnett',
-    url: 'http://www.richgilligan.com',
-  },
-  {
-    img: 'ChristBurnett-05.jpg',
-    credit: 'Chris Burnett',
-    url: 'http://www.richgilligan.com',
-  },
-  {
-    img: 'RichGilligan.jpg',
-    credit: 'Rich Gilligan',
-    url: 'http://chrisbur.net',
-  },
-]
-
-const slideSettings = {
-  infinite: true,
-  speed: 500,
-  arrows: false,
-  dots: false,
-  autoplay: true,
-  fade: true,
-  slidesToShow: 1,
-  slidesToScroll: 1,
-}
 
 const Hero = (props) => {
 
@@ -66,8 +23,8 @@ const Hero = (props) => {
           </svg>
         </h1>
 
-      <Slider {...slideSettings}>
-        {slides.map((slide, i) => {
+      <Slider {...data.hero.settings}>
+        {data.hero.slides.map((slide, i) => {
           return (
             <div key={i}>
               <div

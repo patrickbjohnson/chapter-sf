@@ -1,6 +1,6 @@
 import React from 'react'
+import data from '../../../content/data'
 import createMailLink from '../../utils/createMailLink'
-
 import Content from '../Content'
 import MeetRow from '../MeetRow'
 
@@ -8,14 +8,7 @@ import content from '../Content/content.module.css'
 import styles from './meet.module.css'
 
 
-const missionEmail = {
-    to: 'book@chaptersf.com',
-    subject: 'book the mission',
-    cc: false,
-    body: false,
-}
 
-const calendlyLink = 'https://calendly.com/critroulette/15min';
 
 const Meet = () => {
     return (
@@ -38,33 +31,29 @@ const Meet = () => {
                         data-sal-duration="600"
                         data-sal-easing="ease-out-bounce"
                     >
-                        Get better by doing things together
+                        {data.connect.title}
                     </p>
 
                     <MeetRow
-                        title="Critroulette"
-                        copy="Book a portfolio review"
-                        listItems={['You have work.', 'We have thoughts.', 'Every Tuesday.', 'On Google Hangouts.']}
+                        title={data.connect.crit.title}
+                        copy={data.connect.crit.copy}
+                        listItems={data.connect.crit.listItems}
                         clickHandler={() => {
                             if (!window.Calendly) return false;
-                            window.Calendly.showPopupWidget(calendlyLink);
+                            window.Calendly.showPopupWidget(data.calendly);
                             return false;
                         }}
                     />
                     <MeetRow
-                        title="The Mission"
-                        copy="JOIN US TO SOLVE SOMETHING <br> THAT MATTERS TOGETHER"
-                        listItems={['Three hours.', 'A few pizzas.', 'Solving a problem for good in the world.', 'Quarterly at Chapter.']}
+                        title={data.connect.mission.title}
+                        copy={data.connect.mission.copy}
+                        listItems={data.connect.mission.listItems}
                         clickHandler={(e) => {
                             e.preventDefault();
-                            window.open(createMailLink(missionEmail));
-
+                            window.open(createMailLink(data.connect.mission.email));
                         }}
                     />
-
                 </Content>
-
-
 
             </div>
         </section>

@@ -1,16 +1,10 @@
 import React, { Component } from 'react'
+import data from '../../../content/data'
 import createMailLink from '../../utils/createMailLink'
 
 import Client from '../Client'
 
 import styles from './clients.module.css'
-
-const contactEmail = {
-  to: 'info@chapter.com',
-  subject: 'hello',
-  cc: false,
-  body: false,
-}
 
 class Clients extends Component {
   constructor() {
@@ -19,56 +13,6 @@ class Clients extends Component {
     this.state = {
       mq: null,
       activeClient: null,
-      clients: [
-        {
-          name: 'Google',
-          info: 'go to market',
-        },
-        {
-          name: 'Airbnb',
-          info: 'brand design',
-        },
-        {
-          name: 'Sonos',
-          info: 'naming',
-        },
-        {
-          name: 'Dropbox',
-          info: 'product strategy',
-        },
-        {
-          name: 'Oculus',
-          info: 'experience design',
-        },
-        {
-          name: 'Uber',
-          info: 'communications design',
-        },
-        {
-          name: 'Domo',
-          info: 'story design',
-        },
-        {
-          name: 'Kodak',
-          info: 'end to end experience',
-        },
-        {
-          name: 'Facebook',
-          info: 'brand design',
-        },
-        {
-          name: 'PayPal',
-          info: 'product design',
-        },
-        {
-          name: 'Target',
-          info: 'business design',
-        },
-        {
-          name: 'Pillpack',
-          info: 'go to market',
-        },
-      ],
     }
   }
 
@@ -84,7 +28,7 @@ class Clients extends Component {
       })
     })
 
-    this.state.clients.map((client, i) => {
+    data.clients.list.map((client, i) => {
       const dom = this.refs[client.name].clientRef.current
 
       return dom.addEventListener('mouseleave', e => {
@@ -128,10 +72,10 @@ class Clients extends Component {
           data-sal-duration="600"
           data-sal-easing="ease-out-bounce"
         >
-          <h2 className={styles.title}>We partner with pioneers</h2>
+          <h2 className={styles.title}>{data.clients.title}</h2>
 
           <ul className={styles.clientList}>
-            {this.state.clients.map((client, i) => {
+            {data.clients.list.map((client, i) => {
               return (
                 <li key={i}>
                   <Client
@@ -149,7 +93,7 @@ class Clients extends Component {
             })}
           </ul>
 
-          <p className={styles.cta}>The work we do makes it difficult to share what we're up to publicly. <br />For a private viewing of these projects, please <a href={createMailLink(contactEmail)} target="_blank">contact us</a></p>
+          <p className={styles.cta}>The work we do makes it difficult to share what we're up to publicly. <br />For a private viewing of these projects, please <a href={createMailLink(data.clients.email)} target="_blank">contact us</a></p>
         </div>
       </section>
     )
