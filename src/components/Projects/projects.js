@@ -1,17 +1,8 @@
 import React, { Component } from 'react'
 
 import styles from './projects.module.css'
+import data from '../../../content/data'
 
-const projects = [
-  'Experiences',
-  'Products',
-  'Systems',
-  'Campaigns',
-  'Environments',
-  'Prototypes',
-  'Events',
-  'Documentaries'
-]
 
 class Projects extends Component {
   constructor() {
@@ -69,11 +60,11 @@ class Projects extends Component {
   render() {
     return (
       <section className={styles.section} id="project-list">
-        <h2 className={styles.title}>Some things we’ve made</h2>
-        {projects.length > 0 && (
+        <h2 className={styles.title}>{data.projects.title}</h2>
+        {data.projects.list.length > 0 && (
           <div className={styles.content}>
             <ul className={styles.list} ref={this.slider}>
-              {projects.map((project, i) => {
+              {data.projects.list.map((project, i) => {
                 return (
                   <li className={styles.item} key={i}>
                     {project}

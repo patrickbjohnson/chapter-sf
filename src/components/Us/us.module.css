@@ -122,7 +122,14 @@
   }
 
   .copy {
-    font-size: 20px;
-    line-height: 35px;
+    font-size: 30px;
+    line-height: 40px;
+    letter-spacing: 0.05em;
   }
+
+  .bottom {
+    margin-top: 250px;
+    margin-bottom: 250px;
+  }
+
 }

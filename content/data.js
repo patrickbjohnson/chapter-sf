@@ -5,6 +5,19 @@ const siteContent = {
     "about": {
         "title": "WE’RE BUILDING A HOME FOR BRILLIANT MISFITS"
     },
+    "projects": {
+        "title": "Some Things We Make",
+        "list": [
+            'Experiences',
+            'Products',
+            'Systems',
+            'Campaigns',
+            'Environments',
+            'Prototypes',
+            'Events',
+            'Documentaries'
+        ]
+    },
     "bios": [
         {
             "name": "Gareth Kay",

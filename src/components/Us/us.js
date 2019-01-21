@@ -54,7 +54,7 @@ const Us = () => {
           data-sal-duration="600"
           data-sal-easing="ease-out-bounce"
         >
-          <p className={`${styles.copy} ${content.copySmall}`}>
+          <p className={`${styles.copy} ${styles.bottom} ${content.copySmall}`}>
           Our experience has led us to do things a bit differently. We act as an agent of change not an agency of record. We’re obsessed in finding the human opportunity or problem and solving or seizing it in whatever shape it takes. We break down silos. We move fast. We’re open. We show the thing. We’re fearless, optimistic explorers in search of the better path less traveled.
           </p>
         </div>
