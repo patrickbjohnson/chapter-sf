@@ -21,10 +21,10 @@ class DesktopMenu extends Component {
       mq: null,
       sections: [
         {
-          id: 'partner',
+          id: 'about',
         },
         {
-          id: 'about',
+          id: 'partner',
         },
         {
           id: 'join',
@@ -144,15 +144,6 @@ class DesktopMenu extends Component {
         <nav className={styles.desktop}>
           <div className={styles.group}>
             <Link
-              to="#partner"
-              className={this.navClasses('partner')}
-              onClick={e => {
-                this.props.clickHandler(e, '#partner')
-              }}
-            >
-              Partner
-            </Link>
-            <Link
               to="#about"
               className={this.navClasses('about')}
               onClick={e => {
@@ -161,6 +152,16 @@ class DesktopMenu extends Component {
             >
               About
             </Link>
+            <Link
+              to="#partner"
+              className={this.navClasses('partner')}
+              onClick={e => {
+                this.props.clickHandler(e, '#partner')
+              }}
+            >
+              Partner
+            </Link>
+
           </div>
 
           <div className={styles.group}>

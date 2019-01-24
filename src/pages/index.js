@@ -181,11 +181,10 @@ class IndexPage extends Component {
               }}
             />
             <NewKind />
-            <Partner />
-
-            <Clients />
-            <Projects />
             <Us />
+            <Clients />
+            <Partner />
+            <Projects />
             <Tumblr />
             <Meet />
             <Footer />
