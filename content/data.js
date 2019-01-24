@@ -170,25 +170,25 @@ const siteContent = {
         {
             "name": "Gareth Kay",
             "title": "co-founder",
-            "desc": "Ex-CSO of Goodby, Silverstein and Partners. Left a 20 year career at some of the world’s best ad agencies to apply strategic creativity more expansively. Failed musician.",
-            "linkedin:": "#",
-            "email": "#",
+            "desc": "Ex-Chief Strategy Officer of Goodby, Silverstein & Partners. Left a 20-year career at some of the world’s best ad agencies to apply strategic creativity more expansively. Failed musician.",
+            "linkedin:": "https://www.linkedin.com/in/garethkaysf/",
+            "twitter": "https://twitter.com/garethk",
             "image": '../../gareth.png'
         },
         {
             "name": "Neil Robinson",
             "title": "co-founder",
             "desc": "Ex-ECD AQKA San Francisco. After helping to build one of the best agencies in the world for 17 years hit the reset button to build something from the ground up that's designed to do the right thing.",
-            "linkedin:": "#",
-            "email": "#",
+            "linkedin:": "https://www.linkedin.com/in/neilrobinson/",
+            "twitter": "https://twitter.com/dnrobinson",
             "image": '../../neil.png'
         },
         {
             "name": "Sue Murphy",
             "title": "partner",
-            "desc": "Ex-Wieden+Kennedy, Wolff Olins and Ogilvy. The odd-shaped maverick swapping sides of the fence in advertising, branding and design studios. Pulling pints since age 6. Designing since age 11",
-            "linkedin:": "#",
-            "email": "#",
+            "desc": "Ex-Wieden+Kennedy PDX, Wolff Olins and Ogilvy. The odd-shaped maverick swapping sides of the fence in advertising, branding and design studios. Pulling pints since age 6. Designing since age 11.",
+            "linkedin:": "https://www.linkedin.com/in/howsueisnow/",
+            "twitter": "https://twitter.com/howsueisnow",
             "image": '../../sue.png'
         },
     ],

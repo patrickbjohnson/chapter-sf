@@ -54,6 +54,12 @@
   margin-bottom: 0;
 }
 
+.copyright svg {
+  max-width: 100px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
 .phone {
   margin-bottom: 0;
 }

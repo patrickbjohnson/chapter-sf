@@ -14,8 +14,8 @@ const Bio = (props) => {
                   <p className={styles.desc}>{props.desc}</p>
                 </div>
             </div>
-            <a className={styles.bioLink} href={props.linkedin}>LinkedIn</a>
-            <a className={styles.bioLink} href={`mailto:${props.email}`}>Twitter</a>
+            <a className={styles.bioLink} href={props.linkedin} taget="_blank">LinkedIn</a>
+            <a className={styles.bioLink} href={props.twitter} taget="_blank">Twitter</a>
         </div>
 
     )
