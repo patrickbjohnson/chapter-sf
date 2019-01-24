@@ -30,17 +30,17 @@
 }
 
 .name {
-
-    Font-size: 12px;
+    font-size: 35px;
     margin-bottom: 0;
 }
 
 .title {
     display: block;
-    font-size: 10px;
     font-family: 'venus';
     text-transform: uppercase;
     margin-bottom: 10px;
+    font-size: 12px;
+    letter-spacing: 3px;
 }
 
 .desc {
@@ -61,20 +61,4 @@
     margin-top: 10px;
     font-size: 12px;
     letter-spacing: 0.3em;
-}
-
-@media (min-width: 768px) {
-
-}
-
-@media (min-width: 1024px) {
-    .name {
-        font-size: 25px;
-    }
-
-    .desc {
-        font-size: 12px;
-        line-height: 16px;
-    }
-
 }
