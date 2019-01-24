@@ -17,7 +17,7 @@ const Us = () => {
           data-sal-duration="600"
           data-sal-easing="ease-out-bounce"
         >
-          <p className={`${styles.copy} ${content.copySmall}`}>
+          <p className={styles.title}>
             {data.about.title}
           </p>
         </div>

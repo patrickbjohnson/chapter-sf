@@ -7,23 +7,27 @@
 }
 
 .title {
-  display: block;
-  width: 100%;
-  max-width: 40%;
-  padding-top: 42px;
-  margin-left: auto;
-  margin-right: auto;
-  transition: max-width 0.25s ease-out;
+  font-family: 'austin-lite';
+  font-size: 15px;
+  line-height: 1;
+  margin-bottom: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 200;
+  line-height: 30px;
+  color: #fff;
 }
 
 .contentInner {
-  padding: 32px;
+  padding: 52px 32px 32px;
 }
 
 .contentInner a {
   color: #fff;
   text-decoration: none;
 }
+
 
 .copy {
   font-family: 'austin-lite';
@@ -66,8 +70,8 @@
   }
 
   .title {
-    max-width: 150px;
-    padding-top: 60px;
+    font-size: 12px;
+    margin-bottom: 20px;
   }
 
   .contentInner {
@@ -106,9 +110,12 @@
 }
 
 @media (min-width: 1024px) {
+
+
   .title {
-    padding-top: 200px;
-    max-width: 400px;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 30px;
   }
 
   .content {
