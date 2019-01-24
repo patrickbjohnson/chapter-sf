@@ -28,15 +28,20 @@
   text-decoration: none;
 }
 
+.contentInner.bottom {
+  padding-top: 0;
+}
 
 .copy {
   font-family: 'austin-lite';
-  letter-spacing: 3px;
+  letter-spacing: 1px;
   text-align: center;
   font-size: 20px;
   line-height: 30px;
   margin-bottom: 20px;
   color: #fff;
+
+
 }
 
 .grid {
@@ -54,9 +59,6 @@
   margin-bottom: 80px;
 }
 
-.bottom {
-  margin-top: 50px;
-}
 
 @media (min-width: 768px) {
   .section {
