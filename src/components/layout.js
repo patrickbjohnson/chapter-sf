@@ -29,6 +29,8 @@ const Layout = ({ children }) => (
             { name: 'og:url', content: 'https://chaptersf.com' },
             { name: 'og:title', content: data.site.siteMetadata.title },
             { name: 'og:description', content: data.site.siteMetadata.description },
+            { name: 'og:image', content: '../../static/CHAPTER.jpg' },
+            { name: 'twitter:card', content: 'summary_large_image' },
           ]}
           link={[
             {
