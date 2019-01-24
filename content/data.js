@@ -193,7 +193,7 @@ const siteContent = {
         },
     ],
     "join": {
-        "title": "Curious, optimistic, misfits wanted.",
+        "title": "Curious, optimistic, misfits wanted",
         "rows": [
             {
                 "title": "Crew",
