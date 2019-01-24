@@ -24,8 +24,11 @@
 .caption {
   position: absolute;
   right: 15px;
+  left: 15px;
+  margin: 0 auto;
   top: 15px;
   font-size: 10px;
+  text-align: center;
 }
 
 .credit {
@@ -119,6 +122,7 @@
   .caption {
     display: block;
     bottom: 100px;
+    left: auto;
   }
 
   .copy {
