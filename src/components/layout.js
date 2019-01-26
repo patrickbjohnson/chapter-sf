@@ -3,16 +3,22 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
 
+
+import shareImage from "../images/CHAPTER.jpg"
+
+
 import '../../static/fonts/fonts.css'
 import './layout.css'
 import './sal.css'
 
+console.log(shareImage)
 const Layout = ({ children }) => (
   <StaticQuery
     query={graphql`
       query SiteTitleQuery {
         site {
           siteMetadata {
+            siteUrl,
             title,
             description
           }
@@ -29,7 +35,7 @@ const Layout = ({ children }) => (
             { name: 'og:url', content: 'https://chaptersf.com' },
             { name: 'og:title', content: data.site.siteMetadata.title },
             { name: 'og:description', content: data.site.siteMetadata.description },
-            { name: 'og:image', content: '../../static/CHAPTER.jpg' },
+            { name: 'og:image', content: shareImage },
             { name: 'twitter:card', content: 'summary_large_image' },
           ]}
           link={[

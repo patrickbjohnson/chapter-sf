@@ -1,5 +1,6 @@
 module.exports = {
   siteMetadata: {
+    siteUrl: 'https://pl-chapter-sf.netlify.com',
     title: 'CHAPTER is a new type of creative studio.',
     description: 'CHAPTER is a new type of creative studio focused on designing soulful brands that thrive in today\'s world of unreasonable expectations.'
   },
