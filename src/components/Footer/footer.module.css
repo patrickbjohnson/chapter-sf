@@ -1,12 +1,14 @@
 .section {
-  position: absolute;
+  position: fixed;
+  bottom: 0;
   background-color: #FF6D2C;
   color: #fff;
-  top: 0;
+  /* top: 0; */
   left: 0;
   right: 0;
   visibility: hidden;
   font-family: 'Suisse';
+  padding-bottom: 50px;
 }
 
 .container {

@@ -52,9 +52,6 @@ class IndexPage extends Component {
     this.footerSpacer.style.height = `${
       this.footer.getBoundingClientRect().height
     }px`
-    this.footer.style.left = 0
-    this.footer.style.right = 0
-
 
     if (this.mq.matches) {
       this.baseAnimationSpeed = .25;
@@ -66,10 +63,6 @@ class IndexPage extends Component {
 
     scrollbar.addListener(({ offset }) => {
       this.offset = offset
-
-      this.footer.style.top = `${offset.y +
-        (scrollbar.bounding.bottom -
-          this.footer.getBoundingClientRect().height)}px`
 
       const parallax1 = this.parallaxSections[0].getBoundingClientRect()
       const parallax2 = this.parallaxSections[1].getBoundingClientRect()
@@ -162,6 +155,10 @@ class IndexPage extends Component {
 
   resizeOffsets() {
     const heroDims = this.hero.getBoundingClientRect()
+
+    this.footerSpacer.style.height = `${
+      this.footer.getBoundingClientRect().height
+    }px`
 
     if (this.offset) {
       this.menuScrollOffsets();
