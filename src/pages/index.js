@@ -30,13 +30,23 @@ class IndexPage extends Component {
     this.pastHero = false
     this.baseAnimationSpeed = .25;
 
+
     this.state = {
-      pastHero: false
+      pastHero: false,
+      iPhone: false
     }
   }
 
   componentDidMount() {
     const { scrollbar } = this.scrollContainer
+
+    // Hacky but need to tweak
+    // styles since smooth scrollbar
+    // forces the iphone lower navigation to
+    // dislpay at all times.
+    this.setState({
+      iPhone: (navigator.platform === 'iPhone')
+    })
 
     this.mq = window.matchMedia('(min-width: 1024px)')
     this.hero = document.querySelector('[data-hero]')
@@ -195,6 +205,7 @@ class IndexPage extends Component {
         <div className={styles.container}>
           <Scrollbar ref={c => (this.scrollContainer = c)}>
             <Hero
+              iPhone={this.state.iPhone}
               clickHandler={(e, id) => {
                 e.preventDefault()
                 this.scrollContainer.scrollbar.scrollIntoView(document.querySelector(id), {

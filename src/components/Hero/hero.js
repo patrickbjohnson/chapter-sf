@@ -6,9 +6,9 @@ import styles from './hero.module.css'
 
 
 const Hero = (props) => {
-
+  console.log(props)
   return (
-    <section className={styles.section} data-hero >
+    <section className={`${styles.section} ${props.iPhone ? styles.iPhone  : ''}`} data-hero >
       <div className={styles.spacer} />
         <h1 className={styles.title}
             data-sal="fade"
