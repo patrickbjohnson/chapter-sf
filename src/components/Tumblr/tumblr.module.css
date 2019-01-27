@@ -84,14 +84,6 @@
     .caption {
         font-size: 14px;
     }
-}
-
-@media (min-width: 1024px) {
-
-    .section {
-        position: relative;
-        height: 900px;
-    }
 
     .inner {
         position: relative;
@@ -152,5 +144,12 @@
         top: 12%;
         right: 0;
         width: 370px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .section {
+        position: relative;
+        height: 900px;
     }
 }

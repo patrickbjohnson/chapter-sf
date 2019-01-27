@@ -11,10 +11,6 @@
   backface-visibility: hidden;
 }
 
-.iPhone {
-  height: calc(100vh - 120px);
-}
-
 .slide {
   position: relative;
   float: left;
@@ -83,6 +79,12 @@
   }
   100% {
     transform: translateY(0) rotate(45deg);
+  }
+}
+
+@media (max-width: 768px) {
+  .iPhone {
+    height: calc(100vh - 120px);
   }
 }
 

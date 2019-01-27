@@ -16,7 +16,7 @@ const Tumblr = (props) => {
     <>
       <section className={`${styles.section}`}>
         <div className={styles.inner} data-parallax-section>
-          <div className={`${styles.imageWrap} ${styles.media1}`} data-parallax-image>
+        <div className={`${styles.imageWrap} ${styles.media1}`} data-parallax-image>
             <img src={fern} alt=""/>
           </div>
 
@@ -28,9 +28,6 @@ const Tumblr = (props) => {
             <img src={art} alt=""/>
           </div>
         </div>
-
-
-
       </section>
 
       <JoinUs />

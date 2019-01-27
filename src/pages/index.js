@@ -44,8 +44,10 @@ class IndexPage extends Component {
     // styles since smooth scrollbar
     // forces the iphone lower navigation to
     // dislpay at all times.
+    console.log(navigator.platform);
     this.setState({
-      iPhone: (navigator.platform === 'iPhone')
+      iPhone: (navigator.platform === 'iPhone'),
+      iPad: (navigator.platform === 'iPad')
     })
 
     this.mq = window.matchMedia('(min-width: 1024px)')
