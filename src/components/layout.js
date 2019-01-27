@@ -2,16 +2,12 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
-
-
 import shareImage from "../images/CHAPTER.jpg"
-
 
 import '../../static/fonts/fonts.css'
 import './layout.css'
 import './sal.css'
 
-console.log(shareImage)
 const Layout = ({ children }) => (
   <StaticQuery
     query={graphql`

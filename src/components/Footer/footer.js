@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 
 import data from '../../../content/data'
-import social from '../../utils/socialLinks'
 
 import styles from './footer.module.css'
 
@@ -31,7 +30,7 @@ class Footer extends Component {
               </a>
               <br />
               <p className={`${styles.link} ${styles.phone}`}><a href={data.phoneLink}>{data.phone}</a></p>
-              <p className={styles.link}><a href={`mailto:${data.email}`} target="_blank">{data.email}</a></p>
+              <p className={styles.link}><a href={`mailto:${data.email}`} target="_blank" rel="noopener noreferrer">{data.email}</a></p>
             </div>
 
             <div className={`${styles.socialLinks} ${styles.contentSection}`}>

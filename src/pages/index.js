@@ -28,6 +28,7 @@ class IndexPage extends Component {
     this.offset = null
     this.scrollContainer = null
     this.pastHero = false
+    this.baseAnimationSpeed = .25;
 
     this.state = {
       pastHero: false
@@ -41,6 +42,8 @@ class IndexPage extends Component {
     this.hero = document.querySelector('[data-hero]')
     this.heroDims = this.hero.getBoundingClientRect()
 
+    this.parallaxSections = Array.from(document.querySelectorAll('[data-parallax-section]'))
+
     this.newKind = document.querySelector('[data-newkind]')
     this.menu = document.querySelector('[data-nav]')
 
@@ -53,6 +56,12 @@ class IndexPage extends Component {
     this.footer.style.right = 0
 
 
+    if (this.mq.matches) {
+      this.baseAnimationSpeed = .25;
+    } else {
+      this.baseAnimationSpeed = .1;
+    }
+
     this.initialNavSetup(this.mq.matches)
 
     scrollbar.addListener(({ offset }) => {
@@ -61,6 +70,21 @@ class IndexPage extends Component {
       this.footer.style.top = `${offset.y +
         (scrollbar.bounding.bottom -
           this.footer.getBoundingClientRect().height)}px`
+
+      const parallax1 = this.parallaxSections[0].getBoundingClientRect()
+      const parallax2 = this.parallaxSections[1].getBoundingClientRect()
+
+      if (parallax1.top < (window.innerHeight)) {
+        const images = Array.from(this.parallaxSections[0].querySelectorAll('[data-parallax-image]'))
+        this.parallaxImageStyles(images);
+      }
+
+
+      if (parallax2.top < (window.innerHeight)) {
+        const images = Array.from(this.parallaxSections[1].querySelectorAll('[data-parallax-image]'))
+        this.parallaxImageStyles(images);
+      }
+
 
       if (this.offset.y < window.innerHeight) {
         this.hero.style.visibility = 'visible'
@@ -97,13 +121,16 @@ class IndexPage extends Component {
       }px`
 
       if (media.matches) {
+
         if (this.offset) {
+          this.baseAnimationSpeed = .25;
           this.hero.style.top = `${this.offset.y}px`
           this.menuScrollOffsets()
         } else {
           this.initialNavSetup(media.matches)
         }
       } else {
+        this.baseAnimationSpeed = .1;
         if (this.offset) {
           this.hero.style.top = `${this.offset.y + 70}px`
           this.menu.style.top = `${this.offset.y}px`
@@ -154,6 +181,15 @@ class IndexPage extends Component {
       this.menu.style.top = `${heroDims.height}px`
       this.pastHero = false
     }
+  }
+
+  parallaxImageStyles(images) {
+    return images.map((image, i) => {
+
+      const multipler = i === images.length - 1 || i === 0 ? 1 : i + 1;
+      const top = image.getBoundingClientRect().top
+      image.style.transform = `translateY(${top * (this.baseAnimationSpeed * multipler)}px)`;
+    })
   }
 
   render() {

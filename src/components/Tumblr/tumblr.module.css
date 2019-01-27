@@ -1,15 +1,66 @@
 .section {
-    display: flex;
+    padding: 60px 32px;
     position: relative;
     z-index: 10;
     backface-visibility: hidden;
     overflow: hidden;
+    background-color: #fff;
+    min-height: 100vh;
 }
 
 .imageWrap {
     position: relative;
-    height: 50vw;
-    flex-basis: 50%;
+}
+
+.media1,
+.media2,
+.media3,
+.media4,
+.media5,
+.media6 {
+    position: relative;
+}
+
+.media1 {
+    margin-top: -2%;
+    width: 76%;
+    max-width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.media2 {
+    max-width: 195px;
+    margin-top: -38%;
+    margin-left: auto;
+    margin-right: -15px;
+}
+
+.media3 {
+    max-width: 215px;
+    margin-top: -25%;
+    margin-left: 0;
+    margin-right: auto;
+}
+
+.media4 {
+    max-width: 210px;
+    margin-left: 0;
+    margin-right: auto;
+}
+
+.media5 {
+    max-width: 190px;
+    margin-top: -100px;
+    margin-right: 0;
+    margin-left: auto;
+}
+
+.media6 {
+    max-width: 215px;
+    margin-top: -60px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .caption {
@@ -33,15 +84,73 @@
     .caption {
         font-size: 14px;
     }
-
-    .imageWrap {
-        height: 100vh;
-        width: 50vw;
-    }
 }
 
 @media (min-width: 1024px) {
+
+    .section {
+        position: relative;
+        height: 900px;
+    }
+
+    .inner {
+        position: relative;
+        max-width: 1000px;
+        width: 100%;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     .imageWrap {
         padding-bottom: 0;
+    }
+
+    .media1,
+    .media2,
+    .media3,
+    .media4,
+    .media5,
+    .media6 {
+        position: absolute;
+        max-width: none;
+        margin: 0;
+    }
+
+    .media1 {
+        width: 370px;
+        top: 4%;
+        left: 0;
+    }
+
+    .media2 {
+        width: 380px;
+        top: 15%;
+        right: 18.75%;
+        z-index: 1;
+    }
+
+    .media3 {
+        top: 20%;
+        right: 0;
+        width: 250px;
+    }
+
+    .media4 {
+        top: 8%;
+        width: 350px;
+        z-index: 1;
+    }
+
+    .media5 {
+        top: 10%;
+        left: 20%;
+        width: 330px;
+    }
+
+    .media6 {
+        top: 12%;
+        right: 0;
+        width: 370px;
     }
 }

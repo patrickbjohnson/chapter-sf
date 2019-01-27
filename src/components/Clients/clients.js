@@ -18,6 +18,7 @@ class Clients extends Component {
 
   componentDidMount() {
     const mq = window.matchMedia('(min-width: 1024px)')
+
     this.setState({
       mq: mq.matches,
     })
@@ -93,7 +94,7 @@ class Clients extends Component {
             })}
           </ul>
 
-          <p className={styles.cta}>The work we do makes it difficult to share what we're up to publicly. For a private viewing of these projects, please <a href={createMailLink(data.clients.email)} target="_blank">contact us</a></p>
+          <p className={styles.cta}>The work we do makes it difficult to share what we're up to publicly. For a private viewing of these projects, please <a href={createMailLink(data.clients.email)} target="_blank" rel="noopener noreferrer">contact us</a></p>
         </div>
       </section>
     )

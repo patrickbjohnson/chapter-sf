@@ -17,6 +17,7 @@
     "intersection-observer": "^0.5.1",
     "lodash.chunk": "^4.2.0",
     "lodash.debounce": "^4.0.8",
+    "lodash.random": "^3.2.0",
     "lodash.throttle": "^4.1.1",
     "react": "^16.5.1",
     "react-dom": "^16.5.1",
