@@ -134,7 +134,7 @@ const siteContent = {
             },
             {
                 name: 'Target',
-                info: 'business design',
+                info: 'End To End Experience',
             },
             {
                 name: 'Pillpack',
