@@ -39,33 +39,28 @@ const siteContent = {
         },
         "slides": [
             {
-              "img": 'ChristBurnett-01.jpg',
+              "img": '01-ThomasHeinser.png',
+              "credit": 'Thomas Heinser',
+              "url": 'https://thomasheinser.com',
+            },
+            {
+              "img": '02-Bonanza.jpg',
+              "credit": 'Bonanza',
+              "url": 'http://bonanzallc.co/',
+            },
+            {
+              "img": '03-ChristBurnett.jpg',
               "credit": 'Chris Burnett',
+              "url": 'http://chrisbur.net',
+            },
+            {
+              "img": '04-RichGiligan.jpg',
+              "credit": 'Rich Giligan',
               "url": 'http://www.richgilligan.com',
             },
             {
-              "img": 'ChristBurnett-02.jpg',
+              "img": '05-ChristBurnett.jpg',
               "credit": 'Chris Burnett',
-              "url": 'http://www.richgilligan.com',
-            },
-            {
-              "img": 'ChristBurnett-03.jpg',
-              "credit": 'Chris Burnett',
-              "url": 'http://www.richgilligan.com',
-            },
-            {
-              "img": 'ChristBurnett-04.jpg',
-              "credit": 'Chris Burnett',
-              "url": 'http://www.richgilligan.com',
-            },
-            {
-              "img": 'ChristBurnett-05.jpg',
-              "credit": 'Chris Burnett',
-              "url": 'http://www.richgilligan.com',
-            },
-            {
-              "img": 'RichGilligan.jpg',
-              "credit": 'Rich Gilligan',
               "url": 'http://chrisbur.net',
             },
         ]
