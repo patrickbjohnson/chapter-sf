@@ -44,7 +44,6 @@ class IndexPage extends Component {
     // styles since smooth scrollbar
     // forces the iphone lower navigation to
     // dislpay at all times.
-    console.log(navigator.platform);
     this.setState({
       iPhone: (navigator.platform === 'iPhone'),
       iPad: (navigator.platform === 'iPad')
@@ -64,6 +63,7 @@ class IndexPage extends Component {
     this.footerSpacer.style.height = `${
       this.footer.getBoundingClientRect().height
     }px`
+    this.footerSpacer.style.backgroundColor = '#FF6D2C'
 
     if (this.mq.matches) {
       this.baseAnimationSpeed = .25;
@@ -76,6 +76,11 @@ class IndexPage extends Component {
     scrollbar.addListener(({ offset }) => {
       this.offset = offset
 
+      this.footer.style.top = `${offset.y +
+        (scrollbar.bounding.bottom -
+          this.footer.getBoundingClientRect().height)}px`
+
+
       const parallax1 = this.parallaxSections[0].getBoundingClientRect()
       const parallax2 = this.parallaxSections[1].getBoundingClientRect()
 
@@ -84,12 +89,10 @@ class IndexPage extends Component {
         this.parallaxImageStyles(images);
       }
 
-
       if (parallax2.top < (window.innerHeight)) {
         const images = Array.from(this.parallaxSections[1].querySelectorAll('[data-parallax-image]'))
         this.parallaxImageStyles(images);
       }
-
 
       if (this.offset.y < window.innerHeight) {
         this.hero.style.visibility = 'visible'

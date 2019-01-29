@@ -181,7 +181,7 @@ const siteContent = {
         {
             "name": "Sue Murphy",
             "title": "partner",
-            "desc": "Ex-Wieden+Kennedy PDX, Wolff Olins and Ogilvy. The odd-shaped maverick swapping sides of the fence in advertising, branding and design studios. Pulling pints since age 6. Designing since age 11.",
+            "desc": "Ex-Design Director Wieden+Kennedy, Wolff Olins and Ogilvy. The odd-shaped maverick swapping sides of the fence in advertising, branding and design studios. Pulling pints since age 6.",
             "linkedin:": "https://www.linkedin.com/in/howsueisnow/",
             "twitter": "https://twitter.com/howsueisnow",
             "image": '../../sue.png'
