@@ -3,6 +3,7 @@ import Scrollbar from 'react-smooth-scrollbar'
 import sal from 'sal.js'
 import throttle from 'lodash.throttle'
 
+
 import Layout from '../components/layout'
 import Hero from '../components/Hero'
 import Menu from '../components/DesktopMenu'
@@ -16,11 +17,6 @@ import Us from '../components/Us'
 import Footer from '../components/Footer'
 
 import styles from '../components/smoothScroll.module.css'
-
-if (typeof window !== `undefined`) {
-  import ih from 'ios-inner-height'
-}
-
 
 class IndexPage extends Component {
   constructor() {
@@ -42,7 +38,7 @@ class IndexPage extends Component {
   }
 
   componentDidMount() {
-
+    const ih = require('ios-inner-height')
     const { scrollbar } = this.scrollContainer
 
     // Hacky but need to tweak
