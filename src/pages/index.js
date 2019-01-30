@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import Scrollbar from 'react-smooth-scrollbar'
 import sal from 'sal.js'
 import throttle from 'lodash.throttle'
-import ih from 'ios-inner-height'
+
 
 import Layout from '../components/layout'
 import Hero from '../components/Hero'
@@ -38,6 +38,7 @@ class IndexPage extends Component {
   }
 
   componentDidMount() {
+    import ih from 'ios-inner-height'
     const { scrollbar } = this.scrollContainer
 
     // Hacky but need to tweak
