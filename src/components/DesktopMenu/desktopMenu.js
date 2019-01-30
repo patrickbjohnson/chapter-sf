@@ -125,6 +125,7 @@ class DesktopMenu extends Component {
         </div>
 
         <MobileMenu
+          mobileMenuHandler={this.mobileMenuHandler}
           logoInView={this.state.showLogo}
           isOpen={this.state.mobileMenu}
           menu={this.state.sections}

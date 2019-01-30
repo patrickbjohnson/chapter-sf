@@ -21,7 +21,6 @@ class MobileMenu extends Component {
   }
 
   render() {
-
     return (
       <div className={this.menuClasses()}>
         <nav className={styles.nav}>
@@ -34,6 +33,7 @@ class MobileMenu extends Component {
                 onClick={(e) => {
                   e.preventDefault();
                   this.props.clickHandler(e, `#${item.id}`)
+                  setTimeout(this.props.mobileMenuHandler, 1000);
                 }}
               >
                 {item.id}
