@@ -47,13 +47,13 @@ const Us = () => {
       </div>
       <Content>
         <div
-          className={`${styles.contentInner} ${styles.bottom}`}
+          className={`${styles.contentInner} ${styles.bottom} `}
           data-sal="slide-up"
           data-sal-delay="100"
           data-sal-duration="600"
           data-sal-easing="ease-out-bounce"
         >
-          <p className={`${styles.copy} ${styles.bottom} ${content.copySmall}`}>{data.about.bottom}</p>
+          <p className={`${styles.copy}  ${content.copySmall}`}>{data.about.bottom}</p>
         </div>
       </Content>
     </section>
