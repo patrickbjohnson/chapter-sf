@@ -73,15 +73,8 @@
 
 @media (min-width: 1024px) {
   .section {
-    min-height: 100vh;
-    padding: 148px 55px 130px;
+    padding: 170px 55px 130px;
   }
-
-  /* .title {
-    font-size: 20px;
-    line-height: 30px;
-    margin-bottom: 30px;
-  } */
 }
 
 @media (min-width: 1200px) {
