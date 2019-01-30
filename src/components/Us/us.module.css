@@ -56,6 +56,10 @@
   margin-bottom: 80px;
 }
 
+.bottom {
+  margin-top: 100px;
+  padding-bottom: 100px;
+}
 
 @media (min-width: 768px) {
   .section {
@@ -103,9 +107,7 @@
     margin-bottom: 0;
   }
 
-  .bottom {
-    margin-top: 100px;
-  }
+
 }
 
 @media (min-width: 1024px) {
