@@ -19,13 +19,13 @@
 
 .title {
   font-family: 'austin-lite';
-  font-size: 15px;
-  line-height: 1;
+  font-size: 24px;
+  font-weight: 100;
+  line-height: 30px;
   margin-bottom: 24px;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 3px;
-  font-weight: 200;
 }
 
 .clientList {
@@ -58,8 +58,9 @@
   }
 
   .title {
-    font-size: 12px;
-    margin-bottom: 20px;
+    font-size: 35px;
+    line-height: 45px;
+    margin-bottom: 50px;
   }
 
   .cta {
@@ -76,11 +77,11 @@
     padding: 148px 55px 130px;
   }
 
-  .title {
+  /* .title {
     font-size: 20px;
     line-height: 30px;
     margin-bottom: 30px;
-  }
+  } */
 }
 
 @media (min-width: 1200px) {

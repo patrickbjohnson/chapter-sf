@@ -7004,6 +7004,11 @@ invert-kv@^2.0.0:
   resolved "https://registry.yarnpkg.com/invert-kv/-/invert-kv-2.0.0.tgz#7393f5afa59ec9ff5f67a27620d11c226e3eec02"
   integrity sha512-wPVv/y/QQ/Uiirj/vh3oP+1Ww+AWehmi1g5fFWGPF6IpCBCDVrhgHRMvrLfdYcwDh3QJbGXDW4JAuzxElLSqKA==
 
+ios-inner-height@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/ios-inner-height/-/ios-inner-height-1.1.0.tgz#87e0003ee181c18e070640d10ba5e6434147306a"
+  integrity sha512-ms/ifgoozTQSyw2Gp9u3QGB7nPw/ZTdjjriKY10m0MPdnA5TiEJiEofOc5ThGR9ACj1VosdzYDPqluMQ3/xJkQ==
+
 ip-regex@^1.0.1:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/ip-regex/-/ip-regex-1.0.3.tgz#dc589076f659f419c222039a33316f1c7387effd"

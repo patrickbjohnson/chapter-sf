@@ -1,12 +1,15 @@
 import React from 'react'
+import random from 'lodash.random'
 
 import Slider from 'react-slick'
 import data from '../../../content/data'
 import styles from './hero.module.css'
 
+const settings = Object.assign({
+  initialSlide: random(data.hero.slides.length)
+}, data.hero.settings);
 
 const Hero = (props) => {
-  console.log(props)
   return (
     <section className={`${styles.section} ${(props.iPhone || props.iPad) ? styles.iPhone  : ''}`} data-hero >
       <div className={styles.spacer} />
@@ -23,7 +26,7 @@ const Hero = (props) => {
           </svg>
         </h1>
 
-      <Slider {...data.hero.settings}>
+      <Slider {...settings}>
         {data.hero.slides.map((slide, i) => {
           return (
             <div key={i}>

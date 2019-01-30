@@ -81,6 +81,12 @@
 
 
 @media (min-width: 768px) {
+    .section {
+        max-height: 900px;
+        height: 100vh;
+        min-height: inherit;
+    }
+
     .caption {
         font-size: 14px;
     }

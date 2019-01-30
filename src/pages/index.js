@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import Scrollbar from 'react-smooth-scrollbar'
 import sal from 'sal.js'
 import throttle from 'lodash.throttle'
+import ih from 'ios-inner-height'
 
 import Layout from '../components/layout'
 import Hero from '../components/Hero'
@@ -30,7 +31,6 @@ class IndexPage extends Component {
     this.pastHero = false
     this.baseAnimationSpeed = .25;
 
-
     this.state = {
       pastHero: false,
       iPhone: false
@@ -52,18 +52,13 @@ class IndexPage extends Component {
     this.mq = window.matchMedia('(min-width: 1024px)')
     this.hero = document.querySelector('[data-hero]')
     this.heroDims = this.hero.getBoundingClientRect()
-
-    this.parallaxSections = Array.from(document.querySelectorAll('[data-parallax-section]'))
-
-    this.newKind = document.querySelector('[data-newkind]')
-    this.menu = document.querySelector('[data-nav]')
-
     this.footer = document.querySelector('[data-newsletter]')
     this.footerSpacer = document.querySelector('[data-newsletter-spacer]')
-    this.footerSpacer.style.height = `${
-      this.footer.getBoundingClientRect().height
-    }px`
-    this.footerSpacer.style.backgroundColor = '#FF6D2C'
+    this.footerSpacer.style.backgroundColor = '#FF6D2C';
+    this.footerSpacer.style.height = `${this.footer.getBoundingClientRect().height}px`
+    this.parallaxSections = Array.from(document.querySelectorAll('[data-parallax-section]'))
+    this.newKind = document.querySelector('[data-newkind]')
+    this.menu = document.querySelector('[data-nav]')
 
     if (this.mq.matches) {
       this.baseAnimationSpeed = .25;
@@ -75,14 +70,11 @@ class IndexPage extends Component {
 
     scrollbar.addListener(({ offset }) => {
       this.offset = offset
-
-      this.footer.style.top = `${offset.y +
-        (scrollbar.bounding.bottom -
-          this.footer.getBoundingClientRect().height)}px`
-
-
       const parallax1 = this.parallaxSections[0].getBoundingClientRect()
       const parallax2 = this.parallaxSections[1].getBoundingClientRect()
+
+      this.footer.style.top = `${offset.y}px`
+      this.footer.style.top = `${offset.y +(scrollbar.bounding.bottom - this.footer.getBoundingClientRect().height) + (ih() - window.innerHeight)}px`
 
       if (parallax1.top < (window.innerHeight)) {
         const images = Array.from(this.parallaxSections[0].querySelectorAll('[data-parallax-image]'))
@@ -124,12 +116,9 @@ class IndexPage extends Component {
     this.mq.addListener(media => {
       this.heroDims = this.hero.getBoundingClientRect()
 
-      this.footerSpacer.style.height = `${
-        this.footer.getBoundingClientRect().height
-      }px`
+      this.footerSpacer.style.height = `${this.footer.getBoundingClientRect().height}px`
 
       if (media.matches) {
-
         if (this.offset) {
           this.baseAnimationSpeed = .25;
           this.hero.style.top = `${this.offset.y}px`
@@ -139,6 +128,7 @@ class IndexPage extends Component {
         }
       } else {
         this.baseAnimationSpeed = .1;
+
         if (this.offset) {
           this.hero.style.top = `${this.offset.y + 70}px`
           this.menu.style.top = `${this.offset.y}px`
@@ -171,9 +161,7 @@ class IndexPage extends Component {
   resizeOffsets() {
     const heroDims = this.hero.getBoundingClientRect()
 
-    this.footerSpacer.style.height = `${
-      this.footer.getBoundingClientRect().height
-    }px`
+    this.footerSpacer.style.height = `${this.footer.getBoundingClientRect().height}px`
 
     if (this.offset) {
       this.menuScrollOffsets();
@@ -208,7 +196,7 @@ class IndexPage extends Component {
     return (
       <Layout>
         <div className={styles.container}>
-          <Scrollbar ref={c => (this.scrollContainer = c)}>
+          <Scrollbar damping={0.2} ref={c => (this.scrollContainer = c)}>
             <Hero
               iPhone={this.state.iPhone}
               clickHandler={(e, id) => {
