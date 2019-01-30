@@ -57,7 +57,7 @@
 }
 
 .bottom {
-  margin-top: 100px;
+  margin-top: 125px;
   padding-bottom: 100px;
 }
 
@@ -107,7 +107,9 @@
     margin-bottom: 0;
   }
 
-
+  .bottom {
+    margin-top: 150px;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -129,7 +131,8 @@
 
   .bottom {
     margin-top: 250px;
-    margin-bottom: 50px;
+    margin-bottom: 150px;
+    padding-bottom: 0;
   }
 
 }
