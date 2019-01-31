@@ -33,7 +33,7 @@ class MobileMenu extends Component {
                 onClick={(e) => {
                   e.preventDefault();
                   this.props.clickHandler(e, `#${item.id}`)
-                  setTimeout(this.props.mobileMenuHandler, 1000);
+                  setTimeout(this.props.mobileMenuHandler, 200);
                 }}
               >
                 {item.id}
