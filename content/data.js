@@ -69,7 +69,7 @@ const siteContent = {
         "title" :"Only the human friendly will thrive",
         "first": "Today, people expect more from their brands. Those expectations may seem unreasonable but they have been reset for good. Brands can no longer draw comfort from being a bit better than their direct competitors or doing what they’ve always done before. They need a new playbook to thrive in today’s world; to be human friendly, not just human like.",
         "second": "Chapter is a new type of creative studio focused on designing soulful brands that thrive in today's world of unreasonable expectations. We help businesses seize the right opportunity, reset their direction and reinvent themselves and the categories they operate in.",
-        "third": "We do this by focusing our energy on rethinking products, communications and the way they work together to bring brands to life in more unexpected, joyful and human friendly ways. Because the brands that win today, and tomorrow, will have an opinion on how they not just meet, but set, new expectations."
+        "third": "We do this by focusing our energy on rethinking products, communications and the way they work together to bring brands to life in more unexpected and joyful ways. Because the brands that win today, and tomorrow, will have an opinion on how they not just meet, but set, new expectations."
     },
     "about": {
         "title": "WE’RE BUILDING A HOME FOR BRILLIANT MISFITS",
