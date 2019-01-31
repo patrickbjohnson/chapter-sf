@@ -24,6 +24,10 @@
   text-align: center;
 }
 
+.paraText {
+  font-family: 'austin-lite', serif;
+}
+
 @media (min-width: 768px) {
   .content {
     font-size: 35px;
@@ -37,28 +41,21 @@
     margin-top: 0;
   }
 
-  .copy,
-  .copy span {
-    font-size: 40px;
-    line-height: 1.125;
-  }
-
-  .copy {
-    margin-bottom: 150px;
-  }
-
-  .form {
-    max-width: 580px;
-  }
-
-  .button {
-    font-size: 15px;
+  .paraText {
+    font-size: 30px;
+    line-height: 40px;
   }
 }
 
 @media (min-width: 1200px) {
   .section {
     padding: 200px 40px 150px;
+  }
+
+  .content {
+    font-size: 60px;
+    line-height: 70px;
+    margin-bottom: 30px;
   }
 
   .copy {

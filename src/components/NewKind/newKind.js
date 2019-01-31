@@ -16,9 +16,9 @@ const Partner = () => {
         >
 
         <h2 className={`${styles.content}`}>{data.newKind.title}</h2>
-        <p className={content.introCopy}>{data.newKind.first}</p>
-        <p className={content.introCopy}>{data.newKind.second}</p>
-        <p className={content.introCopy}>{data.newKind.third}</p>
+        <p className={`${styles.paraText} ${content.introCopy}`}>{data.newKind.first}</p>
+        <p className={`${styles.paraText} ${content.introCopy}`}>{data.newKind.second}</p>
+        <p className={`${styles.paraText} ${content.introCopy}`}>{data.newKind.third}</p>
         </div>
 
 
