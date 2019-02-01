@@ -51,6 +51,7 @@
 }
 
 .bioLink {
+    position: relative;
     display: inline-block;
     font-family: 'venus';
     text-transform: uppercase;
@@ -60,4 +61,27 @@
     margin-top: 10px;
     font-size: 12px;
     letter-spacing: 0.3em;
+    cursor: pointer;
 }
+
+.bioLink:after {
+    content: '';
+    height: 3px;
+    width: 100%;
+    position: absolute;
+    top: 48%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    transition: width 0.25s ease-out;
+    background-color: inherit;
+    width: 0%;
+  }
+
+  .bioLink:hover:after {
+    width: 100%;
+  }
+
+  .bioLink:after {
+    background-color: #fff;
+  }
