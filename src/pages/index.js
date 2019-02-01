@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import Scrollbar from 'react-smooth-scrollbar'
 import sal from 'sal.js'
 import throttle from 'lodash.throttle'
+import easing from 'easing-js'
 
 
 import Layout from '../components/layout'
@@ -193,6 +194,14 @@ class IndexPage extends Component {
     })
   }
 
+  sectionScrollHandler(scrollOffset, id) {
+    var sectionOffset = (document.querySelector(id).getBoundingClientRect().top - 70);
+
+    const pageOffset = scrollOffset ? sectionOffset + scrollOffset.y : sectionOffset;
+
+    this.scrollContainer.scrollbar.scrollTo(0, pageOffset, 1650);
+  }
+
   render() {
     return (
       <Layout>
@@ -202,20 +211,14 @@ class IndexPage extends Component {
               iPhone={this.state.iPhone}
               clickHandler={(e, id) => {
                 e.preventDefault()
-                this.scrollContainer.scrollbar.scrollIntoView(document.querySelector(id), {
-                  alignToTop: true,
-                  offsetTop: 70,
-                });
+                this.sectionScrollHandler(this.offset, id)
               }}
             />
             <Menu
               pastHero={this.state.pastHero}
               clickHandler={(e, id) => {
                 e.preventDefault()
-                this.scrollContainer.scrollbar.scrollIntoView(document.querySelector(id), {
-                  alignToTop: true,
-                  offsetTop: 70,
-                });
+                this.sectionScrollHandler(this.offset, id)
               }}
             />
             <NewKind />
