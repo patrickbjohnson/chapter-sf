@@ -94,7 +94,7 @@ class Clients extends Component {
             })}
           </ul>
 
-          <p className={styles.cta}>The work we do makes it difficult to share what we're up to publicly. </p><p className={styles.cta}>For a private viewing of these projects, please <a href={createMailLink(data.clients.email)} target="_blank" rel="noopener noreferrer">contact us</a></p>
+          <p className={styles.cta}>The work we do makes it difficult to share what we're up to publicly. </p><p className={styles.cta}>For a private viewing of these projects, please <a href={createMailLink(data.clients.email)} target="_blank" rel="noopener noreferrer">contact us</a>.</p>
         </div>
       </section>
     )
