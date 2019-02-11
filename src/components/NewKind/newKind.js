@@ -3,6 +3,7 @@ import data from '../../../content/data'
 import Content from '../Content'
 import content from '../Content/content.module.css'
 import styles from './newkind.module.css'
+import image from '../../images/CHAPTER-Quotes.png'
 
 const Partner = () => {
   return (
@@ -14,8 +15,7 @@ const Partner = () => {
           data-sal-duration="600"
           data-sal-easing="ease-out-bounce"
         >
-
-        <h2 className={`${styles.content}`}>{data.newKind.title}</h2>
+        <img className={content.introCopy} src={image} alt={data.newKind.title}/>
         <p className={`${styles.paraText} ${content.introCopy}`}>{data.newKind.first}</p>
         <p className={`${styles.paraText} ${content.introCopy}`}>{data.newKind.second}</p>
         <p className={`${styles.paraText} ${content.introCopy}`}>{data.newKind.third}</p>
