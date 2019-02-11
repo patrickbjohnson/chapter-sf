@@ -193,7 +193,7 @@ const siteContent = {
             {
                 "title": "Crew",
                 "desc": "We’re a bunch of designers, writers, producers and strategists restlessly dissatisfied with how brands, agencies and consultancies act today. If you feel like you’re a misfit, let’s change things together.",
-                "message": "Join our crew",
+                "message": "Join the crew",
                 "cta": {
                     "text": "Join",
                     "email": {
