@@ -3,12 +3,12 @@ import React from 'react'
 import JoinUs from '../JoinUs'
 import styles from './tumblr.module.css'
 
-import fern from '../../images/01-fern.png'
+import fear from '../../images/MakeFearYourTailwind.png'
 import music from '../../images/02-music.png'
 import art from '../../images/03-art.png'
 import office from '../../images/04-office.png'
 import rock from '../../images/05-rock.png'
-import orange from '../../images/06-orange.png'
+import destroy from '../../images/Destroy.png'
 
 const Tumblr = (props) => {
 
@@ -17,7 +17,7 @@ const Tumblr = (props) => {
       <section className={`${styles.section}`}>
         <div className={styles.inner} data-parallax-section>
         <div className={`${styles.imageWrap} ${styles.media1}`} data-parallax-image>
-            <img src={fern} alt=""/>
+            <img src={fear} alt=""/>
           </div>
 
           <div className={`${styles.imageWrap} ${styles.media2}`} data-parallax-image>
@@ -40,7 +40,7 @@ const Tumblr = (props) => {
           </div>
 
           <div className={`${styles.imageWrap} ${styles.media5}`} data-parallax-image>
-            <img src={orange} alt=""/>
+            <img src={destroy} alt="Destroy to create"/>
           </div>
 
           <div className={`${styles.imageWrap} ${styles.media6}`} data-parallax-image>
