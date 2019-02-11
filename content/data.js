@@ -67,13 +67,13 @@ const siteContent = {
     },
     "newKind": {
         "title" :"Only the human friendly will thrive",
-        "first": "Today, people expect more from their brands. Those expectations may seem unreasonable but they have been reset for good. Brands can no longer draw comfort from being a bit better than their direct competitors or doing what they’ve always done before. They need a new playbook to thrive in today’s world; to be human friendly, not just human like.",
+        "first": "Today, people expect more from their brands. Those expectations may seem unreasonable but they have been reset for good. Brands can no longer draw comfort from being a bit better than their direct competitors or doing what they’ve always done before. They need a new playbook to thrive in today’s world: to be human friendly, not just human like.",
         "second": "Chapter is a new type of creative studio focused on designing soulful brands that thrive in today's world of unreasonable expectations. We help businesses seize the right opportunity, reset their direction and reinvent themselves and the categories they operate in.",
         "third": "We do this by focusing our energy on rethinking products, communications and the way they work together to bring brands to life in more unexpected and joyful ways. Because the brands that win today, and tomorrow, will have an opinion on how they not just meet, but set, new expectations."
     },
     "about": {
         "title": "WE’RE BUILDING A HOME FOR BRILLIANT MISFITS",
-        "bottom": "Our experience has led us to do things a bit differently. We act as an agent of change not an agency of record. We’re obsessed in finding the human opportunity or problem and solving or seizing it in whatever shape it takes. We break down silos. We move fast. We’re open. We show the thing. We’re fearless, optimistic explorers in search of the better path less traveled."
+        "bottom": "Our experience has led us to do things a bit differently. We act as an agent of change not an agency of record. We’re obsessed in finding the human opportunity or problem and solving or seizing it in whatever shape it takes. We break down silos. We move fast. We’re open. We show the thing. We’re fearless, optimistic explorers of the path less traveled."
     },
     "partner": {
         "title": "We partner with a select number of changemakers who know they need to change what they do to meet the unreasonable expectations people have today",
@@ -198,7 +198,7 @@ const siteContent = {
                     "text": "Join",
                     "email": {
                         to: 'join@chaptersf.com',
-                        subject: 'apply for the workshop',
+                        subject: 'join the crew',
                         cc: false,
                         body: false,
                     }
@@ -219,14 +219,14 @@ const siteContent = {
                 }
             },
             {
-                "title": "Workshop",
+                "title": "Apprentice",
                 "desc": "This is not an internship. It’s an always-on crash course in solving real problems, open to talent all over the world, done 10 weeks at a time.",
-                "message": "Apply for the workshop",
+                "message": "Apply for the apprenticeship",
                 "cta": {
                     "text": "Apply",
                     "email": {
                         to: 'join@chaptersf.com',
-                        subject: 'join the crew',
+                        subject: 'apply for the apprenticeship',
                         cc: false,
                         body: false,
                       }
