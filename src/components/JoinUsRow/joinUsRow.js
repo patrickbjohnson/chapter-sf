@@ -22,7 +22,7 @@ const JoinUsRow = props => {
           </div>
         </div>
 
-        <a className={styles.button} href={createMailLink(mailto)}>
+        <a className={styles.button} href={mailto}>
           {buttonText}
         </a>
       </div>
