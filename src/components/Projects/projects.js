@@ -30,9 +30,11 @@ class Projects extends Component {
     const flky = new Flickity(this.slider.current, {
       prevNextButtons: false,
       pageDots: false,
-      friction: 0.98,
+      selectedAttraction: 0.01,
+      friction: 0.39,
+      pauseAutoPlayOnHover: 2000,
       percentPosition: true,
-      autoPlay: this.matches ? 4000 : false,
+      autoPlay: this.matches ? 2000 : false,
       wrapAround: this.matches ? true : false,
       cellAlign: this.matches ? 'left' : 'center',
       contain: this.matches ? true : false,
