@@ -4,6 +4,7 @@ module.exports = {
     title: 'CHAPTER is a new type of creative studio.',
     description: 'CHAPTER is a new type of creative studio focused on designing soulful brands that thrive in today\'s world of unreasonable expectations.'
   },
+  pathPrefix: `/chapter-sf`,
   plugins: [
     'gatsby-plugin-react-helmet',
     {

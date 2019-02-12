@@ -1,4 +1,5 @@
 import React from 'react'
+import { withPrefix } from 'gatsby'
 import random from 'lodash.random'
 
 import Slider from 'react-slick'
@@ -32,7 +33,7 @@ const Hero = (props) => {
             <div key={i}>
               <div
                 className={styles.slide}
-                style={{ backgroundImage: `url(../../${slide.img})` }}
+                style={{ backgroundImage: `url(${slide.img})` }}
               >
                 <div className={styles.caption}>
                   {slide.credit &&

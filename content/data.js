@@ -1,3 +1,5 @@
+import { withPrefix } from 'gatsby'
+
 const siteContent = {
     "calendly": "https://calendly.com/critroulette/15min",
     "phone": "+1 415 529 2529",
@@ -39,27 +41,27 @@ const siteContent = {
         },
         "slides": [
             {
-              "img": '01-ThomasHeinser.png',
+              "img": `${withPrefix('01-ThomasHeinser.jpg')}`,
               "credit": 'Thomas Heinser',
               "url": 'https://thomasheinser.com',
             },
             {
-              "img": '02-Bonanza.jpg',
+              "img": `${withPrefix('02-Bonanza.jpg')}`,
               "credit": 'Bonanza',
               "url": 'http://bonanzallc.co/',
             },
             {
-              "img": '03-ChristBurnett.jpg',
+              "img": `${withPrefix('03-ChristBurnett.jpg')}`,
               "credit": 'Chris Burnett',
               "url": 'http://chrisbur.net',
             },
             {
-              "img": '04-RichGiligan.jpg',
+              "img": `${withPrefix('04-RichGiligan.jpg')}`,
               "credit": 'Rich Giligan',
               "url": 'http://www.richgilligan.com',
             },
             {
-              "img": '05-ChristBurnett.jpg',
+              "img": `${withPrefix('05-ChristBurnett.jpg')}`,
               "credit": 'Chris Burnett',
               "url": 'http://chrisbur.net',
             },
@@ -164,19 +166,19 @@ const siteContent = {
     "bios": [
         {
             "name": "Gareth Kay",
-            "title": "co-founder",
+            "title": "Founding Partner",
             "desc": "Ex-Chief Strategy Officer of Goodby, Silverstein & Partners. Left a 20-year career at some of the world’s best ad agencies to apply strategic creativity more expansively. Failed musician.",
             "linkedin:": "https://www.linkedin.com/in/garethkaysf/",
             "twitter": "https://twitter.com/garethk",
-            "image": '../../gareth.png'
+            "image": `${withPrefix('gareth.jpg')}`,
         },
         {
             "name": "Neil Robinson",
-            "title": "co-founder",
+            "title": "Founding Partner",
             "desc": "Ex-ECD AQKA San Francisco. After helping to build one of the best agencies in the world for 17 years hit the reset button to build something from the ground up that's designed to do the right thing.",
             "linkedin:": "https://www.linkedin.com/in/neilrobinson/",
             "twitter": "https://twitter.com/dnrobinson",
-            "image": '../../neil.png'
+            "image": `${withPrefix('neil.jpg')}`
         },
         {
             "name": "Sue Murphy",
@@ -184,7 +186,7 @@ const siteContent = {
             "desc": "Ex-Design Director Wieden+Kennedy, Wolff Olins and Ogilvy. The odd-shaped maverick swapping sides of the fence in advertising, branding and design studios. Pulling pints since age 6.",
             "linkedin:": "https://www.linkedin.com/in/howsueisnow/",
             "twitter": "https://twitter.com/howsueisnow",
-            "image": '../../sue.png'
+            "image": `${withPrefix('sue.jpg')}`
         },
     ],
     "join": {
