@@ -13,4 +13,3 @@ const createMailLink = (props) => {
 }
 
 export default createMailLink
-
