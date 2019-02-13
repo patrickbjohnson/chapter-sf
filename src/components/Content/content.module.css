@@ -5,6 +5,10 @@
     color: #000;
 }
 
+.img {
+    max-width: 100%;
+}
+
 .white,
 .white .copy {
     color: #fff;
@@ -116,5 +120,8 @@
         letter-spacing: inherit;
     }
 
+    .img {
+        max-width: 850px;
+    }
 
 }

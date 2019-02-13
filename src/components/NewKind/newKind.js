@@ -15,7 +15,7 @@ const Partner = () => {
           data-sal-duration="600"
           data-sal-easing="ease-out-bounce"
         >
-        <img className={content.introCopy} src={image} alt={data.newKind.title}/>
+        <img className={content.img} src={image} alt={data.newKind.title}/>
         <p className={`${styles.paraText} ${content.introCopy}`}>{data.newKind.first}</p>
         <p className={`${styles.paraText} ${content.introCopy}`}>{data.newKind.second}</p>
         <p className={`${styles.paraText} ${content.introCopy}`}>{data.newKind.third}</p>
