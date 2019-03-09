@@ -629,3 +629,7 @@ pre tt:after {
 .scrollContainer > * {
   height: 100vh;
 }
+
+.slick-active {
+  z-index: 1;
+}

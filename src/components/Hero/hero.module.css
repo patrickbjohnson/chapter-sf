@@ -31,7 +31,12 @@
   text-align: center;
 }
 
+.slick-active .caption {
+  z-index: 10;
+}
+
 .credit {
+  z-index: 1;
   font-family: 'Courier New', Courier, monospace;
   font-weight: 200;
   text-transform: uppercase;
