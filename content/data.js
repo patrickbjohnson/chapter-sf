@@ -180,14 +180,6 @@ const siteContent = {
             "twitter": "https://twitter.com/dnrobinson",
             "image": `${withPrefix('neil.jpg')}`
         },
-        {
-            "name": "Sue Murphy",
-            "title": "partner",
-            "desc": "Ex-Design Director Wieden+Kennedy, Wolff Olins and Ogilvy. The odd-shaped maverick swapping sides of the fence in advertising, branding and design studios. Pulling pints since age 6.",
-            "linkedin:": "https://www.linkedin.com/in/howsueisnow/",
-            "twitter": "https://twitter.com/howsueisnow",
-            "image": `${withPrefix('sue.jpg')}`
-        },
     ],
     "join": {
         "title": "Curious, optimistic, misfits wanted",
