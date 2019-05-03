@@ -34,12 +34,13 @@ const Us = () => {
                 data-sal-easing="ease-out-bounce"
               >
                 <Bio
-                  name={bio.name}
-                  title={bio.title}
-                  desc={bio.desc}
-                  linkedin={bio.linkedin}
-                  email={bio.email}
-                  image={bio.image}
+                  {...bio}
+                  // name={bio.name}
+                  // title={bio.title}
+                  // desc={bio.desc}
+                  // linkedin={bio.linkedin}
+                  // email={bio.email}
+                  // image={bio.image}
                 />
               </div>
           )

@@ -3,6 +3,7 @@ import { withPrefix } from 'gatsby'
 import styles from './bio.module.css'
 
 const Bio = (props) => {
+    console.log(props)
     return (
         <div className={styles.bioWrap}>
             <div
@@ -15,8 +16,8 @@ const Bio = (props) => {
                   <p className={styles.desc}>{props.desc}</p>
                 </div>
             </div>
-            <a className={styles.bioLink} href={props.linkedin} taget="_blank">LinkedIn</a>
-            <a className={styles.bioLink} href={props.twitter} taget="_blank">Twitter</a>
+            <a className={styles.bioLink} href={`https://www.linkedin.com/in/${props.linkedin}`} taget="_blank">LinkedIn</a>
+            <a className={styles.bioLink} href={`https://twitter.com/${props.twitter}`} taget="_blank">Twitter</a>
         </div>
 
     )
