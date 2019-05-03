@@ -3,12 +3,11 @@ import { withPrefix } from 'gatsby'
 import styles from './bio.module.css'
 
 const Bio = (props) => {
-    console.log(props)
     return (
         <div className={styles.bioWrap}>
             <div
-                    className={styles.bio}
-                    style={{ backgroundImage: `url(${props.image})` }}
+                className={styles.bio}
+                style={{ backgroundImage: `url(${props.image})` }}
             >
                 <div className={styles.bioCopy}>
                   <h3 className={styles.name}>{props.name}</h3>
